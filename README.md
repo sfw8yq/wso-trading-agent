@@ -34,7 +34,7 @@ policy v2 agreed on 2026-10-29 (`wso/policy_defaults.json`, flattened in `wso/po
 ## Deploy (Streamlit Community Cloud, free)
 
 1. Fork or use this repo on GitHub.
-2. Go to https://share.streamlit.io → **Create app** → pick this repo, branch `main`, file `app.py`.
+2. One-click: https://share.streamlit.io/deploy?repository=sfw8yq/wso-trading-agent&branch=main&mainModule=app.py (or go to https://share.streamlit.io → **Create app** → pick this repo, branch `main`, file `app.py`).
 3. Under **Advanced settings → Secrets**, paste the contents of `.streamlit/secrets.toml.example` with your values (see below).
 4. Deploy. First load takes ~1 minute (installs `requirements.txt`).
 
