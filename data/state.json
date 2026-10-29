@@ -1,7 +1,7 @@
 {
  "schema_version": 3,
  "created_at": "2026-10-29T07:33:18+00:00",
- "updated_at": "2026-10-29T07:36:40+00:00",
+ "updated_at": "2026-10-29T18:47:36+00:00",
  "settings": {
   "trading_capital": 10000.0,
   "paper_mode": true,
@@ -19,7 +19,13 @@
   "cash": 10000.0,
   "starting_capital": 10000.0,
   "capital_set_at": "2026-10-29T07:33:18+00:00",
-  "equity_curve": [],
+  "equity_curve": [
+   {
+    "date": "2026-10-29",
+    "equity": 10000.0,
+    "cash": 10000.0
+   }
+  ],
   "realized_pnl": 0.0
  },
  "positions": [],
@@ -708,7 +714,7 @@
   "finished_at_utc": "2026-10-29T07:36:40+00:00",
   "proposal_symbols": []
  },
- "last_monitor": null,
+ "last_monitor": "2026-10-29T18:47:36+00:00",
  "reports": {
   "daily": [],
   "weekly": []
