@@ -1,0 +1,2768 @@
+{
+ "schema_version": 3,
+ "created_at": "2026-10-29T07:33:18+00:00",
+ "updated_at": "2026-10-29T07:36:40+00:00",
+ "settings": {
+  "trading_capital": 10000.0,
+  "paper_mode": true,
+  "human_approval": true,
+  "notifications_enabled": true,
+  "emails": [],
+  "kill_switch": false,
+  "auto_run_cycle": true,
+  "policy_overrides": {},
+  "extra_symbols": [],
+  "excluded_symbols": [],
+  "timezone": "America/New_York"
+ },
+ "account": {
+  "cash": 10000.0,
+  "starting_capital": 10000.0,
+  "capital_set_at": "2026-10-29T07:33:18+00:00",
+  "equity_curve": [],
+  "realized_pnl": 0.0
+ },
+ "positions": [],
+ "orders": [],
+ "trades": [],
+ "pending_proposals": [],
+ "watchlist": [
+  {
+   "symbol": "PG",
+   "setup": "pullback_to_21ema",
+   "price": 158.26,
+   "score": 66.2,
+   "reasons": [
+    "reward:risk 1.19 < 2.0",
+    "fundamental data unavailable from vendor \u2014 confidence reduced, re-run later",
+    "score 66.2 in watchlist band"
+   ],
+   "stop": 149.94,
+   "t1": 165.75,
+   "t2": 170.58,
+   "expected_rr": 1.19,
+   "added_at_utc": "2026-10-29T07:35:27+00:00",
+   "trigger": "re-test of 21 EMA 154.79 with rising volume"
+  }
+ ],
+ "decision_log": [
+  {
+   "id": "6ee2310e",
+   "at": "2026-10-29T07:33:32+00:00",
+   "symbol": null,
+   "decision": "INFO",
+   "reason": "regime balanced (score 55.9); leaders Energy, Utilities, Consumer Staples, Consumer Discretionary; laggards Technology, Communication, Semiconductors",
+   "rule": "Gate 2 market regime"
+  },
+  {
+   "id": "9c18439a",
+   "at": "2026-10-29T07:33:33+00:00",
+   "symbol": null,
+   "decision": "INFO",
+   "reason": "50 names passed the structural screen; 18 shortlisted for specialist review",
+   "rule": "Gate 3 universe screen"
+  },
+  {
+   "id": "1a3ddea2",
+   "at": "2026-10-29T07:33:43+00:00",
+   "symbol": "APA",
+   "decision": "REJECT",
+   "reason": "earnings inside holding window; reward:risk 0.72 < 2.0; fundamental data unavailable from vendor \u2014 confidence reduced, re-run later; score 51.6 below 65",
+   "rule": "WSO score + CIO decision rules",
+   "score": 51.6,
+   "setup": "breakout_watch",
+   "expected_rr": 0.72,
+   "stop": 45.91,
+   "t1": 52.39,
+   "t2": 57.33,
+   "earnings_next": "2026-11-04",
+   "bear_case": [
+    "Penalty: earnings inside holding window",
+    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)",
+    "Reward:risk 0.7 is below the 2.0 minimum at a 10.2% stop"
+   ]
+  },
+  {
+   "id": "832ec98a",
+   "at": "2026-10-29T07:33:53+00:00",
+   "symbol": "COP",
+   "decision": "REJECT",
+   "reason": "earnings inside holding window; reward:risk 0.98 < 2.0; fundamental data unavailable from vendor \u2014 confidence reduced, re-run later; score 53.4 below 65",
+   "rule": "WSO score + CIO decision rules",
+   "score": 53.4,
+   "setup": "breakout_watch",
+   "expected_rr": 0.98,
+   "stop": 139.93,
+   "t1": 152.77,
+   "t2": 163.19,
+   "earnings_next": "2026-11-05",
+   "bear_case": [
+    "Penalty: earnings inside holding window",
+    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)",
+    "Reward:risk 1.0 is below the 2.0 minimum at a 6.1% stop"
+   ]
+  },
+  {
+   "id": "731fb510",
+   "at": "2026-10-29T07:34:04+00:00",
+   "symbol": "PR",
+   "decision": "REJECT",
+   "reason": "earnings inside holding window; reward:risk 0.95 < 2.0; fundamental data unavailable from vendor \u2014 confidence reduced, re-run later; score 49.0 below 65",
+   "rule": "WSO score + CIO decision rules",
+   "score": 49.0,
+   "setup": "breakout_watch",
+   "expected_rr": 0.95,
+   "stop": 23.19,
+   "t1": 26.99,
+   "t2": 28.45,
+   "earnings_next": "2026-11-04",
+   "bear_case": [
+    "Penalty: earnings inside holding window",
+    "Penalty: new high on light volume",
+    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)"
+   ]
+  },
+  {
+   "id": "5cbca88d",
+   "at": "2026-10-29T07:34:14+00:00",
+   "symbol": "CVX",
+   "decision": "REJECT",
+   "reason": "earnings inside holding window; reward:risk 0.96 < 2.0; fundamental data unavailable from vendor \u2014 confidence reduced, re-run later; score 50.4 below 65",
+   "rule": "WSO score + CIO decision rules",
+   "score": 50.4,
+   "setup": "breakout_watch",
+   "expected_rr": 0.96,
+   "stop": 216.89,
+   "t1": 234.08,
+   "t2": 247.78,
+   "earnings_next": "2026-10-30",
+   "bear_case": [
+    "Penalty: earnings inside holding window",
+    "Penalty: new high on light volume",
+    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)"
+   ]
+  },
+  {
+   "id": "20845242",
+   "at": "2026-10-29T07:34:25+00:00",
+   "symbol": "XOM",
+   "decision": "REJECT",
+   "reason": "earnings inside holding window; reward:risk 1.26 < 2.0; fundamental data unavailable from vendor \u2014 confidence reduced, re-run later; score 52.2 below 65",
+   "rule": "WSO score + CIO decision rules",
+   "score": 52.2,
+   "setup": "breakout_watch",
+   "expected_rr": 1.26,
+   "stop": 172.61,
+   "t1": 189.92,
+   "t2": 197.83,
+   "earnings_next": "2026-10-30",
+   "bear_case": [
+    "Penalty: earnings inside holding window",
+    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)",
+    "Reward:risk 1.3 is below the 2.0 minimum at a 5.2% stop"
+   ]
+  },
+  {
+   "id": "ac45a4f9",
+   "at": "2026-10-29T07:34:35+00:00",
+   "symbol": "EOG",
+   "decision": "REJECT",
+   "reason": "earnings inside holding window; reward:risk 0.85 < 2.0; fundamental data unavailable from vendor \u2014 confidence reduced, re-run later; score 49.3 below 65",
+   "rule": "WSO score + CIO decision rules",
+   "score": 49.3,
+   "setup": "breakout_watch",
+   "expected_rr": 0.85,
+   "stop": 149.7,
+   "t1": 165.11,
+   "t2": 175.9,
+   "earnings_next": "2026-11-05",
+   "bear_case": [
+    "Penalty: earnings inside holding window",
+    "Penalty: new high on light volume",
+    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)"
+   ]
+  },
+  {
+   "id": "99df712d",
+   "at": "2026-10-29T07:34:46+00:00",
+   "symbol": "OXY",
+   "decision": "REJECT",
+   "reason": "earnings inside holding window; reward:risk 1.52 < 2.0; fundamental data unavailable from vendor \u2014 confidence reduced, re-run later; score 54.0 below 65",
+   "rule": "WSO score + CIO decision rules",
+   "score": 54.0,
+   "setup": "pullback_to_21ema",
+   "expected_rr": 1.52,
+   "stop": 59.59,
+   "t1": 66.83,
+   "t2": 68.89,
+   "earnings_next": "2026-11-09",
+   "bear_case": [
+    "Penalty: earnings inside holding window",
+    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)",
+    "Reward:risk 1.5 is below the 2.0 minimum at a 5.2% stop"
+   ]
+  },
+  {
+   "id": "f015b8dc",
+   "at": "2026-10-29T07:34:56+00:00",
+   "symbol": "LNG",
+   "decision": "REJECT",
+   "reason": "earnings inside holding window; reward:risk 0.74 < 2.0; fundamental data unavailable from vendor \u2014 confidence reduced, re-run later; score 51.2 below 65",
+   "rule": "WSO score + CIO decision rules",
+   "score": 51.2,
+   "setup": "breakout_watch",
+   "expected_rr": 0.74,
+   "stop": 272.0,
+   "t1": 304.73,
+   "t2": 328.9,
+   "earnings_next": "2026-10-29",
+   "bear_case": [
+    "Penalty: earnings inside holding window",
+    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)",
+    "Reward:risk 0.7 is below the 2.0 minimum at a 8.7% stop"
+   ]
+  },
+  {
+   "id": "8d22d42b",
+   "at": "2026-10-29T07:35:07+00:00",
+   "symbol": "DVN",
+   "decision": "REJECT",
+   "reason": "earnings inside holding window; reward:risk 1.27 < 2.0; fundamental data unavailable from vendor \u2014 confidence reduced, re-run later; score 53.5 below 65",
+   "rule": "WSO score + CIO decision rules",
+   "score": 53.5,
+   "setup": "pullback_to_21ema",
+   "expected_rr": 1.27,
+   "stop": 48.06,
+   "t1": 54.0,
+   "t2": 56.74,
+   "earnings_next": "2026-11-05",
+   "bear_case": [
+    "Penalty: earnings inside holding window",
+    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)",
+    "Reward:risk 1.3 is below the 2.0 minimum at a 6.3% stop"
+   ]
+  },
+  {
+   "id": "1e7902c0",
+   "at": "2026-10-29T07:35:17+00:00",
+   "symbol": "TRGP",
+   "decision": "REJECT",
+   "reason": "earnings inside holding window; reward:risk 0.80 < 2.0; fundamental data unavailable from vendor \u2014 confidence reduced, re-run later; score 49.2 below 65",
+   "rule": "WSO score + CIO decision rules",
+   "score": 49.2,
+   "setup": "breakout_watch",
+   "expected_rr": 0.8,
+   "stop": 275.09,
+   "t1": 322.2,
+   "t2": 338.5,
+   "earnings_next": "2026-11-05",
+   "bear_case": [
+    "Penalty: earnings inside holding window",
+    "Penalty: new high on light volume",
+    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)"
+   ]
+  },
+  {
+   "id": "3171b26c",
+   "at": "2026-10-29T07:35:27+00:00",
+   "symbol": "PG",
+   "decision": "WATCHLIST",
+   "reason": "reward:risk 1.19 < 2.0; fundamental data unavailable from vendor \u2014 confidence reduced, re-run later; score 66.2 in watchlist band",
+   "rule": "WSO score + CIO decision rules",
+   "score": 66.2,
+   "setup": "pullback_to_21ema",
+   "expected_rr": 1.19,
+   "stop": 149.94,
+   "t1": 165.75,
+   "t2": 170.58,
+   "earnings_next": "2027-01-21",
+   "bear_case": [
+    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)",
+    "Reward:risk 1.2 is below the 2.0 minimum at a 5.3% stop"
+   ]
+  },
+  {
+   "id": "6de5e632",
+   "at": "2026-10-29T07:35:38+00:00",
+   "symbol": "KMI",
+   "decision": "REJECT",
+   "reason": "reward:risk 1.59 < 2.0; fundamental data unavailable from vendor \u2014 confidence reduced, re-run later; score 62.0 below 65",
+   "rule": "WSO score + CIO decision rules",
+   "score": 62.0,
+   "setup": "pullback_to_21ema",
+   "expected_rr": 1.59,
+   "stop": 32.11,
+   "t1": 34.75,
+   "t2": 36.99,
+   "earnings_next": "2027-01-27",
+   "bear_case": [
+    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)",
+    "Reward:risk 1.6 is below the 2.0 minimum at a 4.3% stop"
+   ]
+  },
+  {
+   "id": "b54dae2d",
+   "at": "2026-10-29T07:35:48+00:00",
+   "symbol": "OKE",
+   "decision": "REJECT",
+   "reason": "reward:risk 1.47 < 2.0; fundamental data unavailable from vendor \u2014 confidence reduced, re-run later; score 60.9 below 65",
+   "rule": "WSO score + CIO decision rules",
+   "score": 60.9,
+   "setup": "pullback_to_21ema",
+   "expected_rr": 1.47,
+   "stop": 89.72,
+   "t1": 99.85,
+   "t2": 103.36,
+   "earnings_next": "2027-02-22",
+   "bear_case": [
+    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)",
+    "Reward:risk 1.5 is below the 2.0 minimum at a 5.1% stop",
+    "Earnings reaction day closed red \u2014 continuation is unconfirmed"
+   ]
+  },
+  {
+   "id": "4bcda7a1",
+   "at": "2026-10-29T07:35:59+00:00",
+   "symbol": "PM",
+   "decision": "REJECT",
+   "reason": "reward:risk 0.73 < 2.0; fundamental data unavailable from vendor \u2014 confidence reduced, re-run later; score 59.7 below 65",
+   "rule": "WSO score + CIO decision rules",
+   "score": 59.7,
+   "setup": "pullback_to_21ema",
+   "expected_rr": 0.73,
+   "stop": 182.68,
+   "t1": 210.45,
+   "t2": 223.74,
+   "earnings_next": "2027-02-04",
+   "bear_case": [
+    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)",
+    "Reward:risk 0.7 is below the 2.0 minimum at a 9.8% stop",
+    "Earnings reaction day closed red \u2014 continuation is unconfirmed"
+   ]
+  },
+  {
+   "id": "0a07bc2c",
+   "at": "2026-10-29T07:36:09+00:00",
+   "symbol": "VEEV",
+   "decision": "REJECT",
+   "reason": "reward:risk 0.99 < 2.0; fundamental data unavailable from vendor \u2014 confidence reduced, re-run later; score 62.0 below 65",
+   "rule": "WSO score + CIO decision rules",
+   "score": 62.0,
+   "setup": "breakout_watch",
+   "expected_rr": 0.99,
+   "stop": 293.13,
+   "t1": 325.99,
+   "t2": 358.46,
+   "earnings_next": "2026-11-25",
+   "bear_case": [
+    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)",
+    "Reward:risk 1.0 is below the 2.0 minimum at a 7.8% stop"
+   ]
+  },
+  {
+   "id": "00f9276f",
+   "at": "2026-10-29T07:36:19+00:00",
+   "symbol": "PLTR",
+   "decision": "REJECT",
+   "reason": "earnings inside holding window; reward:risk 1.77 < 2.0; fundamental data unavailable from vendor \u2014 confidence reduced, re-run later; score 52.5 below 65",
+   "rule": "WSO score + CIO decision rules",
+   "score": 52.5,
+   "setup": "pullback_to_21ema",
+   "expected_rr": 1.77,
+   "stop": 182.25,
+   "t1": 212.94,
+   "t2": 232.02,
+   "earnings_next": "2026-11-02",
+   "bear_case": [
+    "Penalty: earnings inside holding window",
+    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)",
+    "Reward:risk 1.8 is below the 2.0 minimum at a 7.4% stop"
+   ]
+  },
+  {
+   "id": "30d5b30d",
+   "at": "2026-10-29T07:36:30+00:00",
+   "symbol": "SHOP",
+   "decision": "REJECT",
+   "reason": "earnings inside holding window; reward:risk 1.51 < 2.0; fundamental data unavailable from vendor \u2014 confidence reduced, re-run later; score 52.0 below 65",
+   "rule": "WSO score + CIO decision rules",
+   "score": 52.0,
+   "setup": "pullback_to_21ema",
+   "expected_rr": 1.51,
+   "stop": 153.32,
+   "t1": 182.19,
+   "t2": 199.35,
+   "earnings_next": "2026-11-03",
+   "bear_case": [
+    "Penalty: earnings inside holding window",
+    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)",
+    "Reward:risk 1.5 is below the 2.0 minimum at a 8.9% stop"
+   ]
+  },
+  {
+   "id": "5e4e1f96",
+   "at": "2026-10-29T07:36:40+00:00",
+   "symbol": "CRM",
+   "decision": "REJECT",
+   "reason": "fundamental data unavailable from vendor \u2014 confidence reduced, re-run later; score 63.2 below 65",
+   "rule": "WSO score + CIO decision rules",
+   "score": 63.2,
+   "setup": "pullback_to_21ema",
+   "expected_rr": 2.41,
+   "stop": 229.53,
+   "t1": 267.8,
+   "t2": 277.04,
+   "earnings_next": "2026-12-02",
+   "bear_case": [
+    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)"
+   ]
+  },
+  {
+   "id": "1c1070c4",
+   "at": "2026-10-29T07:36:40+00:00",
+   "symbol": null,
+   "decision": "HOLD",
+   "reason": "vendor fundamentals unavailable for 18/18 names \u2014 scores reduced, decisions capped at WATCHLIST",
+   "rule": "Never invent values; default under uncertainty = WATCHLIST"
+  },
+  {
+   "id": "a1546f0e",
+   "at": "2026-10-29T07:36:40+00:00",
+   "symbol": null,
+   "decision": "HOLD",
+   "reason": "no candidate cleared score \u2265 75 and R:R \u2265 2.0 \u2014 no new orders",
+   "rule": "Default under uncertainty = WATCHLIST"
+  }
+ ],
+ "alerts": [
+  {
+   "at": "2026-10-29T07:36:40+00:00",
+   "type": "setup_alert",
+   "subject": "[WSO] Setup alert: 0 possible entries, 1 on watchlist",
+   "to": [],
+   "result": {
+    "sent": false,
+    "error": "notifications off or no recipients"
+   }
+  }
+ ],
+ "regime": {
+  "regime": "balanced",
+  "score": 55.9,
+  "computed_at_utc": "2026-10-29T07:33:32+00:00",
+  "as_of_close": "2026-10-28",
+  "facts": {
+   "SPY": {
+    "close": 772.31,
+    "ema21": 768.83,
+    "ema48": 765.91,
+    "ema200": 735.11,
+    "above21": true,
+    "above48": true,
+    "above200": true,
+    "ema21_gt_48": true,
+    "pct_from_52w_high": -1.19,
+    "ret_1m_pct": 1.06,
+    "as_of": "2026-10-28"
+   },
+   "QQQ": {
+    "close": 725.61,
+    "ema21": 725.48,
+    "ema48": 724.77,
+    "ema200": 690.81,
+    "above21": true,
+    "above48": true,
+    "above200": true,
+    "ema21_gt_48": true,
+    "pct_from_52w_high": -4.88,
+    "ret_1m_pct": -1.67,
+    "as_of": "2026-10-28"
+   },
+   "IWM": {
+    "close": 281.29,
+    "ema21": 278.33,
+    "ema48": 282.38,
+    "ema200": 277.5,
+    "above21": true,
+    "above48": false,
+    "above200": true,
+    "ema21_gt_48": false,
+    "pct_from_52w_high": -7.59,
+    "ret_1m_pct": 0.82,
+    "as_of": "2026-10-28"
+   },
+   "SOXX": {
+    "close": 521.94,
+    "ema21": 521.01,
+    "ema48": 530.01,
+    "ema200": 481.76,
+    "above21": true,
+    "above48": false,
+    "above200": true,
+    "ema21_gt_48": false,
+    "pct_from_52w_high": -20.38,
+    "ret_1m_pct": -8.02,
+    "as_of": "2026-10-28"
+   },
+   "DIA": {
+    "close": 524.68,
+    "ema21": 520.53,
+    "ema48": 520.3,
+    "ema200": 506.53,
+    "above21": true,
+    "above48": true,
+    "above200": true,
+    "ema21_gt_48": true,
+    "pct_from_52w_high": -3.71,
+    "ret_1m_pct": 2.32,
+    "as_of": "2026-10-28"
+   },
+   "VIX": 17.15,
+   "breadth_pct_above_48ema": 71.8
+  },
+  "sector_1m_returns": {
+   "Energy": 11.23,
+   "Utilities": 7.0,
+   "Consumer Staples": 6.1,
+   "Consumer Discretionary": 5.66,
+   "Materials": 5.62,
+   "Health Care": 5.27,
+   "Financials": 3.93,
+   "Real Estate": 1.91,
+   "Industrials": -0.38,
+   "Technology": -1.8,
+   "Communication": -7.47,
+   "Semiconductors": -8.02
+  },
+  "leaders": [
+   "Energy",
+   "Utilities",
+   "Consumer Staples",
+   "Consumer Discretionary"
+  ],
+  "laggards": [
+   "Technology",
+   "Communication",
+   "Semiconductors"
+  ],
+  "notes": [
+   "QQQ negative over 1 month: growth leadership fading",
+   "IWM below 48 EMA: small caps lagging",
+   "SOXX below 48 EMA: semis/AI-infra penalized",
+   "defensive sectors leading: rotation away from risk"
+  ],
+  "new_positions_allowed": true,
+  "label": "fact: computed from daily closes; regime label is a rule-based inference"
+ },
+ "last_cycle": {
+  "started_at_utc": "2026-10-29T07:33:18+00:00",
+  "watchlist": [
+   {
+    "symbol": "PG",
+    "setup": "pullback_to_21ema",
+    "price": 158.26,
+    "score": 66.2,
+    "reasons": [
+     "reward:risk 1.19 < 2.0",
+     "fundamental data unavailable from vendor \u2014 confidence reduced, re-run later",
+     "score 66.2 in watchlist band"
+    ],
+    "stop": 149.94,
+    "t1": 165.75,
+    "t2": 170.58,
+    "expected_rr": 1.19,
+    "added_at_utc": "2026-10-29T07:35:27+00:00",
+    "trigger": "re-test of 21 EMA 154.79 with rising volume"
+   }
+  ],
+  "rejected": [
+   "CRM",
+   "KMI",
+   "VEEV",
+   "OKE",
+   "PM",
+   "OXY",
+   "DVN",
+   "COP",
+   "PLTR",
+   "XOM",
+   "SHOP",
+   "APA",
+   "LNG",
+   "CVX",
+   "EOG",
+   "TRGP",
+   "PR"
+  ],
+  "errors": [],
+  "regime": {
+   "regime": "balanced",
+   "score": 55.9,
+   "computed_at_utc": "2026-10-29T07:33:32+00:00",
+   "as_of_close": "2026-10-28",
+   "facts": {
+    "SPY": {
+     "close": 772.31,
+     "ema21": 768.83,
+     "ema48": 765.91,
+     "ema200": 735.11,
+     "above21": true,
+     "above48": true,
+     "above200": true,
+     "ema21_gt_48": true,
+     "pct_from_52w_high": -1.19,
+     "ret_1m_pct": 1.06,
+     "as_of": "2026-10-28"
+    },
+    "QQQ": {
+     "close": 725.61,
+     "ema21": 725.48,
+     "ema48": 724.77,
+     "ema200": 690.81,
+     "above21": true,
+     "above48": true,
+     "above200": true,
+     "ema21_gt_48": true,
+     "pct_from_52w_high": -4.88,
+     "ret_1m_pct": -1.67,
+     "as_of": "2026-10-28"
+    },
+    "IWM": {
+     "close": 281.29,
+     "ema21": 278.33,
+     "ema48": 282.38,
+     "ema200": 277.5,
+     "above21": true,
+     "above48": false,
+     "above200": true,
+     "ema21_gt_48": false,
+     "pct_from_52w_high": -7.59,
+     "ret_1m_pct": 0.82,
+     "as_of": "2026-10-28"
+    },
+    "SOXX": {
+     "close": 521.94,
+     "ema21": 521.01,
+     "ema48": 530.01,
+     "ema200": 481.76,
+     "above21": true,
+     "above48": false,
+     "above200": true,
+     "ema21_gt_48": false,
+     "pct_from_52w_high": -20.38,
+     "ret_1m_pct": -8.02,
+     "as_of": "2026-10-28"
+    },
+    "DIA": {
+     "close": 524.68,
+     "ema21": 520.53,
+     "ema48": 520.3,
+     "ema200": 506.53,
+     "above21": true,
+     "above48": true,
+     "above200": true,
+     "ema21_gt_48": true,
+     "pct_from_52w_high": -3.71,
+     "ret_1m_pct": 2.32,
+     "as_of": "2026-10-28"
+    },
+    "VIX": 17.15,
+    "breadth_pct_above_48ema": 71.8
+   },
+   "sector_1m_returns": {
+    "Energy": 11.23,
+    "Utilities": 7.0,
+    "Consumer Staples": 6.1,
+    "Consumer Discretionary": 5.66,
+    "Materials": 5.62,
+    "Health Care": 5.27,
+    "Financials": 3.93,
+    "Real Estate": 1.91,
+    "Industrials": -0.38,
+    "Technology": -1.8,
+    "Communication": -7.47,
+    "Semiconductors": -8.02
+   },
+   "leaders": [
+    "Energy",
+    "Utilities",
+    "Consumer Staples",
+    "Consumer Discretionary"
+   ],
+   "laggards": [
+    "Technology",
+    "Communication",
+    "Semiconductors"
+   ],
+   "notes": [
+    "QQQ negative over 1 month: growth leadership fading",
+    "IWM below 48 EMA: small caps lagging",
+    "SOXX below 48 EMA: semis/AI-infra penalized",
+    "defensive sectors leading: rotation away from risk"
+   ],
+   "new_positions_allowed": true,
+   "label": "fact: computed from daily closes; regime label is a rule-based inference"
+  },
+  "evaluated": 18,
+  "data_quality": "degraded",
+  "finished_at_utc": "2026-10-29T07:36:40+00:00",
+  "proposal_symbols": []
+ },
+ "last_monitor": null,
+ "reports": {
+  "daily": [],
+  "weekly": []
+ },
+ "fingerprints": [],
+ "last_candidates": [
+  {
+   "symbol": "PG",
+   "name": null,
+   "sector": "Consumer Staples",
+   "price": 158.26,
+   "setup": "pullback_to_21ema",
+   "score": 66.2,
+   "factors": {
+    "regime": 75,
+    "business_quality": 55,
+    "financial_strength": 55,
+    "growth": 50,
+    "moat": 70,
+    "valuation": 55,
+    "technical": 100.0,
+    "catalyst": 75,
+    "institutional": 65,
+    "liquidity": 95,
+    "reward_risk": 49.75
+   },
+   "penalties": [
+    [
+     "binary macro event inside window: US midterm elections (2026-11-03)",
+     3
+    ]
+   ],
+   "notes": [
+    "Consumer Staples is a leading sector",
+    "above 21/48/200 EMA",
+    "RS 3m +6.0% vs SPY",
+    "accumulation: more high-volume up days",
+    "post-earnings reaction +5.6% on 2.38x volume"
+   ],
+   "bear_case": [
+    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)",
+    "Reward:risk 1.2 is below the 2.0 minimum at a 5.3% stop"
+   ],
+   "decision": "WATCHLIST",
+   "reasons": [
+    "reward:risk 1.19 < 2.0",
+    "fundamental data unavailable from vendor \u2014 confidence reduced, re-run later",
+    "score 66.2 in watchlist band"
+   ],
+   "tech": {
+    "symbol": "PG",
+    "as_of": "2026-10-28",
+    "price": 158.26,
+    "ema21": 154.79,
+    "ema48": 150.71,
+    "ema200": 146.6,
+    "ema21_slope_5d": 3.38,
+    "atr14": 3.08,
+    "atr_pct": 1.95,
+    "ext_vs_21ema_pct": 2.24,
+    "pct_from_52w_high": -4.52,
+    "hi52": 165.75,
+    "low10": 155.76,
+    "low20": 142.46,
+    "rs_1m_pct": 6.28,
+    "rs_3m_pct": 6.01,
+    "vol_ratio_last": 0.56,
+    "up_days_high_vol_20": 7,
+    "down_days_high_vol_20": 4,
+    "avg_dollar_volume": 1467982993.0,
+    "above_all_emas": true,
+    "setup": "pullback_to_21ema",
+    "post_earnings": {
+     "reaction_date": "2026-10-22",
+     "reaction_chg_pct": 5.58,
+     "reaction_vol_ratio": 2.38,
+     "reaction_low": 160.2988147093329,
+     "holding_above_low": false
+    },
+    "stop": 149.94,
+    "stop_pct": 5.26,
+    "t1": 165.75,
+    "t2": 170.58,
+    "ret_1m_pct": 7.41,
+    "ret_3m_pct": 10.66,
+    "t2_source": "4xATR",
+    "rr_t1": 0.9,
+    "rr_t2": 1.48,
+    "expected_rr": 1.19,
+    "data_quality": "degraded"
+   },
+   "earnings": {
+    "next": "2027-01-21",
+    "last": "2026-10-22",
+    "surprise": {
+     "eps_estimate": 1.89,
+     "eps_actual": 2.0,
+     "surprise_pct": 5.66
+    },
+    "inside_window": false,
+    "days_to_next": 60
+   },
+   "expected_rr": 1.19,
+   "stop": 149.94,
+   "stop_pct": 5.26,
+   "t1": 165.75,
+   "t2": 170.58,
+   "data_quality": "degraded",
+   "fund": {
+    "marketCap": 366812347479.2169,
+    "forwardPE": null,
+    "revenueGrowth": null,
+    "profitMargins": null,
+    "debtToEquity": null,
+    "targetMedianPrice": null,
+    "recommendationMean": null,
+    "heldPercentInstitutions": null
+   },
+   "evaluated_at_utc": "2026-10-29T07:35:27+00:00"
+  },
+  {
+   "symbol": "CRM",
+   "name": null,
+   "sector": "Technology",
+   "price": 242.11,
+   "setup": "pullback_to_21ema",
+   "score": 63.2,
+   "factors": {
+    "regime": 50,
+    "business_quality": 55,
+    "financial_strength": 55,
+    "growth": 50,
+    "moat": 70,
+    "valuation": 55,
+    "technical": 100.0,
+    "catalyst": 55,
+    "institutional": 55,
+    "liquidity": 95,
+    "reward_risk": 80.25
+   },
+   "penalties": [
+    [
+     "binary macro event inside window: US midterm elections (2026-11-03)",
+     3
+    ]
+   ],
+   "notes": [
+    "Technology is a lagging sector",
+    "above 21/48/200 EMA",
+    "RS 3m +28.6% vs SPY"
+   ],
+   "bear_case": [
+    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)"
+   ],
+   "decision": "REJECT",
+   "reasons": [
+    "fundamental data unavailable from vendor \u2014 confidence reduced, re-run later",
+    "score 63.2 below 65"
+   ],
+   "tech": {
+    "symbol": "CRM",
+    "as_of": "2026-10-28",
+    "price": 242.11,
+    "ema21": 240.01,
+    "ema48": 231.72,
+    "ema200": 212.62,
+    "ema21_slope_5d": 3.32,
+    "atr14": 8.73,
+    "atr_pct": 3.61,
+    "ext_vs_21ema_pct": 0.88,
+    "pct_from_52w_high": -9.59,
+    "hi52": 267.8,
+    "low10": 235.6,
+    "low20": 220.29,
+    "rs_1m_pct": 6.33,
+    "rs_3m_pct": 28.57,
+    "vol_ratio_last": 0.54,
+    "up_days_high_vol_20": 0,
+    "down_days_high_vol_20": 0,
+    "avg_dollar_volume": 2946074868.0,
+    "above_all_emas": true,
+    "setup": "pullback_to_21ema",
+    "post_earnings": null,
+    "stop": 229.53,
+    "stop_pct": 5.2,
+    "t1": 267.8,
+    "t2": 277.04,
+    "ret_1m_pct": 7.46,
+    "ret_3m_pct": 34.21,
+    "t2_source": "4xATR",
+    "rr_t1": 2.04,
+    "rr_t2": 2.78,
+    "expected_rr": 2.41,
+    "data_quality": "degraded"
+   },
+   "earnings": {
+    "next": "2026-12-02",
+    "last": "2026-08-26",
+    "surprise": {
+     "eps_estimate": 3.27,
+     "eps_actual": 5.9,
+     "surprise_pct": 80.36
+    },
+    "inside_window": false,
+    "days_to_next": 24
+   },
+   "expected_rr": 2.41,
+   "stop": 229.53,
+   "stop_pct": 5.2,
+   "t1": 267.8,
+   "t2": 277.04,
+   "data_quality": "degraded",
+   "fund": {
+    "marketCap": 199256530502.31934,
+    "forwardPE": null,
+    "revenueGrowth": null,
+    "profitMargins": null,
+    "debtToEquity": null,
+    "targetMedianPrice": null,
+    "recommendationMean": null,
+    "heldPercentInstitutions": null
+   },
+   "evaluated_at_utc": "2026-10-29T07:36:40+00:00"
+  },
+  {
+   "symbol": "KMI",
+   "name": null,
+   "sector": "Energy",
+   "price": 33.56,
+   "setup": "pullback_to_21ema",
+   "score": 62.0,
+   "factors": {
+    "regime": 75,
+    "business_quality": 55,
+    "financial_strength": 55,
+    "growth": 50,
+    "moat": 62,
+    "valuation": 55,
+    "technical": 90.0,
+    "catalyst": 60,
+    "institutional": 55,
+    "liquidity": 85,
+    "reward_risk": 59.75
+   },
+   "penalties": [
+    [
+     "binary macro event inside window: US midterm elections (2026-11-03)",
+     3
+    ]
+   ],
+   "notes": [
+    "Energy is a leading sector",
+    "above 21/48/200 EMA",
+    "post-earnings reaction +1.2% on 1.39x volume"
+   ],
+   "bear_case": [
+    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)",
+    "Reward:risk 1.6 is below the 2.0 minimum at a 4.3% stop"
+   ],
+   "decision": "REJECT",
+   "reasons": [
+    "reward:risk 1.59 < 2.0",
+    "fundamental data unavailable from vendor \u2014 confidence reduced, re-run later",
+    "score 62.0 below 65"
+   ],
+   "tech": {
+    "symbol": "KMI",
+    "as_of": "2026-10-28",
+    "price": 33.56,
+    "ema21": 33.06,
+    "ema48": 32.39,
+    "ema200": 31.02,
+    "ema21_slope_5d": 0.5,
+    "atr14": 0.86,
+    "atr_pct": 2.56,
+    "ext_vs_21ema_pct": 1.52,
+    "pct_from_52w_high": -3.42,
+    "hi52": 34.75,
+    "low10": 32.32,
+    "low20": 29.43,
+    "rs_1m_pct": 9.06,
+    "rs_3m_pct": 2.5,
+    "vol_ratio_last": 0.86,
+    "up_days_high_vol_20": 5,
+    "down_days_high_vol_20": 5,
+    "avg_dollar_volume": 444443690.0,
+    "above_all_emas": true,
+    "setup": "pullback_to_21ema",
+    "post_earnings": {
+     "reaction_date": "2026-10-21",
+     "reaction_chg_pct": 1.19,
+     "reaction_vol_ratio": 1.39,
+     "reaction_low": 33.599998474121094,
+     "holding_above_low": false
+    },
+    "stop": 32.11,
+    "stop_pct": 4.32,
+    "t1": 34.75,
+    "t2": 36.99,
+    "ret_1m_pct": 10.21,
+    "ret_3m_pct": 6.99,
+    "t2_source": "4xATR",
+    "rr_t1": 0.82,
+    "rr_t2": 2.37,
+    "expected_rr": 1.59,
+    "data_quality": "degraded"
+   },
+   "earnings": {
+    "next": "2027-01-27",
+    "last": "2026-10-21",
+    "surprise": {
+     "eps_estimate": 0.33,
+     "eps_actual": 0.35,
+     "surprise_pct": 6.25
+    },
+    "inside_window": false,
+    "days_to_next": 64
+   },
+   "expected_rr": 1.59,
+   "stop": 32.11,
+   "stop_pct": 4.32,
+   "t1": 34.75,
+   "t2": 36.99,
+   "data_quality": "degraded",
+   "fund": {
+    "marketCap": 74762126144.5413,
+    "forwardPE": null,
+    "revenueGrowth": null,
+    "profitMargins": null,
+    "debtToEquity": null,
+    "targetMedianPrice": null,
+    "recommendationMean": null,
+    "heldPercentInstitutions": null
+   },
+   "evaluated_at_utc": "2026-10-29T07:35:38+00:00"
+  },
+  {
+   "symbol": "VEEV",
+   "name": null,
+   "sector": "Health Care",
+   "price": 317.82,
+   "setup": "breakout_watch",
+   "score": 62.0,
+   "factors": {
+    "regime": 65,
+    "business_quality": 55,
+    "financial_strength": 55,
+    "growth": 50,
+    "moat": 62,
+    "valuation": 55,
+    "technical": 100.0,
+    "catalyst": 55,
+    "institutional": 65,
+    "liquidity": 95,
+    "reward_risk": 44.75
+   },
+   "penalties": [
+    [
+     "binary macro event inside window: US midterm elections (2026-11-03)",
+     3
+    ]
+   ],
+   "notes": [
+    "above 21/48/200 EMA",
+    "RS 3m +51.0% vs SPY",
+    "within 3% of 52-week high",
+    "accumulation: more high-volume up days"
+   ],
+   "bear_case": [
+    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)",
+    "Reward:risk 1.0 is below the 2.0 minimum at a 7.8% stop"
+   ],
+   "decision": "REJECT",
+   "reasons": [
+    "reward:risk 0.99 < 2.0",
+    "fundamental data unavailable from vendor \u2014 confidence reduced, re-run later",
+    "score 62.0 below 65"
+   ],
+   "tech": {
+    "symbol": "VEEV",
+    "as_of": "2026-10-28",
+    "price": 317.82,
+    "ema21": 303.9,
+    "ema48": 281.85,
+    "ema200": 236.19,
+    "ema21_slope_5d": 9.01,
+    "atr14": 10.16,
+    "atr_pct": 3.2,
+    "ext_vs_21ema_pct": 4.58,
+    "pct_from_52w_high": -2.51,
+    "hi52": 325.99,
+    "low10": 295.67,
+    "low20": 272.84,
+    "rs_1m_pct": 12.89,
+    "rs_3m_pct": 51.05,
+    "vol_ratio_last": 0.84,
+    "up_days_high_vol_20": 4,
+    "down_days_high_vol_20": 1,
+    "avg_dollar_volume": 528747612.0,
+    "above_all_emas": true,
+    "setup": "breakout_watch",
+    "post_earnings": null,
+    "stop": 293.13,
+    "stop_pct": 7.77,
+    "t1": 325.99,
+    "t2": 358.46,
+    "ret_1m_pct": 14.09,
+    "ret_3m_pct": 57.68,
+    "t2_source": "4xATR",
+    "rr_t1": 0.33,
+    "rr_t2": 1.65,
+    "expected_rr": 0.99,
+    "data_quality": "degraded"
+   },
+   "earnings": {
+    "next": "2026-11-25",
+    "last": "2026-08-26",
+    "surprise": {
+     "eps_estimate": 2.22,
+     "eps_actual": 2.35,
+     "surprise_pct": 5.77
+    },
+    "inside_window": false,
+    "days_to_next": 19
+   },
+   "expected_rr": 0.99,
+   "stop": 293.13,
+   "stop_pct": 7.77,
+   "t1": 325.99,
+   "t2": 358.46,
+   "data_quality": "degraded",
+   "fund": {
+    "marketCap": 51457871892.855835,
+    "forwardPE": null,
+    "revenueGrowth": null,
+    "profitMargins": null,
+    "debtToEquity": null,
+    "targetMedianPrice": null,
+    "recommendationMean": null,
+    "heldPercentInstitutions": null
+   },
+   "evaluated_at_utc": "2026-10-29T07:36:09+00:00"
+  },
+  {
+   "symbol": "OKE",
+   "name": null,
+   "sector": "Energy",
+   "price": 94.54,
+   "setup": "pullback_to_21ema",
+   "score": 60.9,
+   "factors": {
+    "regime": 75,
+    "business_quality": 55,
+    "financial_strength": 55,
+    "growth": 50,
+    "moat": 62,
+    "valuation": 55,
+    "technical": 95.0,
+    "catalyst": 40,
+    "institutional": 65,
+    "liquidity": 85,
+    "reward_risk": 56.75
+   },
+   "penalties": [
+    [
+     "binary macro event inside window: US midterm elections (2026-11-03)",
+     3
+    ]
+   ],
+   "notes": [
+    "Energy is a leading sector",
+    "above 21/48/200 EMA",
+    "accumulation: more high-volume up days",
+    "post-earnings reaction -0.4% on 0.74x volume"
+   ],
+   "bear_case": [
+    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)",
+    "Reward:risk 1.5 is below the 2.0 minimum at a 5.1% stop",
+    "Earnings reaction day closed red \u2014 continuation is unconfirmed"
+   ],
+   "decision": "REJECT",
+   "reasons": [
+    "reward:risk 1.47 < 2.0",
+    "fundamental data unavailable from vendor \u2014 confidence reduced, re-run later",
+    "score 60.9 below 65"
+   ],
+   "tech": {
+    "symbol": "OKE",
+    "as_of": "2026-10-28",
+    "price": 94.54,
+    "ema21": 92.91,
+    "ema48": 92.16,
+    "ema200": 86.42,
+    "ema21_slope_5d": 1.49,
+    "atr14": 2.21,
+    "atr_pct": 2.33,
+    "ext_vs_21ema_pct": 1.75,
+    "pct_from_52w_high": -5.32,
+    "hi52": 99.85,
+    "low10": 90.27,
+    "low20": 84.15,
+    "rs_1m_pct": 7.7,
+    "rs_3m_pct": 2.89,
+    "vol_ratio_last": 1.01,
+    "up_days_high_vol_20": 5,
+    "down_days_high_vol_20": 2,
+    "avg_dollar_volume": 321123454.0,
+    "above_all_emas": true,
+    "setup": "pullback_to_21ema",
+    "post_earnings": {
+     "reaction_date": "2026-10-27",
+     "reaction_chg_pct": -0.36,
+     "reaction_vol_ratio": 0.74,
+     "reaction_low": 95.41999816894531,
+     "holding_above_low": false
+    },
+    "stop": 89.72,
+    "stop_pct": 5.1,
+    "t1": 99.85,
+    "t2": 103.36,
+    "ret_1m_pct": 8.84,
+    "ret_3m_pct": 7.41,
+    "t2_source": "4xATR",
+    "rr_t1": 1.1,
+    "rr_t2": 1.83,
+    "expected_rr": 1.47,
+    "data_quality": "degraded"
+   },
+   "earnings": {
+    "next": "2027-02-22",
+    "last": "2026-10-27",
+    "surprise": {
+     "eps_estimate": 1.5,
+     "eps_actual": 2.13,
+     "surprise_pct": 41.99
+    },
+    "inside_window": false,
+    "days_to_next": 82
+   },
+   "expected_rr": 1.47,
+   "stop": 89.72,
+   "stop_pct": 5.1,
+   "t1": 99.85,
+   "t2": 103.36,
+   "data_quality": "degraded",
+   "fund": {
+    "marketCap": 59598886628.77686,
+    "forwardPE": null,
+    "revenueGrowth": null,
+    "profitMargins": null,
+    "debtToEquity": null,
+    "targetMedianPrice": null,
+    "recommendationMean": null,
+    "heldPercentInstitutions": null
+   },
+   "evaluated_at_utc": "2026-10-29T07:35:48+00:00"
+  },
+  {
+   "symbol": "PM",
+   "name": null,
+   "sector": "Consumer Staples",
+   "price": 202.64,
+   "setup": "pullback_to_21ema",
+   "score": 59.7,
+   "factors": {
+    "regime": 75,
+    "business_quality": 55,
+    "financial_strength": 55,
+    "growth": 50,
+    "moat": 70,
+    "valuation": 55,
+    "technical": 95.0,
+    "catalyst": 35,
+    "institutional": 65,
+    "liquidity": 95,
+    "reward_risk": 38.25
+   },
+   "penalties": [
+    [
+     "binary macro event inside window: US midterm elections (2026-11-03)",
+     3
+    ]
+   ],
+   "notes": [
+    "Consumer Staples is a leading sector",
+    "above 21/48/200 EMA",
+    "accumulation: more high-volume up days",
+    "post-earnings reaction -1.2% on 1.29x volume"
+   ],
+   "bear_case": [
+    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)",
+    "Reward:risk 0.7 is below the 2.0 minimum at a 9.8% stop",
+    "Earnings reaction day closed red \u2014 continuation is unconfirmed"
+   ],
+   "decision": "REJECT",
+   "reasons": [
+    "reward:risk 0.73 < 2.0",
+    "fundamental data unavailable from vendor \u2014 confidence reduced, re-run later",
+    "score 59.7 below 65"
+   ],
+   "tech": {
+    "symbol": "PM",
+    "as_of": "2026-10-28",
+    "price": 202.64,
+    "ema21": 198.47,
+    "ema48": 194.06,
+    "ema200": 179.14,
+    "ema21_slope_5d": 2.01,
+    "atr14": 5.27,
+    "atr_pct": 2.6,
+    "ext_vs_21ema_pct": 2.1,
+    "pct_from_52w_high": -3.71,
+    "hi52": 210.45,
+    "low10": 184.0,
+    "low20": 184.0,
+    "rs_1m_pct": 4.3,
+    "rs_3m_pct": 1.97,
+    "vol_ratio_last": 0.74,
+    "up_days_high_vol_20": 5,
+    "down_days_high_vol_20": 4,
+    "avg_dollar_volume": 913543672.0,
+    "above_all_emas": true,
+    "setup": "pullback_to_21ema",
+    "post_earnings": {
+     "reaction_date": "2026-10-21",
+     "reaction_chg_pct": -1.22,
+     "reaction_vol_ratio": 1.29,
+     "reaction_low": 184.0,
+     "holding_above_low": true
+    },
+    "stop": 182.68,
+    "stop_pct": 9.85,
+    "t1": 210.45,
+    "t2": 223.74,
+    "ret_1m_pct": 5.4,
+    "ret_3m_pct": 6.45,
+    "t2_source": "4xATR",
+    "rr_t1": 0.39,
+    "rr_t2": 1.06,
+    "expected_rr": 0.73,
+    "data_quality": "degraded"
+   },
+   "earnings": {
+    "next": "2027-02-04",
+    "last": "2026-10-21",
+    "surprise": {
+     "eps_estimate": 2.32,
+     "eps_actual": 2.36,
+     "surprise_pct": 1.88
+    },
+    "inside_window": false,
+    "days_to_next": 70
+   },
+   "expected_rr": 0.73,
+   "stop": 182.68,
+   "stop_pct": 9.85,
+   "t1": 210.45,
+   "t2": 223.74,
+   "data_quality": "degraded",
+   "fund": {
+    "marketCap": 315837426327.65784,
+    "forwardPE": null,
+    "revenueGrowth": null,
+    "profitMargins": null,
+    "debtToEquity": null,
+    "targetMedianPrice": null,
+    "recommendationMean": null,
+    "heldPercentInstitutions": null
+   },
+   "evaluated_at_utc": "2026-10-29T07:35:59+00:00"
+  },
+  {
+   "symbol": "OXY",
+   "name": null,
+   "sector": "Energy",
+   "price": 62.86,
+   "setup": "pullback_to_21ema",
+   "score": 54.0,
+   "factors": {
+    "regime": 75,
+    "business_quality": 55,
+    "financial_strength": 55,
+    "growth": 50,
+    "moat": 62,
+    "valuation": 55,
+    "technical": 100.0,
+    "catalyst": 55,
+    "institutional": 65,
+    "liquidity": 95,
+    "reward_risk": 58.0
+   },
+   "penalties": [
+    [
+     "earnings inside holding window",
+     10
+    ],
+    [
+     "binary macro event inside window: US midterm elections (2026-11-03)",
+     3
+    ]
+   ],
+   "notes": [
+    "Energy is a leading sector",
+    "above 21/48/200 EMA",
+    "RS 3m +8.1% vs SPY",
+    "accumulation: more high-volume up days"
+   ],
+   "bear_case": [
+    "Penalty: earnings inside holding window",
+    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)",
+    "Reward:risk 1.5 is below the 2.0 minimum at a 5.2% stop"
+   ],
+   "decision": "REJECT",
+   "reasons": [
+    "earnings inside holding window",
+    "reward:risk 1.52 < 2.0",
+    "fundamental data unavailable from vendor \u2014 confidence reduced, re-run later",
+    "score 54.0 below 65"
+   ],
+   "tech": {
+    "symbol": "OXY",
+    "as_of": "2026-10-28",
+    "price": 62.86,
+    "ema21": 61.47,
+    "ema48": 59.96,
+    "ema200": 54.91,
+    "ema21_slope_5d": 1.09,
+    "atr14": 1.51,
+    "atr_pct": 2.4,
+    "ext_vs_21ema_pct": 2.26,
+    "pct_from_52w_high": -5.94,
+    "hi52": 66.83,
+    "low10": 60.28,
+    "low20": 55.5,
+    "rs_1m_pct": 13.21,
+    "rs_3m_pct": 8.12,
+    "vol_ratio_last": 0.86,
+    "up_days_high_vol_20": 8,
+    "down_days_high_vol_20": 2,
+    "avg_dollar_volume": 532310429.0,
+    "above_all_emas": true,
+    "setup": "pullback_to_21ema",
+    "post_earnings": null,
+    "stop": 59.59,
+    "stop_pct": 5.2,
+    "t1": 66.83,
+    "t2": 68.89,
+    "ret_1m_pct": 14.42,
+    "ret_3m_pct": 12.87,
+    "t2_source": "4xATR",
+    "rr_t1": 1.21,
+    "rr_t2": 1.84,
+    "expected_rr": 1.52,
+    "data_quality": "degraded"
+   },
+   "earnings": {
+    "next": "2026-11-09",
+    "last": "2026-08-05",
+    "surprise": {
+     "eps_estimate": 1.85,
+     "eps_actual": 2.4,
+     "surprise_pct": 29.8
+    },
+    "inside_window": true,
+    "days_to_next": 7
+   },
+   "expected_rr": 1.52,
+   "stop": 59.59,
+   "stop_pct": 5.2,
+   "t1": 66.83,
+   "t2": 68.89,
+   "data_quality": "degraded",
+   "fund": {
+    "marketCap": 62837205751.19023,
+    "forwardPE": null,
+    "revenueGrowth": null,
+    "profitMargins": null,
+    "debtToEquity": null,
+    "targetMedianPrice": null,
+    "recommendationMean": null,
+    "heldPercentInstitutions": null
+   },
+   "evaluated_at_utc": "2026-10-29T07:34:46+00:00"
+  },
+  {
+   "symbol": "DVN",
+   "name": null,
+   "sector": "Energy",
+   "price": 51.27,
+   "setup": "pullback_to_21ema",
+   "score": 53.5,
+   "factors": {
+    "regime": 75,
+    "business_quality": 55,
+    "financial_strength": 55,
+    "growth": 50,
+    "moat": 62,
+    "valuation": 55,
+    "technical": 100.0,
+    "catalyst": 55,
+    "institutional": 65,
+    "liquidity": 95,
+    "reward_risk": 51.75
+   },
+   "penalties": [
+    [
+     "earnings inside holding window",
+     10
+    ],
+    [
+     "binary macro event inside window: US midterm elections (2026-11-03)",
+     3
+    ]
+   ],
+   "notes": [
+    "Energy is a leading sector",
+    "above 21/48/200 EMA",
+    "RS 3m +11.9% vs SPY",
+    "within 3% of 52-week high",
+    "accumulation: more high-volume up days"
+   ],
+   "bear_case": [
+    "Penalty: earnings inside holding window",
+    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)",
+    "Reward:risk 1.3 is below the 2.0 minimum at a 6.3% stop"
+   ],
+   "decision": "REJECT",
+   "reasons": [
+    "earnings inside holding window",
+    "reward:risk 1.27 < 2.0",
+    "fundamental data unavailable from vendor \u2014 confidence reduced, re-run later",
+    "score 53.5 below 65"
+   ],
+   "tech": {
+    "symbol": "DVN",
+    "as_of": "2026-10-28",
+    "price": 51.27,
+    "ema21": 49.79,
+    "ema48": 48.56,
+    "ema200": 44.56,
+    "ema21_slope_5d": 0.75,
+    "atr14": 1.37,
+    "atr_pct": 2.67,
+    "ext_vs_21ema_pct": 2.97,
+    "pct_from_52w_high": -1.42,
+    "hi52": 52.01,
+    "low10": 48.4,
+    "low20": 45.75,
+    "rs_1m_pct": 8.87,
+    "rs_3m_pct": 11.92,
+    "vol_ratio_last": 0.77,
+    "up_days_high_vol_20": 2,
+    "down_days_high_vol_20": 0,
+    "avg_dollar_volume": 552272857.0,
+    "above_all_emas": true,
+    "setup": "pullback_to_21ema",
+    "post_earnings": null,
+    "stop": 48.06,
+    "stop_pct": 6.26,
+    "t1": 54.0,
+    "t2": 56.74,
+    "ret_1m_pct": 10.02,
+    "ret_3m_pct": 16.83,
+    "t2_source": "4xATR",
+    "rr_t1": 0.85,
+    "rr_t2": 1.7,
+    "expected_rr": 1.27,
+    "data_quality": "degraded"
+   },
+   "earnings": {
+    "next": "2026-11-05",
+    "last": "2026-08-04",
+    "surprise": {
+     "eps_estimate": 1.41,
+     "eps_actual": 1.57,
+     "surprise_pct": 11.26
+    },
+    "inside_window": true,
+    "days_to_next": 5
+   },
+   "expected_rr": 1.27,
+   "stop": 48.06,
+   "stop_pct": 6.26,
+   "t1": 54.0,
+   "t2": 56.74,
+   "data_quality": "degraded",
+   "fund": {
+    "marketCap": 56397000503.54004,
+    "forwardPE": null,
+    "revenueGrowth": null,
+    "profitMargins": null,
+    "debtToEquity": null,
+    "targetMedianPrice": null,
+    "recommendationMean": null,
+    "heldPercentInstitutions": null
+   },
+   "evaluated_at_utc": "2026-10-29T07:35:07+00:00"
+  },
+  {
+   "symbol": "COP",
+   "name": null,
+   "sector": "Energy",
+   "price": 149.06,
+   "setup": "breakout_watch",
+   "score": 53.4,
+   "factors": {
+    "regime": 75,
+    "business_quality": 55,
+    "financial_strength": 55,
+    "growth": 50,
+    "moat": 70,
+    "valuation": 55,
+    "technical": 100.0,
+    "catalyst": 55,
+    "institutional": 65,
+    "liquidity": 95,
+    "reward_risk": 44.5
+   },
+   "penalties": [
+    [
+     "earnings inside holding window",
+     10
+    ],
+    [
+     "binary macro event inside window: US midterm elections (2026-11-03)",
+     3
+    ]
+   ],
+   "notes": [
+    "Energy is a leading sector",
+    "above 21/48/200 EMA",
+    "RS 3m +20.8% vs SPY",
+    "within 3% of 52-week high",
+    "accumulation: more high-volume up days"
+   ],
+   "bear_case": [
+    "Penalty: earnings inside holding window",
+    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)",
+    "Reward:risk 1.0 is below the 2.0 minimum at a 6.1% stop"
+   ],
+   "decision": "REJECT",
+   "reasons": [
+    "earnings inside holding window",
+    "reward:risk 0.98 < 2.0",
+    "fundamental data unavailable from vendor \u2014 confidence reduced, re-run later",
+    "score 53.4 below 65"
+   ],
+   "tech": {
+    "symbol": "COP",
+    "as_of": "2026-10-28",
+    "price": 149.06,
+    "ema21": 141.79,
+    "ema48": 135.55,
+    "ema200": 119.75,
+    "ema21_slope_5d": 4.42,
+    "atr14": 3.53,
+    "atr_pct": 2.37,
+    "ext_vs_21ema_pct": 5.13,
+    "pct_from_52w_high": -2.43,
+    "hi52": 152.77,
+    "low10": 140.81,
+    "low20": 124.23,
+    "rs_1m_pct": 17.58,
+    "rs_3m_pct": 20.77,
+    "vol_ratio_last": 0.84,
+    "up_days_high_vol_20": 3,
+    "down_days_high_vol_20": 1,
+    "avg_dollar_volume": 963421867.0,
+    "above_all_emas": true,
+    "setup": "breakout_watch",
+    "post_earnings": null,
+    "stop": 139.93,
+    "stop_pct": 6.13,
+    "t1": 152.77,
+    "t2": 163.19,
+    "ret_1m_pct": 18.83,
+    "ret_3m_pct": 26.06,
+    "t2_source": "4xATR",
+    "rr_t1": 0.41,
+    "rr_t2": 1.55,
+    "expected_rr": 0.98,
+    "data_quality": "degraded"
+   },
+   "earnings": {
+    "next": "2026-11-05",
+    "last": "2026-08-06",
+    "surprise": {
+     "eps_estimate": 2.93,
+     "eps_actual": 3.24,
+     "surprise_pct": 10.58
+    },
+    "inside_window": true,
+    "days_to_next": 5
+   },
+   "expected_rr": 0.98,
+   "stop": 139.93,
+   "stop_pct": 6.13,
+   "t1": 152.77,
+   "t2": 163.19,
+   "data_quality": "degraded",
+   "fund": {
+    "marketCap": 181598901709.0694,
+    "forwardPE": null,
+    "revenueGrowth": null,
+    "profitMargins": null,
+    "debtToEquity": null,
+    "targetMedianPrice": null,
+    "recommendationMean": null,
+    "heldPercentInstitutions": null
+   },
+   "evaluated_at_utc": "2026-10-29T07:33:53+00:00"
+  },
+  {
+   "symbol": "PLTR",
+   "name": null,
+   "sector": "Technology",
+   "price": 196.81,
+   "setup": "pullback_to_21ema",
+   "score": 52.5,
+   "factors": {
+    "regime": 50,
+    "business_quality": 55,
+    "financial_strength": 55,
+    "growth": 50,
+    "moat": 70,
+    "valuation": 55,
+    "technical": 100.0,
+    "catalyst": 55,
+    "institutional": 65,
+    "liquidity": 95,
+    "reward_risk": 64.25
+   },
+   "penalties": [
+    [
+     "earnings inside holding window",
+     10
+    ],
+    [
+     "binary macro event inside window: US midterm elections (2026-11-03)",
+     3
+    ]
+   ],
+   "notes": [
+    "Technology is a lagging sector",
+    "above 21/48/200 EMA",
+    "RS 3m +54.2% vs SPY",
+    "accumulation: more high-volume up days"
+   ],
+   "bear_case": [
+    "Penalty: earnings inside holding window",
+    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)",
+    "Reward:risk 1.8 is below the 2.0 minimum at a 7.4% stop"
+   ],
+   "decision": "REJECT",
+   "reasons": [
+    "earnings inside holding window",
+    "reward:risk 1.77 < 2.0",
+    "fundamental data unavailable from vendor \u2014 confidence reduced, re-run later",
+    "score 52.5 below 65"
+   ],
+   "tech": {
+    "symbol": "PLTR",
+    "as_of": "2026-10-28",
+    "price": 196.81,
+    "ema21": 195.04,
+    "ema48": 185.55,
+    "ema200": 166.24,
+    "ema21_slope_5d": 1.51,
+    "atr14": 8.8,
+    "atr_pct": 4.47,
+    "ext_vs_21ema_pct": 0.91,
+    "pct_from_52w_high": -7.57,
+    "hi52": 212.94,
+    "low10": 184.45,
+    "low20": 184.45,
+    "rs_1m_pct": 4.16,
+    "rs_3m_pct": 54.21,
+    "vol_ratio_last": 0.82,
+    "up_days_high_vol_20": 2,
+    "down_days_high_vol_20": 1,
+    "avg_dollar_volume": 4991128304.0,
+    "above_all_emas": true,
+    "setup": "pullback_to_21ema",
+    "post_earnings": null,
+    "stop": 182.25,
+    "stop_pct": 7.4,
+    "t1": 212.94,
+    "t2": 232.02,
+    "ret_1m_pct": 5.26,
+    "ret_3m_pct": 60.98,
+    "t2_source": "4xATR",
+    "rr_t1": 1.11,
+    "rr_t2": 2.42,
+    "expected_rr": 1.77,
+    "data_quality": "degraded"
+   },
+   "earnings": {
+    "next": "2026-11-02",
+    "last": "2026-08-03",
+    "surprise": {
+     "eps_estimate": 0.35,
+     "eps_actual": 0.41,
+     "surprise_pct": 18.51
+    },
+    "inside_window": true,
+    "days_to_next": 2
+   },
+   "expected_rr": 1.77,
+   "stop": 182.25,
+   "stop_pct": 7.4,
+   "t1": 212.94,
+   "t2": 232.02,
+   "data_quality": "degraded",
+   "fund": {
+    "marketCap": 472945933581.958,
+    "forwardPE": null,
+    "revenueGrowth": null,
+    "profitMargins": null,
+    "debtToEquity": null,
+    "targetMedianPrice": null,
+    "recommendationMean": null,
+    "heldPercentInstitutions": null
+   },
+   "evaluated_at_utc": "2026-10-29T07:36:19+00:00"
+  },
+  {
+   "symbol": "XOM",
+   "name": null,
+   "sector": "Energy",
+   "price": 182.02,
+   "setup": "breakout_watch",
+   "score": 52.2,
+   "factors": {
+    "regime": 75,
+    "business_quality": 55,
+    "financial_strength": 55,
+    "growth": 50,
+    "moat": 70,
+    "valuation": 55,
+    "technical": 100.0,
+    "catalyst": 45,
+    "institutional": 55,
+    "liquidity": 95,
+    "reward_risk": 51.5
+   },
+   "penalties": [
+    [
+     "earnings inside holding window",
+     10
+    ],
+    [
+     "binary macro event inside window: US midterm elections (2026-11-03)",
+     3
+    ]
+   ],
+   "notes": [
+    "Energy is a leading sector",
+    "above 21/48/200 EMA",
+    "RS 3m +11.8% vs SPY",
+    "within 3% of 52-week high"
+   ],
+   "bear_case": [
+    "Penalty: earnings inside holding window",
+    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)",
+    "Reward:risk 1.3 is below the 2.0 minimum at a 5.2% stop"
+   ],
+   "decision": "REJECT",
+   "reasons": [
+    "earnings inside holding window",
+    "reward:risk 1.26 < 2.0",
+    "fundamental data unavailable from vendor \u2014 confidence reduced, re-run later",
+    "score 52.2 below 65"
+   ],
+   "tech": {
+    "symbol": "XOM",
+    "as_of": "2026-10-28",
+    "price": 182.02,
+    "ema21": 174.85,
+    "ema48": 168.31,
+    "ema200": 151.64,
+    "ema21_slope_5d": 4.16,
+    "atr14": 3.95,
+    "atr_pct": 2.17,
+    "ext_vs_21ema_pct": 4.1,
+    "pct_from_52w_high": -1.55,
+    "hi52": 184.88,
+    "low10": 173.6,
+    "low20": 160.81,
+    "rs_1m_pct": 11.63,
+    "rs_3m_pct": 11.8,
+    "vol_ratio_last": 0.96,
+    "up_days_high_vol_20": 2,
+    "down_days_high_vol_20": 2,
+    "avg_dollar_volume": 2408555316.0,
+    "above_all_emas": true,
+    "setup": "breakout_watch",
+    "post_earnings": null,
+    "stop": 172.61,
+    "stop_pct": 5.17,
+    "t1": 189.92,
+    "t2": 197.83,
+    "ret_1m_pct": 12.81,
+    "ret_3m_pct": 16.71,
+    "t2_source": "4xATR",
+    "rr_t1": 0.84,
+    "rr_t2": 1.68,
+    "expected_rr": 1.26,
+    "data_quality": "degraded"
+   },
+   "earnings": {
+    "next": "2026-10-30",
+    "last": "2026-07-31",
+    "surprise": {
+     "eps_estimate": 3.63,
+     "eps_actual": 3.52,
+     "surprise_pct": -3.0
+    },
+    "inside_window": true,
+    "days_to_next": 1
+   },
+   "expected_rr": 1.26,
+   "stop": 172.61,
+   "stop_pct": 5.17,
+   "t1": 189.92,
+   "t2": 197.83,
+   "data_quality": "degraded",
+   "fund": {
+    "marketCap": 748450232527.1832,
+    "forwardPE": null,
+    "revenueGrowth": null,
+    "profitMargins": null,
+    "debtToEquity": null,
+    "targetMedianPrice": null,
+    "recommendationMean": null,
+    "heldPercentInstitutions": null
+   },
+   "evaluated_at_utc": "2026-10-29T07:34:25+00:00"
+  },
+  {
+   "symbol": "SHOP",
+   "name": null,
+   "sector": "Technology",
+   "price": 168.22,
+   "setup": "pullback_to_21ema",
+   "score": 52.0,
+   "factors": {
+    "regime": 50,
+    "business_quality": 55,
+    "financial_strength": 55,
+    "growth": 50,
+    "moat": 70,
+    "valuation": 55,
+    "technical": 100.0,
+    "catalyst": 55,
+    "institutional": 65,
+    "liquidity": 95,
+    "reward_risk": 57.75
+   },
+   "penalties": [
+    [
+     "earnings inside holding window",
+     10
+    ],
+    [
+     "binary macro event inside window: US midterm elections (2026-11-03)",
+     3
+    ]
+   ],
+   "notes": [
+    "Technology is a lagging sector",
+    "above 21/48/200 EMA",
+    "RS 3m +31.7% vs SPY",
+    "accumulation: more high-volume up days"
+   ],
+   "bear_case": [
+    "Penalty: earnings inside holding window",
+    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)",
+    "Reward:risk 1.5 is below the 2.0 minimum at a 8.9% stop"
+   ],
+   "decision": "REJECT",
+   "reasons": [
+    "earnings inside holding window",
+    "reward:risk 1.51 < 2.0",
+    "fundamental data unavailable from vendor \u2014 confidence reduced, re-run later",
+    "score 52.0 below 65"
+   ],
+   "tech": {
+    "symbol": "SHOP",
+    "as_of": "2026-10-28",
+    "price": 168.22,
+    "ema21": 165.09,
+    "ema48": 155.27,
+    "ema200": 141.59,
+    "ema21_slope_5d": 1.7,
+    "atr14": 7.78,
+    "atr_pct": 4.63,
+    "ext_vs_21ema_pct": 1.9,
+    "pct_from_52w_high": -7.67,
+    "hi52": 182.19,
+    "low10": 163.25,
+    "low20": 148.01,
+    "rs_1m_pct": 12.27,
+    "rs_3m_pct": 31.66,
+    "vol_ratio_last": 0.66,
+    "up_days_high_vol_20": 4,
+    "down_days_high_vol_20": 2,
+    "avg_dollar_volume": 1445671252.0,
+    "above_all_emas": true,
+    "setup": "pullback_to_21ema",
+    "post_earnings": null,
+    "stop": 153.32,
+    "stop_pct": 8.86,
+    "t1": 182.19,
+    "t2": 199.35,
+    "ret_1m_pct": 13.46,
+    "ret_3m_pct": 37.43,
+    "t2_source": "4xATR",
+    "rr_t1": 0.94,
+    "rr_t2": 2.09,
+    "expected_rr": 1.51,
+    "data_quality": "degraded"
+   },
+   "earnings": {
+    "next": "2026-11-03",
+    "last": "2026-08-05",
+    "surprise": {
+     "eps_estimate": 0.4,
+     "eps_actual": 0.42,
+     "surprise_pct": 5.05
+    },
+    "inside_window": true,
+    "days_to_next": 3
+   },
+   "expected_rr": 1.51,
+   "stop": 153.32,
+   "stop_pct": 8.86,
+   "t1": 182.19,
+   "t2": 199.35,
+   "data_quality": "degraded",
+   "fund": {
+    "marketCap": 216439243643.43027,
+    "forwardPE": null,
+    "revenueGrowth": null,
+    "profitMargins": null,
+    "debtToEquity": null,
+    "targetMedianPrice": null,
+    "recommendationMean": null,
+    "heldPercentInstitutions": null
+   },
+   "evaluated_at_utc": "2026-10-29T07:36:30+00:00"
+  },
+  {
+   "symbol": "APA",
+   "name": null,
+   "sector": "Energy",
+   "price": 51.11,
+   "setup": "breakout_watch",
+   "score": 51.6,
+   "factors": {
+    "regime": 75,
+    "business_quality": 55,
+    "financial_strength": 55,
+    "growth": 50,
+    "moat": 55,
+    "valuation": 55,
+    "technical": 100.0,
+    "catalyst": 55,
+    "institutional": 65,
+    "liquidity": 85,
+    "reward_risk": 38.0
+   },
+   "penalties": [
+    [
+     "earnings inside holding window",
+     10
+    ],
+    [
+     "binary macro event inside window: US midterm elections (2026-11-03)",
+     3
+    ]
+   ],
+   "notes": [
+    "Energy is a leading sector",
+    "above 21/48/200 EMA",
+    "RS 3m +35.5% vs SPY",
+    "within 3% of 52-week high",
+    "accumulation: more high-volume up days"
+   ],
+   "bear_case": [
+    "Penalty: earnings inside holding window",
+    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)",
+    "Reward:risk 0.7 is below the 2.0 minimum at a 10.2% stop"
+   ],
+   "decision": "REJECT",
+   "reasons": [
+    "earnings inside holding window",
+    "reward:risk 0.72 < 2.0",
+    "fundamental data unavailable from vendor \u2014 confidence reduced, re-run later",
+    "score 51.6 below 65"
+   ],
+   "tech": {
+    "symbol": "APA",
+    "as_of": "2026-10-28",
+    "price": 51.11,
+    "ema21": 48.01,
+    "ema48": 45.23,
+    "ema200": 37.59,
+    "ema21_slope_5d": 1.83,
+    "atr14": 1.55,
+    "atr_pct": 3.04,
+    "ext_vs_21ema_pct": 6.45,
+    "pct_from_52w_high": -2.44,
+    "hi52": 52.39,
+    "low10": 46.3,
+    "low20": 41.1,
+    "rs_1m_pct": 20.48,
+    "rs_3m_pct": 35.45,
+    "vol_ratio_last": 0.9,
+    "up_days_high_vol_20": 4,
+    "down_days_high_vol_20": 2,
+    "avg_dollar_volume": 285596141.0,
+    "above_all_emas": true,
+    "setup": "breakout_watch",
+    "post_earnings": null,
+    "stop": 45.91,
+    "stop_pct": 10.17,
+    "t1": 52.39,
+    "t2": 57.33,
+    "ret_1m_pct": 21.76,
+    "ret_3m_pct": 41.39,
+    "t2_source": "4xATR",
+    "rr_t1": 0.25,
+    "rr_t2": 1.2,
+    "expected_rr": 0.72,
+    "data_quality": "degraded"
+   },
+   "earnings": {
+    "next": "2026-11-04",
+    "last": "2026-08-05",
+    "surprise": {
+     "eps_estimate": 1.87,
+     "eps_actual": 1.89,
+     "surprise_pct": 1.01
+    },
+    "inside_window": true,
+    "days_to_next": 4
+   },
+   "expected_rr": 0.72,
+   "stop": 45.91,
+   "stop_pct": 10.17,
+   "t1": 52.39,
+   "t2": 57.33,
+   "data_quality": "degraded",
+   "fund": {
+    "marketCap": 17906465889.93759,
+    "forwardPE": null,
+    "revenueGrowth": null,
+    "profitMargins": null,
+    "debtToEquity": null,
+    "targetMedianPrice": null,
+    "recommendationMean": null,
+    "heldPercentInstitutions": null
+   },
+   "evaluated_at_utc": "2026-10-29T07:33:43+00:00"
+  },
+  {
+   "symbol": "LNG",
+   "name": null,
+   "sector": "Energy",
+   "price": 297.77,
+   "setup": "breakout_watch",
+   "score": 51.2,
+   "factors": {
+    "regime": 75,
+    "business_quality": 55,
+    "financial_strength": 55,
+    "growth": 50,
+    "moat": 62,
+    "valuation": 55,
+    "technical": 100.0,
+    "catalyst": 45,
+    "institutional": 65,
+    "liquidity": 95,
+    "reward_risk": 38.5
+   },
+   "penalties": [
+    [
+     "earnings inside holding window",
+     10
+    ],
+    [
+     "binary macro event inside window: US midterm elections (2026-11-03)",
+     3
+    ]
+   ],
+   "notes": [
+    "Energy is a leading sector",
+    "above 21/48/200 EMA",
+    "RS 3m +10.8% vs SPY",
+    "within 3% of 52-week high",
+    "accumulation: more high-volume up days"
+   ],
+   "bear_case": [
+    "Penalty: earnings inside holding window",
+    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)",
+    "Reward:risk 0.7 is below the 2.0 minimum at a 8.7% stop"
+   ],
+   "decision": "REJECT",
+   "reasons": [
+    "earnings inside holding window",
+    "reward:risk 0.74 < 2.0",
+    "fundamental data unavailable from vendor \u2014 confidence reduced, re-run later",
+    "score 51.2 below 65"
+   ],
+   "tech": {
+    "symbol": "LNG",
+    "as_of": "2026-10-28",
+    "price": 297.77,
+    "ema21": 286.13,
+    "ema48": 279.21,
+    "ema200": 255.98,
+    "ema21_slope_5d": 6.74,
+    "atr14": 7.78,
+    "atr_pct": 2.61,
+    "ext_vs_21ema_pct": 4.07,
+    "pct_from_52w_high": -2.28,
+    "hi52": 304.73,
+    "low10": 273.95,
+    "low20": 259.5,
+    "rs_1m_pct": 10.23,
+    "rs_3m_pct": 10.78,
+    "vol_ratio_last": 1.24,
+    "up_days_high_vol_20": 4,
+    "down_days_high_vol_20": 3,
+    "avg_dollar_volume": 560528183.0,
+    "above_all_emas": true,
+    "setup": "breakout_watch",
+    "post_earnings": null,
+    "stop": 272.0,
+    "stop_pct": 8.65,
+    "t1": 304.73,
+    "t2": 328.9,
+    "ret_1m_pct": 11.4,
+    "ret_3m_pct": 15.64,
+    "t2_source": "4xATR",
+    "rr_t1": 0.27,
+    "rr_t2": 1.21,
+    "expected_rr": 0.74,
+    "data_quality": "degraded"
+   },
+   "earnings": {
+    "next": "2026-10-29",
+    "last": "2026-08-06",
+    "surprise": {
+     "eps_estimate": 3.15,
+     "eps_actual": 3.02,
+     "surprise_pct": -4.3
+    },
+    "inside_window": true,
+    "days_to_next": 0
+   },
+   "expected_rr": 0.74,
+   "stop": 272.0,
+   "stop_pct": 8.65,
+   "t1": 304.73,
+   "t2": 328.9,
+   "data_quality": "degraded",
+   "fund": {
+    "marketCap": 61499673958.60797,
+    "forwardPE": null,
+    "revenueGrowth": null,
+    "profitMargins": null,
+    "debtToEquity": null,
+    "targetMedianPrice": null,
+    "recommendationMean": null,
+    "heldPercentInstitutions": null
+   },
+   "evaluated_at_utc": "2026-10-29T07:34:56+00:00"
+  },
+  {
+   "symbol": "CVX",
+   "name": null,
+   "sector": "Energy",
+   "price": 229.2,
+   "setup": "breakout_watch",
+   "score": 50.4,
+   "factors": {
+    "regime": 75,
+    "business_quality": 55,
+    "financial_strength": 55,
+    "growth": 50,
+    "moat": 70,
+    "valuation": 55,
+    "technical": 100.0,
+    "catalyst": 55,
+    "institutional": 65,
+    "liquidity": 95,
+    "reward_risk": 44.0
+   },
+   "penalties": [
+    [
+     "earnings inside holding window",
+     10
+    ],
+    [
+     "new high on light volume",
+     3
+    ],
+    [
+     "binary macro event inside window: US midterm elections (2026-11-03)",
+     3
+    ]
+   ],
+   "notes": [
+    "Energy is a leading sector",
+    "above 21/48/200 EMA",
+    "RS 3m +15.2% vs SPY",
+    "within 3% of 52-week high",
+    "accumulation: more high-volume up days"
+   ],
+   "bear_case": [
+    "Penalty: earnings inside holding window",
+    "Penalty: new high on light volume",
+    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)",
+    "Reward:risk 1.0 is below the 2.0 minimum at a 5.4% stop"
+   ],
+   "decision": "REJECT",
+   "reasons": [
+    "earnings inside holding window",
+    "reward:risk 0.96 < 2.0",
+    "fundamental data unavailable from vendor \u2014 confidence reduced, re-run later",
+    "score 50.4 below 65"
+   ],
+   "tech": {
+    "symbol": "CVX",
+    "as_of": "2026-10-28",
+    "price": 229.2,
+    "ema21": 220.98,
+    "ema48": 212.69,
+    "ema200": 190.88,
+    "ema21_slope_5d": 5.42,
+    "atr14": 4.64,
+    "atr_pct": 2.03,
+    "ext_vs_21ema_pct": 3.72,
+    "pct_from_52w_high": -2.08,
+    "hi52": 234.08,
+    "low10": 218.05,
+    "low20": 201.96,
+    "rs_1m_pct": 10.97,
+    "rs_3m_pct": 15.17,
+    "vol_ratio_last": 0.75,
+    "up_days_high_vol_20": 2,
+    "down_days_high_vol_20": 1,
+    "avg_dollar_volume": 1944093627.0,
+    "above_all_emas": true,
+    "setup": "breakout_watch",
+    "post_earnings": null,
+    "stop": 216.89,
+    "stop_pct": 5.37,
+    "t1": 234.08,
+    "t2": 247.78,
+    "ret_1m_pct": 12.14,
+    "ret_3m_pct": 20.22,
+    "t2_source": "4xATR",
+    "rr_t1": 0.4,
+    "rr_t2": 1.51,
+    "expected_rr": 0.96,
+    "data_quality": "degraded"
+   },
+   "earnings": {
+    "next": "2026-10-30",
+    "last": "2026-07-31",
+    "surprise": {
+     "eps_estimate": 5.57,
+     "eps_actual": 6.06,
+     "surprise_pct": 8.84
+    },
+    "inside_window": true,
+    "days_to_next": 1
+   },
+   "expected_rr": 0.96,
+   "stop": 216.89,
+   "stop_pct": 5.37,
+   "t1": 234.08,
+   "t2": 247.78,
+   "data_quality": "degraded",
+   "fund": {
+    "marketCap": 449599464414.4619,
+    "forwardPE": null,
+    "revenueGrowth": null,
+    "profitMargins": null,
+    "debtToEquity": null,
+    "targetMedianPrice": null,
+    "recommendationMean": null,
+    "heldPercentInstitutions": null
+   },
+   "evaluated_at_utc": "2026-10-29T07:34:14+00:00"
+  },
+  {
+   "symbol": "EOG",
+   "name": null,
+   "sector": "Energy",
+   "price": 160.92,
+   "setup": "breakout_watch",
+   "score": 49.3,
+   "factors": {
+    "regime": 75,
+    "business_quality": 55,
+    "financial_strength": 55,
+    "growth": 50,
+    "moat": 62,
+    "valuation": 55,
+    "technical": 100.0,
+    "catalyst": 55,
+    "institutional": 65,
+    "liquidity": 85,
+    "reward_risk": 41.25
+   },
+   "penalties": [
+    [
+     "earnings inside holding window",
+     10
+    ],
+    [
+     "new high on light volume",
+     3
+    ],
+    [
+     "binary macro event inside window: US midterm elections (2026-11-03)",
+     3
+    ]
+   ],
+   "notes": [
+    "Energy is a leading sector",
+    "above 21/48/200 EMA",
+    "RS 3m +6.7% vs SPY",
+    "within 3% of 52-week high",
+    "accumulation: more high-volume up days"
+   ],
+   "bear_case": [
+    "Penalty: earnings inside holding window",
+    "Penalty: new high on light volume",
+    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)",
+    "Reward:risk 0.8 is below the 2.0 minimum at a 7.0% stop"
+   ],
+   "decision": "REJECT",
+   "reasons": [
+    "earnings inside holding window",
+    "reward:risk 0.85 < 2.0",
+    "fundamental data unavailable from vendor \u2014 confidence reduced, re-run later",
+    "score 49.3 below 65"
+   ],
+   "tech": {
+    "symbol": "EOG",
+    "as_of": "2026-10-28",
+    "price": 160.92,
+    "ema21": 154.1,
+    "ema48": 148.93,
+    "ema200": 135.24,
+    "ema21_slope_5d": 4.46,
+    "atr14": 3.74,
+    "atr_pct": 2.33,
+    "ext_vs_21ema_pct": 4.43,
+    "pct_from_52w_high": -2.54,
+    "hi52": 165.11,
+    "low10": 150.64,
+    "low20": 136.61,
+    "rs_1m_pct": 14.78,
+    "rs_3m_pct": 6.66,
+    "vol_ratio_last": 0.63,
+    "up_days_high_vol_20": 4,
+    "down_days_high_vol_20": 0,
+    "avg_dollar_volume": 478415798.0,
+    "above_all_emas": true,
+    "setup": "breakout_watch",
+    "post_earnings": null,
+    "stop": 149.7,
+    "stop_pct": 6.97,
+    "t1": 165.11,
+    "t2": 175.9,
+    "ret_1m_pct": 16.0,
+    "ret_3m_pct": 11.33,
+    "t2_source": "4xATR",
+    "rr_t1": 0.37,
+    "rr_t2": 1.34,
+    "expected_rr": 0.85,
+    "data_quality": "degraded"
+   },
+   "earnings": {
+    "next": "2026-11-05",
+    "last": "2026-08-04",
+    "surprise": {
+     "eps_estimate": 4.97,
+     "eps_actual": 5.07,
+     "surprise_pct": 2.1
+    },
+    "inside_window": true,
+    "days_to_next": 5
+   },
+   "expected_rr": 0.85,
+   "stop": 149.7,
+   "stop_pct": 6.97,
+   "t1": 165.11,
+   "t2": 175.9,
+   "data_quality": "degraded",
+   "fund": {
+    "marketCap": 84407234041.4784,
+    "forwardPE": null,
+    "revenueGrowth": null,
+    "profitMargins": null,
+    "debtToEquity": null,
+    "targetMedianPrice": null,
+    "recommendationMean": null,
+    "heldPercentInstitutions": null
+   },
+   "evaluated_at_utc": "2026-10-29T07:34:35+00:00"
+  },
+  {
+   "symbol": "TRGP",
+   "name": null,
+   "sector": "Energy",
+   "price": 305.9,
+   "setup": "breakout_watch",
+   "score": 49.2,
+   "factors": {
+    "regime": 75,
+    "business_quality": 55,
+    "financial_strength": 55,
+    "growth": 50,
+    "moat": 62,
+    "valuation": 55,
+    "technical": 100.0,
+    "catalyst": 55,
+    "institutional": 65,
+    "liquidity": 85,
+    "reward_risk": 40.0
+   },
+   "penalties": [
+    [
+     "earnings inside holding window",
+     10
+    ],
+    [
+     "new high on light volume",
+     3
+    ],
+    [
+     "binary macro event inside window: US midterm elections (2026-11-03)",
+     3
+    ]
+   ],
+   "notes": [
+    "Energy is a leading sector",
+    "above 21/48/200 EMA",
+    "RS 3m +9.7% vs SPY",
+    "within 3% of 52-week high",
+    "accumulation: more high-volume up days"
+   ],
+   "bear_case": [
+    "Penalty: earnings inside holding window",
+    "Penalty: new high on light volume",
+    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)",
+    "Reward:risk 0.8 is below the 2.0 minimum at a 10.1% stop"
+   ],
+   "decision": "REJECT",
+   "reasons": [
+    "earnings inside holding window",
+    "reward:risk 0.80 < 2.0",
+    "fundamental data unavailable from vendor \u2014 confidence reduced, re-run later",
+    "score 49.2 below 65"
+   ],
+   "tech": {
+    "symbol": "TRGP",
+    "as_of": "2026-10-28",
+    "price": 305.9,
+    "ema21": 293.32,
+    "ema48": 287.97,
+    "ema200": 255.78,
+    "ema21_slope_5d": 5.07,
+    "atr14": 8.15,
+    "atr_pct": 2.66,
+    "ext_vs_21ema_pct": 4.29,
+    "pct_from_52w_high": -0.83,
+    "hi52": 308.46,
+    "low10": 277.13,
+    "low20": 267.0,
+    "rs_1m_pct": 10.68,
+    "rs_3m_pct": 9.72,
+    "vol_ratio_last": 0.78,
+    "up_days_high_vol_20": 3,
+    "down_days_high_vol_20": 2,
+    "avg_dollar_volume": 365407332.0,
+    "above_all_emas": true,
+    "setup": "breakout_watch",
+    "post_earnings": null,
+    "stop": 275.09,
+    "stop_pct": 10.07,
+    "t1": 322.2,
+    "t2": 338.5,
+    "ret_1m_pct": 11.85,
+    "ret_3m_pct": 14.53,
+    "t2_source": "4xATR",
+    "rr_t1": 0.53,
+    "rr_t2": 1.06,
+    "expected_rr": 0.8,
+    "data_quality": "degraded"
+   },
+   "earnings": {
+    "next": "2026-11-05",
+    "last": "2026-08-06",
+    "surprise": {
+     "eps_estimate": 2.84,
+     "eps_actual": 3.25,
+     "surprise_pct": 14.25
+    },
+    "inside_window": true,
+    "days_to_next": 5
+   },
+   "expected_rr": 0.8,
+   "stop": 275.09,
+   "stop_pct": 10.07,
+   "t1": 322.2,
+   "t2": 338.5,
+   "data_quality": "degraded",
+   "fund": {
+    "marketCap": 65594448015.11691,
+    "forwardPE": null,
+    "revenueGrowth": null,
+    "profitMargins": null,
+    "debtToEquity": null,
+    "targetMedianPrice": null,
+    "recommendationMean": null,
+    "heldPercentInstitutions": null
+   },
+   "evaluated_at_utc": "2026-10-29T07:35:17+00:00"
+  },
+  {
+   "symbol": "PR",
+   "name": null,
+   "sector": "Energy",
+   "price": 25.52,
+   "setup": "breakout_watch",
+   "score": 49.0,
+   "factors": {
+    "regime": 75,
+    "business_quality": 55,
+    "financial_strength": 55,
+    "growth": 50,
+    "moat": 55,
+    "valuation": 55,
+    "technical": 100.0,
+    "catalyst": 55,
+    "institutional": 65,
+    "liquidity": 85,
+    "reward_risk": 43.75
+   },
+   "penalties": [
+    [
+     "earnings inside holding window",
+     10
+    ],
+    [
+     "new high on light volume",
+     3
+    ],
+    [
+     "binary macro event inside window: US midterm elections (2026-11-03)",
+     3
+    ]
+   ],
+   "notes": [
+    "Energy is a leading sector",
+    "above 21/48/200 EMA",
+    "RS 3m +17.2% vs SPY",
+    "within 3% of 52-week high",
+    "accumulation: more high-volume up days"
+   ],
+   "bear_case": [
+    "Penalty: earnings inside holding window",
+    "Penalty: new high on light volume",
+    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)",
+    "Reward:risk 0.9 is below the 2.0 minimum at a 9.1% stop"
+   ],
+   "decision": "REJECT",
+   "reasons": [
+    "earnings inside holding window",
+    "reward:risk 0.95 < 2.0",
+    "fundamental data unavailable from vendor \u2014 confidence reduced, re-run later",
+    "score 49.0 below 65"
+   ],
+   "tech": {
+    "symbol": "PR",
+    "as_of": "2026-10-28",
+    "price": 25.52,
+    "ema21": 24.16,
+    "ema48": 23.19,
+    "ema200": 20.08,
+    "ema21_slope_5d": 0.74,
+    "atr14": 0.73,
+    "atr_pct": 2.87,
+    "ext_vs_21ema_pct": 5.63,
+    "pct_from_52w_high": -1.69,
+    "hi52": 25.96,
+    "low10": 23.37,
+    "low20": 20.94,
+    "rs_1m_pct": 19.11,
+    "rs_3m_pct": 17.18,
+    "vol_ratio_last": 0.79,
+    "up_days_high_vol_20": 2,
+    "down_days_high_vol_20": 1,
+    "avg_dollar_volume": 251149674.0,
+    "above_all_emas": true,
+    "setup": "breakout_watch",
+    "post_earnings": null,
+    "stop": 23.19,
+    "stop_pct": 9.13,
+    "t1": 26.99,
+    "t2": 28.45,
+    "ret_1m_pct": 20.38,
+    "ret_3m_pct": 22.32,
+    "t2_source": "4xATR",
+    "rr_t1": 0.63,
+    "rr_t2": 1.26,
+    "expected_rr": 0.95,
+    "data_quality": "degraded"
+   },
+   "earnings": {
+    "next": "2026-11-04",
+    "last": "2026-08-05",
+    "surprise": {
+     "eps_estimate": 0.59,
+     "eps_actual": 0.69,
+     "surprise_pct": 16.92
+    },
+    "inside_window": true,
+    "days_to_next": 4
+   },
+   "expected_rr": 0.95,
+   "stop": 23.19,
+   "stop_pct": 9.13,
+   "t1": 26.99,
+   "t2": 28.45,
+   "data_quality": "degraded",
+   "fund": {
+    "marketCap": 21374455763.48318,
+    "forwardPE": null,
+    "revenueGrowth": null,
+    "profitMargins": null,
+    "debtToEquity": null,
+    "targetMedianPrice": null,
+    "recommendationMean": null,
+    "heldPercentInstitutions": null
+   },
+   "evaluated_at_utc": "2026-10-29T07:34:04+00:00"
+  }
+ ]
+}

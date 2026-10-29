@@ -1,0 +1,150 @@
+{
+  "policy_version": "2026-10-29.v2",
+  "source": "User answers 2026-10-29 plus conservative defaults where user delegated ('do that for all the other sections')",
+  "account": {
+    "broker": "Robinhood",
+    "account_number": "932779002",
+    "account_type": "cash",
+    "options_level": null,
+    "notes": "Cash account: T+1 settlement, no margin, good-faith-violation risk if proceeds are reused before settlement. No PDT rule applies but GFV rule does."
+  },
+  "approval": {
+    "user_approval_stage": "ON",
+    "rule": "Every order is presented to the user and requires an explicit 'okay' before submission. Robinhood-side toggle is not relied upon."
+  },
+  "position_sizing": {
+    "USER_DEFINED": true,
+    "pct_of_buying_power_min": 10,
+    "pct_of_buying_power_max": 25,
+    "regime_schedule_pct": {
+      "aggressive_growth": 25,
+      "growth": 20,
+      "balanced": 15,
+      "defensive": 10,
+      "risk_off": 0
+    },
+    "further_reduction_triggers": [
+      "ATR(14)/price > 5% -> step down one tier",
+      "earnings inside holding window -> step down one tier or reject",
+      "correlated open position -> combined exposure counts as one position"
+    ],
+    "status": "CONFIRMED BY USER 2026-10-29: expose 10-25% of account buying power per trade depending on market pricing and conditions (regime schedule below). Less than 10% is permitted when the risk budget requires it."
+  },
+  "per_trade_loss": {
+    "USER_DEFINED": true,
+    "user_words": "In case of loss risk only 20 to 30% per trade",
+    "interpretation_adopted_CONSERVATIVE": "USER CONFIRMED 2026-10-29 01:25 -05: 20-30% of the POSITION value. Example from user: $2,000 account, $100 trade -> exit at a $30 loss to protect the remaining $70. Max loss per trade in dollars = position_value x stop_pct. Worst case 25% x 30% = 7.5% of buying power.",
+    "stop_pct_of_position_min": 20,
+    "stop_pct_of_position_max": 30,
+    "stop_placement_rule": "Stop must sit at technical invalidation. If invalidation requires more than 30% of position value, reduce size or reject. If invalidation is tighter than 20%, use the tighter stop (less risk is always allowed).",
+    "hard_cap_pct_of_account_per_trade": 7.5,
+    "options_rule": "For long options max loss = full premium. Premium paid must be <= the dollar loss budget (position_value x stop_pct), NOT the full position allowance. Example: $1,000 account, growth regime -> $200 allowance -> $60 max premium at 30% stop.",
+    "status": "RESOLVED - user confirmed per-position reading",
+    "gap_risk_note": "A stop is a close rule, not a guarantee; gap-through fills can exceed the 30% budget. Position size, not only the stop, bounds real loss.",
+    "stop_execution_rule": "Hard exit when the position's unrealized loss reaches the approved stop (20-30% of position value, placed at technical invalidation within that band). No widening, no averaging down. Stop order placed as a limit-protected stop where supported; gap-through risk is accepted and disclosed per trade.",
+    "user_confirmed": true
+  },
+  "portfolio_limits_DEFAULTS": {
+    "max_portfolio_heat_pct_of_account": 15,
+    "max_gross_exposure_pct": 80,
+    "min_cash_reserve_pct": 20,
+    "max_simultaneous_positions": 4,
+    "max_positions_per_sector": 2,
+    "max_sector_exposure_pct": 40,
+    "max_correlated_cluster_exposure_pct": 40,
+    "correlated_clusters": [
+      "semiconductors+AI infrastructure",
+      "hyperscaler suppliers",
+      "regional banks",
+      "energy producers",
+      "biotech binary events",
+      "stock + call on same underlying"
+    ]
+  },
+  "circuit_breakers_DEFAULTS": {
+    "daily_loss_limit_pct_of_account": 5,
+    "weekly_loss_limit_pct_of_account": 10,
+    "consecutive_losing_trades_pause": 3,
+    "action_on_trigger": "No new positions until next day/week respectively; existing positions managed per exit rules only; user notified."
+  },
+  "kill_switch": {
+    "state": "INACTIVE",
+    "triggers": [
+      "user says STOP",
+      "account data unavailable or stale",
+      "broker rejects two consecutive orders",
+      "unexplained position or order appears in account"
+    ]
+  },
+  "execution_DEFAULTS": {
+    "order_type": "limit only",
+    "equity_limit_rule": "limit <= verified ask x 1.005 (0.5% band); reject if ask moved > 1% from analysis quote",
+    "option_limit_rule": "limit between mid and ask, never above verified ask; reject if ask moved > 5% from analysis quote",
+    "time_in_force": "day",
+    "market_orders": "prohibited",
+    "resubmission_after_rejection": "prohibited; return to analysis",
+    "duplicate_check": "fingerprint = account|ticker|instrument_id|side|qty|limit|strategy|expiry|strike|right; block if match in open orders or last 24h fills"
+  },
+  "data_freshness_DEFAULTS": {
+    "equity_quote_max_age_seconds": 120,
+    "option_quote_max_age_seconds": 120,
+    "account_snapshot_max_age_seconds": 300,
+    "earnings_date_must_be_verified_within_days": 1,
+    "trading_hours_only": true
+  },
+  "options_DEFAULTS": {
+    "allowed_strategies": [
+      "long_call",
+      "long_put",
+      "debit_call_spread",
+      "debit_put_spread"
+    ],
+    "dte_min": 7,
+    "dte_max": 30,
+    "abs_delta_min": 0.45,
+    "abs_delta_max": 0.7,
+    "min_open_interest": 500,
+    "min_daily_volume": 100,
+    "max_bid_ask_spread_pct_of_mid": 10,
+    "earnings_inside_dte": "reject unless the thesis is explicitly an earnings trade and user approves",
+    "exit_dte_threshold": 5,
+    "status": "ALL OPTIONS REJECTED until account options level is verified >= Level 2 (Level 3 for spreads)"
+  },
+  "screening_DEFAULTS": {
+    "list_a_min_market_cap_usd": 10000000000,
+    "list_a_min_avg_dollar_volume_usd": 50000000,
+    "list_b_affordability": "share price <= 25% of buying power, or fractional available; min market cap $2B; min avg dollar volume $20M; price >= $5",
+    "exclude": [
+      "OTC",
+      "SPAC shells",
+      "reverse-split history < 2 yrs",
+      "going-concern language in latest 10-K/10-Q"
+    ]
+  },
+  "holding_period": {
+    "setup_must_work_within_trading_days": 15,
+    "max_hold_trading_days": 30,
+    "time_stop": "If no progress toward target_1 within 15 trading days and thesis not advanced, exit or reduce."
+  },
+  "score_thresholds": {
+    "reject_below": 65,
+    "watchlist": [
+      65,
+      74
+    ],
+    "conditional_candidate": [
+      75,
+      81
+    ],
+    "strong_candidate": [
+      82,
+      89
+    ],
+    "exceptional": [
+      90,
+      100
+    ],
+    "min_score_to_propose_order": 75,
+    "min_expected_reward_risk": 2.0
+  }
+}

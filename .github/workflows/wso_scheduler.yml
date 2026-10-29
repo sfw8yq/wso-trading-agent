@@ -1,0 +1,76 @@
+name: WSO scheduler
+
+# All times UTC. New York is UTC-4 (EDT) / UTC-5 (EST); the jobs themselves
+# check the market clock, so running a little wide of the session is harmless.
+on:
+  schedule:
+    - cron: "*/30 13-21 * * 1-5"   # every 30 min across the US session: monitor + first cycle of the day
+    - cron: "35 20 * * 1-5"        # daily report ~16:35 ET (EDT) 
+    - cron: "35 21 * * 1-5"        # daily report ~16:35 ET (EST) — the job de-duplicates by date
+    - cron: "50 20 * * 5"          # weekly report Friday ~16:50 ET (EDT)
+    - cron: "50 21 * * 5"          # weekly report Friday ~16:50 ET (EST)
+  workflow_dispatch:
+    inputs:
+      job:
+        description: "Job to run"
+        required: true
+        default: "tick"
+        type: choice
+        options: [tick, cycle, monitor, daily_report, weekly_report]
+      force:
+        description: "Ignore the market-hours guard"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: wso-state
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    env:
+      WSO_STORE: ${{ secrets.WSO_STORE }}
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      GH_REPO: ${{ github.repository }}
+      GH_BRANCH: ${{ github.ref_name }}
+      RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+      SMTP_HOST: ${{ secrets.SMTP_HOST }}
+      SMTP_PORT: ${{ secrets.SMTP_PORT }}
+      SMTP_USER: ${{ secrets.SMTP_USER }}
+      SMTP_PASS: ${{ secrets.SMTP_PASS }}
+      EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+      TZ: America/New_York
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Decide which job to run
+        id: pick
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "job=${{ inputs.job }}" >> $GITHUB_OUTPUT
+            if [ "${{ inputs.force }}" = "true" ]; then echo "force=--force" >> $GITHUB_OUTPUT; fi
+          else
+            H=$(date -u +%H); M=$(date -u +%M); D=$(date -u +%u)
+            if [ "$M" = "35" ]; then echo "job=daily_report" >> $GITHUB_OUTPUT;
+            elif [ "$M" = "50" ] && [ "$D" = "5" ]; then echo "job=weekly_report" >> $GITHUB_OUTPUT;
+            else echo "job=tick" >> $GITHUB_OUTPUT; fi
+          fi
+      - name: Run job
+        run: python -m wso.jobs ${{ steps.pick.outputs.job }} ${{ steps.pick.outputs.force }}
+      - name: Commit state (local store only)
+        if: env.WSO_STORE != 'github'
+        run: |
+          git config user.name "wso-bot"
+          git config user.email "wso-bot@users.noreply.github.com"
+          git add data/state.json || true
+          git diff --cached --quiet || git commit -m "wso: scheduler state $(date -u +%FT%TZ)"
+          git pull --rebase origin ${{ github.ref_name }} || true
+          git push || true
