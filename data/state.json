@@ -1,7 +1,7 @@
 {
  "schema_version": 3,
  "created_at": "2026-10-29T07:33:18+00:00",
- "updated_at": "2026-10-29T18:47:36+00:00",
+ "updated_at": "2026-10-30T18:25:45+00:00",
  "settings": {
   "trading_capital": 10000.0,
   "paper_mode": true,
@@ -22,6 +22,11 @@
   "equity_curve": [
    {
     "date": "2026-10-29",
+    "equity": 10000.0,
+    "cash": 10000.0
+   },
+   {
+    "date": "2026-10-30",
     "equity": 10000.0,
     "cash": 10000.0
    }
@@ -438,6 +443,22 @@
    "decision": "HOLD",
    "reason": "no candidate cleared score \u2265 75 and R:R \u2265 2.0 \u2014 no new orders",
    "rule": "Default under uncertainty = WATCHLIST"
+  },
+  {
+   "id": "547fbdd7",
+   "at": "2026-10-30T18:25:45+00:00",
+   "symbol": null,
+   "decision": "INFO",
+   "reason": "regime risk_off (score 10.6); leaders Consumer Staples, Health Care, Energy, Utilities; laggards Communication, Technology, Semiconductors",
+   "rule": "Gate 2 market regime"
+  },
+  {
+   "id": "6be4c35d",
+   "at": "2026-10-30T18:25:45+00:00",
+   "symbol": null,
+   "decision": "HOLD",
+   "reason": "risk_off regime: no new positions permitted",
+   "rule": "Position sizing: risk_off = 0%"
   }
  ],
  "alerts": [
@@ -453,111 +474,113 @@
   }
  ],
  "regime": {
-  "regime": "balanced",
-  "score": 55.9,
-  "computed_at_utc": "2026-10-29T07:33:32+00:00",
-  "as_of_close": "2026-10-28",
+  "regime": "risk_off",
+  "score": 10.6,
+  "computed_at_utc": "2026-10-30T18:25:45+00:00",
+  "as_of_close": "2026-10-30",
   "facts": {
    "SPY": {
-    "close": 772.31,
-    "ema21": 768.83,
-    "ema48": 765.91,
-    "ema200": 735.11,
-    "above21": true,
-    "above48": true,
+    "close": 753.76,
+    "ema21": 767.5,
+    "ema48": 765.54,
+    "ema200": 735.03,
+    "above21": false,
+    "above48": false,
     "above200": true,
     "ema21_gt_48": true,
-    "pct_from_52w_high": -1.19,
-    "ret_1m_pct": 1.06,
-    "as_of": "2026-10-28"
+    "pct_from_52w_high": -3.57,
+    "ret_1m_pct": -1.34,
+    "as_of": "2026-10-30"
    },
    "QQQ": {
-    "close": 725.61,
-    "ema21": 725.48,
-    "ema48": 724.77,
-    "ema200": 690.81,
-    "above21": true,
-    "above48": true,
-    "above200": true,
-    "ema21_gt_48": true,
-    "pct_from_52w_high": -4.88,
-    "ret_1m_pct": -1.67,
-    "as_of": "2026-10-28"
+    "close": 685.68,
+    "ema21": 721.03,
+    "ema48": 722.81,
+    "ema200": 690.22,
+    "above21": false,
+    "above48": false,
+    "above200": false,
+    "ema21_gt_48": false,
+    "pct_from_52w_high": -10.12,
+    "ret_1m_pct": -7.59,
+    "as_of": "2026-10-30"
    },
    "IWM": {
-    "close": 281.29,
-    "ema21": 278.33,
-    "ema48": 282.38,
-    "ema200": 277.5,
-    "above21": true,
+    "close": 277.41,
+    "ema21": 278.72,
+    "ema48": 282.24,
+    "ema200": 277.4,
+    "above21": false,
     "above48": false,
     "above200": true,
     "ema21_gt_48": false,
-    "pct_from_52w_high": -7.59,
-    "ret_1m_pct": 0.82,
-    "as_of": "2026-10-28"
+    "pct_from_52w_high": -8.86,
+    "ret_1m_pct": -0.58,
+    "as_of": "2026-10-30"
    },
    "SOXX": {
-    "close": 521.94,
-    "ema21": 521.01,
-    "ema48": 530.01,
-    "ema200": 481.76,
-    "above21": true,
+    "close": 464.45,
+    "ema21": 515.28,
+    "ema48": 526.7,
+    "ema200": 481.56,
+    "above21": false,
     "above48": false,
-    "above200": true,
+    "above200": false,
     "ema21_gt_48": false,
-    "pct_from_52w_high": -20.38,
-    "ret_1m_pct": -8.02,
-    "as_of": "2026-10-28"
+    "pct_from_52w_high": -29.15,
+    "ret_1m_pct": -19.41,
+    "as_of": "2026-10-30"
    },
    "DIA": {
-    "close": 524.68,
-    "ema21": 520.53,
-    "ema48": 520.3,
-    "ema200": 506.53,
-    "above21": true,
-    "above48": true,
+    "close": 516.1,
+    "ema21": 520.31,
+    "ema48": 520.23,
+    "ema200": 506.67,
+    "above21": false,
+    "above48": false,
     "above200": true,
     "ema21_gt_48": true,
-    "pct_from_52w_high": -3.71,
-    "ret_1m_pct": 2.32,
-    "as_of": "2026-10-28"
+    "pct_from_52w_high": -5.29,
+    "ret_1m_pct": 1.49,
+    "as_of": "2026-10-30"
    },
-   "VIX": 17.15,
-   "breadth_pct_above_48ema": 71.8
+   "VIX": 21.99,
+   "breadth_pct_above_48ema": 66.3
   },
   "sector_1m_returns": {
-   "Energy": 11.23,
-   "Utilities": 7.0,
-   "Consumer Staples": 6.1,
-   "Consumer Discretionary": 5.66,
-   "Materials": 5.62,
-   "Health Care": 5.27,
-   "Financials": 3.93,
-   "Real Estate": 1.91,
-   "Industrials": -0.38,
-   "Technology": -1.8,
-   "Communication": -7.47,
-   "Semiconductors": -8.02
+   "Consumer Staples": 11.68,
+   "Health Care": 11.53,
+   "Energy": 11.07,
+   "Utilities": 9.82,
+   "Materials": 7.7,
+   "Real Estate": 6.35,
+   "Consumer Discretionary": 5.8,
+   "Financials": 5.52,
+   "Industrials": -0.95,
+   "Communication": -9.32,
+   "Technology": -10.25,
+   "Semiconductors": -19.41
   },
   "leaders": [
-   "Energy",
-   "Utilities",
    "Consumer Staples",
-   "Consumer Discretionary"
+   "Health Care",
+   "Energy",
+   "Utilities"
   ],
   "laggards": [
-   "Technology",
    "Communication",
+   "Technology",
    "Semiconductors"
   ],
   "notes": [
+   "SPY below 48 EMA: intermediate trend broken",
    "QQQ negative over 1 month: growth leadership fading",
+   "QQQ below 21 EMA",
    "IWM below 48 EMA: small caps lagging",
    "SOXX below 48 EMA: semis/AI-infra penalized",
    "defensive sectors leading: rotation away from risk"
   ],
-  "new_positions_allowed": true,
+  "new_positions_allowed": false,
   "label": "fact: computed from daily closes; regime label is a rule-based inference"
  },
  "last_cycle": {
@@ -714,7 +737,7 @@
   "finished_at_utc": "2026-10-29T07:36:40+00:00",
   "proposal_symbols": []
  },
- "last_monitor": "2026-10-29T18:47:36+00:00",
+ "last_monitor": "2026-10-30T18:25:33+00:00",
  "reports": {
   "daily": [],
   "weekly": []
