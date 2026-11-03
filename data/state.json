@@ -1,7 +1,7 @@
 {
  "schema_version": 3,
  "created_at": "2026-10-29T07:33:18+00:00",
- "updated_at": "2026-10-30T18:25:45+00:00",
+ "updated_at": "2026-11-03T19:57:15+00:00",
  "settings": {
   "trading_capital": 10000.0,
   "paper_mode": true,
@@ -27,6 +27,11 @@
    },
    {
     "date": "2026-10-30",
+    "equity": 10000.0,
+    "cash": 10000.0
+   },
+   {
+    "date": "2026-11-03",
     "equity": 10000.0,
     "cash": 10000.0
    }
@@ -459,6 +464,22 @@
    "decision": "HOLD",
    "reason": "risk_off regime: no new positions permitted",
    "rule": "Position sizing: risk_off = 0%"
+  },
+  {
+   "id": "66a96fbe",
+   "at": "2026-11-03T19:57:15+00:00",
+   "symbol": null,
+   "decision": "INFO",
+   "reason": "regime risk_off (score 10.1); leaders Health Care, Consumer Staples, Utilities, Real Estate; laggards Communication, Technology, Semiconductors",
+   "rule": "Gate 2 market regime"
+  },
+  {
+   "id": "cc0624fe",
+   "at": "2026-11-03T19:57:15+00:00",
+   "symbol": null,
+   "decision": "HOLD",
+   "reason": "risk_off regime: no new positions permitted",
+   "rule": "Position sizing: risk_off = 0%"
   }
  ],
  "alerts": [
@@ -475,97 +496,97 @@
  ],
  "regime": {
   "regime": "risk_off",
-  "score": 10.6,
-  "computed_at_utc": "2026-10-30T18:25:45+00:00",
-  "as_of_close": "2026-10-30",
+  "score": 10.1,
+  "computed_at_utc": "2026-11-03T19:57:15+00:00",
+  "as_of_close": "2026-11-03",
   "facts": {
    "SPY": {
-    "close": 753.76,
-    "ema21": 767.5,
-    "ema48": 765.54,
-    "ema200": 735.03,
+    "close": 753.84,
+    "ema21": 765.13,
+    "ema48": 764.61,
+    "ema200": 735.68,
     "above21": false,
     "above48": false,
     "above200": true,
     "ema21_gt_48": true,
-    "pct_from_52w_high": -3.57,
-    "ret_1m_pct": -1.34,
-    "as_of": "2026-10-30"
+    "pct_from_52w_high": -3.55,
+    "ret_1m_pct": -2.71,
+    "as_of": "2026-11-03"
    },
    "QQQ": {
-    "close": 685.68,
-    "ema21": 721.03,
-    "ema48": 722.81,
-    "ema200": 690.22,
+    "close": 684.02,
+    "ema21": 714.72,
+    "ema48": 719.77,
+    "ema200": 690.6,
     "above21": false,
     "above48": false,
     "above200": false,
     "ema21_gt_48": false,
-    "pct_from_52w_high": -10.12,
-    "ret_1m_pct": -7.59,
-    "as_of": "2026-10-30"
+    "pct_from_52w_high": -10.34,
+    "ret_1m_pct": -9.55,
+    "as_of": "2026-11-03"
    },
    "IWM": {
-    "close": 277.41,
-    "ema21": 278.72,
-    "ema48": 282.24,
-    "ema200": 277.4,
-    "above21": false,
+    "close": 280.1,
+    "ema21": 279.02,
+    "ema48": 282.11,
+    "ema200": 277.51,
+    "above21": true,
     "above48": false,
     "above200": true,
     "ema21_gt_48": false,
-    "pct_from_52w_high": -8.86,
-    "ret_1m_pct": -0.58,
-    "as_of": "2026-10-30"
+    "pct_from_52w_high": -7.98,
+    "ret_1m_pct": -1.16,
+    "as_of": "2026-11-03"
    },
    "SOXX": {
-    "close": 464.45,
-    "ema21": 515.28,
-    "ema48": 526.7,
-    "ema200": 481.56,
+    "close": 462.36,
+    "ema21": 505.9,
+    "ema48": 521.48,
+    "ema200": 481.4,
     "above21": false,
     "above48": false,
     "above200": false,
     "ema21_gt_48": false,
-    "pct_from_52w_high": -29.15,
-    "ret_1m_pct": -19.41,
-    "as_of": "2026-10-30"
+    "pct_from_52w_high": -29.47,
+    "ret_1m_pct": -21.57,
+    "as_of": "2026-11-03"
    },
    "DIA": {
-    "close": 516.1,
-    "ema21": 520.31,
-    "ema48": 520.23,
-    "ema200": 506.67,
+    "close": 516.94,
+    "ema21": 520.0,
+    "ema48": 520.1,
+    "ema200": 506.79,
     "above21": false,
     "above48": false,
     "above200": true,
-    "ema21_gt_48": true,
-    "pct_from_52w_high": -5.29,
-    "ret_1m_pct": 1.49,
-    "as_of": "2026-10-30"
+    "ema21_gt_48": false,
+    "pct_from_52w_high": -5.13,
+    "ret_1m_pct": 0.97,
+    "as_of": "2026-11-03"
    },
-   "VIX": 21.99,
-   "breadth_pct_above_48ema": 66.3
+   "VIX": 20.74,
+   "breadth_pct_above_48ema": 64.4
   },
   "sector_1m_returns": {
-   "Consumer Staples": 11.68,
-   "Health Care": 11.53,
-   "Energy": 11.07,
-   "Utilities": 9.82,
-   "Materials": 7.7,
-   "Real Estate": 6.35,
-   "Consumer Discretionary": 5.8,
-   "Financials": 5.52,
-   "Industrials": -0.95,
-   "Communication": -9.32,
-   "Technology": -10.25,
-   "Semiconductors": -19.41
+   "Health Care": 10.19,
+   "Consumer Staples": 10.13,
+   "Utilities": 8.99,
+   "Real Estate": 7.19,
+   "Materials": 6.28,
+   "Financials": 6.26,
+   "Consumer Discretionary": 6.1,
+   "Energy": 5.45,
+   "Industrials": 0.79,
+   "Communication": -9.4,
+   "Technology": -12.47,
+   "Semiconductors": -21.57
   },
   "leaders": [
-   "Consumer Staples",
    "Health Care",
-   "Energy",
-   "Utilities"
+   "Consumer Staples",
+   "Utilities",
+   "Real Estate"
   ],
   "laggards": [
    "Communication",
@@ -737,7 +758,7 @@
   "finished_at_utc": "2026-10-29T07:36:40+00:00",
   "proposal_symbols": []
  },
- "last_monitor": "2026-10-30T18:25:33+00:00",
+ "last_monitor": "2026-11-03T19:57:08+00:00",
  "reports": {
   "daily": [],
   "weekly": []
