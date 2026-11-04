@@ -1,7 +1,7 @@
 {
  "schema_version": 3,
  "created_at": "2026-10-29T07:33:18+00:00",
- "updated_at": "2026-11-03T19:57:15+00:00",
+ "updated_at": "2026-11-04T20:17:07+00:00",
  "settings": {
   "trading_capital": 10000.0,
   "paper_mode": true,
@@ -34,6 +34,11 @@
     "date": "2026-11-03",
     "equity": 10000.0,
     "cash": 10000.0
+   },
+   {
+    "date": "2026-11-04",
+    "equity": 10000.0,
+    "cash": 10000.0
    }
   ],
   "realized_pnl": 0.0
@@ -44,21 +49,152 @@
  "pending_proposals": [],
  "watchlist": [
   {
-   "symbol": "PG",
-   "setup": "pullback_to_21ema",
-   "price": 158.26,
-   "score": 66.2,
+   "symbol": "DHR",
+   "setup": "post_earnings_continuation",
+   "price": 235.46,
+   "score": 76.8,
    "reasons": [
-    "reward:risk 1.19 < 2.0",
-    "fundamental data unavailable from vendor \u2014 confidence reduced, re-run later",
-    "score 66.2 in watchlist band"
+    "reward:risk 0.78 < 2.0"
    ],
-   "stop": 149.94,
-   "t1": 165.75,
-   "t2": 170.58,
-   "expected_rr": 1.19,
-   "added_at_utc": "2026-10-29T07:35:27+00:00",
-   "trigger": "re-test of 21 EMA 154.79 with rising volume"
+   "stop": 215.82,
+   "t1": 241.35,
+   "t2": 260.0,
+   "expected_rr": 0.78,
+   "added_at_utc": "2026-11-04T20:17:07+00:00",
+   "trigger": "hold above reaction low 217.5500030517578 and clear 241.35"
+  },
+  {
+   "symbol": "TMO",
+   "setup": "pullback_to_21ema",
+   "price": 704.89,
+   "score": 74.0,
+   "reasons": [
+    "reward:risk 0.86 < 2.0",
+    "score 74.0 in watchlist band"
+   ],
+   "stop": 654.27,
+   "t1": 746.99,
+   "t2": 750.0,
+   "expected_rr": 0.86,
+   "added_at_utc": "2026-11-04T20:17:06+00:00",
+   "trigger": "re-test of 21 EMA 684.59 with rising volume"
+  },
+  {
+   "symbol": "ABBV",
+   "setup": "breakout_watch",
+   "price": 292.17,
+   "score": 73.0,
+   "reasons": [
+    "reward:risk 0.90 < 2.0",
+    "score 73.0 in watchlist band"
+   ],
+   "stop": 276.37,
+   "t1": 298.74,
+   "t2": 314.0,
+   "expected_rr": 0.9,
+   "added_at_utc": "2026-11-04T20:17:05+00:00",
+   "trigger": "close above 298.74 on \u22651.2\u00d7 volume, or pullback to 21 EMA 283.07 that holds"
+  },
+  {
+   "symbol": "PG",
+   "setup": "post_earnings_continuation",
+   "price": 167.47,
+   "score": 72.9,
+   "reasons": [
+    "reward:risk 0.75 < 2.0",
+    "score 72.9 in watchlist band"
+   ],
+   "stop": 157.17,
+   "t1": 174.34,
+   "t2": 176.0,
+   "expected_rr": 0.75,
+   "added_at_utc": "2026-11-04T20:17:07+00:00",
+   "trigger": "hold above reaction low 160.2988147093329 and clear 174.34"
+  },
+  {
+   "symbol": "LLY",
+   "setup": "extended",
+   "price": 1417.19,
+   "score": 72.2,
+   "reasons": [
+    "no actionable setup (extended)",
+    "reward:risk 0.36 < 2.0",
+    "score 72.2 in watchlist band"
+   ],
+   "stop": 1245.99,
+   "t1": 1449.68,
+   "t2": 1508.0,
+   "expected_rr": 0.36,
+   "added_at_utc": "2026-11-04T20:17:01+00:00",
+   "trigger": "pullback toward 21 EMA 1300.6 (currently 9.0% above)"
+  },
+  {
+   "symbol": "REGN",
+   "setup": "extended",
+   "price": 942.18,
+   "score": 71.1,
+   "reasons": [
+    "no actionable setup (extended)",
+    "reward:risk 0.56 < 2.0",
+    "score 71.1 in watchlist band"
+   ],
+   "stop": 788.97,
+   "t1": 991.73,
+   "t2": 1064.4,
+   "expected_rr": 0.56,
+   "added_at_utc": "2026-11-04T20:17:00+00:00",
+   "trigger": "pullback toward 21 EMA 842.95 (currently 11.8% above)"
+  },
+  {
+   "symbol": "VEEV",
+   "setup": "pullback_to_21ema",
+   "price": 311.65,
+   "score": 67.6,
+   "reasons": [
+    "earnings inside holding window",
+    "reward:risk 0.93 < 2.0",
+    "score 67.6 in watchlist band"
+   ],
+   "stop": 284.74,
+   "t1": 325.99,
+   "t2": 347.08,
+   "expected_rr": 0.93,
+   "added_at_utc": "2026-11-04T20:16:59+00:00",
+   "trigger": "re-test of 21 EMA 305.8 with rising volume"
+  },
+  {
+   "symbol": "MAR",
+   "setup": "extended",
+   "price": 424.07,
+   "score": 65.3,
+   "reasons": [
+    "no actionable setup (extended)",
+    "reward:risk 0.55 < 2.0",
+    "score 65.3 in watchlist band"
+   ],
+   "stop": 378.49,
+   "t1": 433.3,
+   "t2": 464.9,
+   "expected_rr": 0.55,
+   "added_at_utc": "2026-11-04T20:17:03+00:00",
+   "trigger": "pullback toward 21 EMA 392.18 (currently 8.1% above)"
+  },
+  {
+   "symbol": "EXEL",
+   "setup": "extended",
+   "price": 72.84,
+   "score": 65.2,
+   "reasons": [
+    "no actionable setup (extended)",
+    "reward:risk 0.64 < 2.0",
+    "score 65.2 in watchlist band"
+   ],
+   "stop": 63.41,
+   "t1": 76.87,
+   "t2": 80.9,
+   "expected_rr": 0.64,
+   "added_at_utc": "2026-11-04T20:16:58+00:00",
+   "trigger": "pullback toward 21 EMA 65.4 (currently 11.4% above)"
   }
  ],
  "decision_log": [
@@ -480,6 +616,386 @@
    "decision": "HOLD",
    "reason": "risk_off regime: no new positions permitted",
    "rule": "Position sizing: risk_off = 0%"
+  },
+  {
+   "id": "b509b693",
+   "at": "2026-11-04T20:16:57+00:00",
+   "symbol": null,
+   "decision": "INFO",
+   "reason": "regime defensive (score 47.8); leaders Health Care, Consumer Staples, Consumer Discretionary, Real Estate; laggards Communication, Technology, Semiconductors",
+   "rule": "Gate 2 market regime"
+  },
+  {
+   "id": "56e3658a",
+   "at": "2026-11-04T20:16:57+00:00",
+   "symbol": null,
+   "decision": "INFO",
+   "reason": "54 names passed the structural screen; 18 shortlisted for specialist review",
+   "rule": "Gate 3 universe screen"
+  },
+  {
+   "id": "1625bed8",
+   "at": "2026-11-04T20:16:58+00:00",
+   "symbol": "EXEL",
+   "decision": "WATCHLIST",
+   "reason": "no actionable setup (extended); reward:risk 0.64 < 2.0; score 65.2 in watchlist band",
+   "rule": "WSO score + CIO decision rules",
+   "score": 65.2,
+   "setup": "extended",
+   "expected_rr": 0.64,
+   "stop": 63.41,
+   "t1": 76.87,
+   "t2": 80.9,
+   "earnings_next": "2027-02-09",
+   "bear_case": [
+    "Penalty: extended above 21 EMA",
+    "Reward:risk 0.6 is below the 2.0 minimum at a 12.9% stop",
+    "Earnings reaction day closed red \u2014 continuation is unconfirmed"
+   ]
+  },
+  {
+   "id": "09753d96",
+   "at": "2026-11-04T20:16:58+00:00",
+   "symbol": "GILD",
+   "decision": "REJECT",
+   "reason": "no actionable setup (extended); reward:risk 0.65 < 2.0; score 57.9 below 65",
+   "rule": "WSO score + CIO decision rules",
+   "score": 57.9,
+   "setup": "extended",
+   "expected_rr": 0.65,
+   "stop": 151.77,
+   "t1": 184.55,
+   "t2": 194.39,
+   "earnings_next": "2027-02-09",
+   "bear_case": [
+    "Penalty: extended above 21 EMA",
+    "Reward:risk 0.7 is below the 2.0 minimum at a 13.1% stop",
+    "Regime does not favor new longs"
+   ]
+  },
+  {
+   "id": "d5d040e6",
+   "at": "2026-11-04T20:16:59+00:00",
+   "symbol": "VEEV",
+   "decision": "WATCHLIST",
+   "reason": "earnings inside holding window; reward:risk 0.93 < 2.0; score 67.6 in watchlist band",
+   "rule": "WSO score + CIO decision rules",
+   "score": 67.6,
+   "setup": "pullback_to_21ema",
+   "expected_rr": 0.93,
+   "stop": 284.74,
+   "t1": 325.99,
+   "t2": 347.08,
+   "earnings_next": "2026-11-25",
+   "bear_case": [
+    "Penalty: earnings inside holding window",
+    "Reward:risk 0.9 is below the 2.0 minimum at a 8.6% stop",
+    "Regime does not favor new longs"
+   ]
+  },
+  {
+   "id": "cca6369a",
+   "at": "2026-11-04T20:17:00+00:00",
+   "symbol": "REGN",
+   "decision": "WATCHLIST",
+   "reason": "no actionable setup (extended); reward:risk 0.56 < 2.0; score 71.1 in watchlist band",
+   "rule": "WSO score + CIO decision rules",
+   "score": 71.1,
+   "setup": "extended",
+   "expected_rr": 0.56,
+   "stop": 788.97,
+   "t1": 991.73,
+   "t2": 1064.4,
+   "earnings_next": "2027-01-28",
+   "bear_case": [
+    "Penalty: extended above 21 EMA",
+    "Reward:risk 0.6 is below the 2.0 minimum at a 16.3% stop",
+    "Regime does not favor new longs"
+   ]
+  },
+  {
+   "id": "33528c3d",
+   "at": "2026-11-04T20:17:00+00:00",
+   "symbol": "HCA",
+   "decision": "REJECT",
+   "reason": "no actionable setup (extended); reward:risk 0.71 < 2.0; score 55.5 below 65",
+   "rule": "WSO score + CIO decision rules",
+   "score": 55.5,
+   "setup": "extended",
+   "expected_rr": 0.71,
+   "stop": 435.2,
+   "t1": 553.56,
+   "t2": 588.63,
+   "earnings_next": "2027-01-26",
+   "bear_case": [
+    "Penalty: extended above 21 EMA",
+    "Reward:risk 0.7 is below the 2.0 minimum at a 15.4% stop",
+    "Earnings reaction day closed red \u2014 continuation is unconfirmed"
+   ]
+  },
+  {
+   "id": "414b6257",
+   "at": "2026-11-04T20:17:01+00:00",
+   "symbol": "MDT",
+   "decision": "REJECT",
+   "reason": "earnings inside holding window; no actionable setup (extended); reward:risk 0.58 < 2.0; score 56.0 below 65",
+   "rule": "WSO score + CIO decision rules",
+   "score": 56.0,
+   "setup": "extended",
+   "expected_rr": 0.58,
+   "stop": 92.41,
+   "t1": 110.26,
+   "t2": 115.28,
+   "earnings_next": "2026-11-17",
+   "bear_case": [
+    "Penalty: earnings inside holding window",
+    "Penalty: extended above 21 EMA",
+    "Reward:risk 0.6 is below the 2.0 minimum at a 12.2% stop"
+   ]
+  },
+  {
+   "id": "b5c68b75",
+   "at": "2026-11-04T20:17:01+00:00",
+   "symbol": "LLY",
+   "decision": "WATCHLIST",
+   "reason": "no actionable setup (extended); reward:risk 0.36 < 2.0; score 72.2 in watchlist band",
+   "rule": "WSO score + CIO decision rules",
+   "score": 72.2,
+   "setup": "extended",
+   "expected_rr": 0.36,
+   "stop": 1245.99,
+   "t1": 1449.68,
+   "t2": 1508.0,
+   "earnings_next": "2027-02-03",
+   "bear_case": [
+    "Penalty: extended above 21 EMA",
+    "Reward:risk 0.4 is below the 2.0 minimum at a 12.1% stop",
+    "Regime does not favor new longs"
+   ]
+  },
+  {
+   "id": "da41f2c9",
+   "at": "2026-11-04T20:17:02+00:00",
+   "symbol": "WMT",
+   "decision": "REJECT",
+   "reason": "earnings inside holding window; no actionable setup (extended); reward:risk 0.59 < 2.0; score 48.2 below 65",
+   "rule": "WSO score + CIO decision rules",
+   "score": 48.2,
+   "setup": "extended",
+   "expected_rr": 0.59,
+   "stop": 117.14,
+   "t1": 134.84,
+   "t2": 141.48,
+   "earnings_next": "2026-11-19",
+   "bear_case": [
+    "Penalty: earnings inside holding window",
+    "Penalty: extended above 21 EMA",
+    "Reward:risk 0.6 is below the 2.0 minimum at a 10.2% stop"
+   ]
+  },
+  {
+   "id": "f6f693a5",
+   "at": "2026-11-04T20:17:02+00:00",
+   "symbol": "AMGN",
+   "decision": "REJECT",
+   "reason": "no actionable setup (extended); reward:risk 0.77 < 2.0; score 63.6 below 65",
+   "rule": "WSO score + CIO decision rules",
+   "score": 63.6,
+   "setup": "extended",
+   "expected_rr": 0.77,
+   "stop": 434.3,
+   "t1": 502.59,
+   "t2": 525.69,
+   "earnings_next": "2027-02-02",
+   "bear_case": [
+    "Penalty: extended above 21 EMA",
+    "Reward:risk 0.8 is below the 2.0 minimum at a 9.4% stop",
+    "Earnings reaction day closed red \u2014 continuation is unconfirmed"
+   ]
+  },
+  {
+   "id": "298a9923",
+   "at": "2026-11-04T20:17:03+00:00",
+   "symbol": "MAR",
+   "decision": "WATCHLIST",
+   "reason": "no actionable setup (extended); reward:risk 0.55 < 2.0; score 65.3 in watchlist band",
+   "rule": "WSO score + CIO decision rules",
+   "score": 65.3,
+   "setup": "extended",
+   "expected_rr": 0.55,
+   "stop": 378.49,
+   "t1": 433.3,
+   "t2": 464.9,
+   "earnings_next": "2027-02-09",
+   "bear_case": [
+    "Penalty: extended above 21 EMA",
+    "Reward:risk 0.6 is below the 2.0 minimum at a 10.8% stop",
+    "Regime does not favor new longs"
+   ]
+  },
+  {
+   "id": "168406ea",
+   "at": "2026-11-04T20:17:03+00:00",
+   "symbol": "MTD",
+   "decision": "REJECT",
+   "reason": "earnings inside holding window; reward:risk 1.24 < 2.0; score 56.2 below 65",
+   "rule": "WSO score + CIO decision rules",
+   "score": 56.2,
+   "setup": "breakout_watch",
+   "expected_rr": 1.24,
+   "stop": 1631.91,
+   "t1": 1810.92,
+   "t2": 1891.87,
+   "earnings_next": "2026-11-05",
+   "bear_case": [
+    "Penalty: earnings inside holding window",
+    "Penalty: new high on light volume",
+    "Reward:risk 1.2 is below the 2.0 minimum at a 5.7% stop"
+   ]
+  },
+  {
+   "id": "9077d067",
+   "at": "2026-11-04T20:17:04+00:00",
+   "symbol": "BDX",
+   "decision": "REJECT",
+   "reason": "earnings inside holding window; no actionable setup (extended); reward:risk 0.81 < 2.0; score 48.7 below 65",
+   "rule": "WSO score + CIO decision rules",
+   "score": 48.7,
+   "setup": "extended",
+   "expected_rr": 0.81,
+   "stop": 192.77,
+   "t1": 216.31,
+   "t2": 224.59,
+   "earnings_next": "2026-11-05",
+   "bear_case": [
+    "Penalty: earnings inside holding window",
+    "Penalty: extended above 21 EMA",
+    "Reward:risk 0.8 is below the 2.0 minimum at a 7.3% stop"
+   ]
+  },
+  {
+   "id": "0e84ac57",
+   "at": "2026-11-04T20:17:05+00:00",
+   "symbol": "A",
+   "decision": "REJECT",
+   "reason": "earnings inside holding window; reward:risk 0.46 < 2.0; score 63.4 below 65",
+   "rule": "WSO score + CIO decision rules",
+   "score": 63.4,
+   "setup": "pullback_to_21ema",
+   "expected_rr": 0.46,
+   "stop": 165.2,
+   "t1": 182.99,
+   "t2": 185.0,
+   "earnings_next": "2026-11-23",
+   "bear_case": [
+    "Penalty: earnings inside holding window",
+    "Reward:risk 0.5 is below the 2.0 minimum at a 7.2% stop",
+    "Regime does not favor new longs"
+   ]
+  },
+  {
+   "id": "5258bf53",
+   "at": "2026-11-04T20:17:05+00:00",
+   "symbol": "ABBV",
+   "decision": "WATCHLIST",
+   "reason": "reward:risk 0.90 < 2.0; score 73.0 in watchlist band",
+   "rule": "WSO score + CIO decision rules",
+   "score": 73.0,
+   "setup": "breakout_watch",
+   "expected_rr": 0.9,
+   "stop": 276.37,
+   "t1": 298.74,
+   "t2": 314.0,
+   "earnings_next": "2027-02-03",
+   "bear_case": [
+    "Reward:risk 0.9 is below the 2.0 minimum at a 5.4% stop",
+    "Regime does not favor new longs"
+   ]
+  },
+  {
+   "id": "390f42b2",
+   "at": "2026-11-04T20:17:06+00:00",
+   "symbol": "TMO",
+   "decision": "WATCHLIST",
+   "reason": "reward:risk 0.86 < 2.0; score 74.0 in watchlist band",
+   "rule": "WSO score + CIO decision rules",
+   "score": 74.0,
+   "setup": "pullback_to_21ema",
+   "expected_rr": 0.86,
+   "stop": 654.27,
+   "t1": 746.99,
+   "t2": 750.0,
+   "earnings_next": "2027-01-28",
+   "bear_case": [
+    "Reward:risk 0.9 is below the 2.0 minimum at a 7.2% stop",
+    "Regime does not favor new longs"
+   ]
+  },
+  {
+   "id": "ff757466",
+   "at": "2026-11-04T20:17:06+00:00",
+   "symbol": "PFE",
+   "decision": "REJECT",
+   "reason": "reward:risk 1.20 < 2.0; score 62.2 below 65",
+   "rule": "WSO score + CIO decision rules",
+   "score": 62.2,
+   "setup": "breakout_watch",
+   "expected_rr": 1.2,
+   "stop": 29.06,
+   "t1": 31.98,
+   "t2": 33.28,
+   "earnings_next": "2027-02-02",
+   "bear_case": [
+    "Reward:risk 1.2 is below the 2.0 minimum at a 5.3% stop",
+    "Earnings reaction day closed red \u2014 continuation is unconfirmed",
+    "Valuation offers little cushion if growth disappoints"
+   ]
+  },
+  {
+   "id": "534bff9d",
+   "at": "2026-11-04T20:17:07+00:00",
+   "symbol": "PG",
+   "decision": "WATCHLIST",
+   "reason": "reward:risk 0.75 < 2.0; score 72.9 in watchlist band",
+   "rule": "WSO score + CIO decision rules",
+   "score": 72.9,
+   "setup": "post_earnings_continuation",
+   "expected_rr": 0.75,
+   "stop": 157.17,
+   "t1": 174.34,
+   "t2": 176.0,
+   "earnings_next": "2027-01-21",
+   "bear_case": [
+    "Reward:risk 0.8 is below the 2.0 minimum at a 6.2% stop",
+    "Regime does not favor new longs"
+   ]
+  },
+  {
+   "id": "dcf49904",
+   "at": "2026-11-04T20:17:07+00:00",
+   "symbol": "DHR",
+   "decision": "WATCHLIST",
+   "reason": "reward:risk 0.78 < 2.0",
+   "rule": "WSO score + CIO decision rules",
+   "score": 76.8,
+   "setup": "post_earnings_continuation",
+   "expected_rr": 0.78,
+   "stop": 215.82,
+   "t1": 241.35,
+   "t2": 260.0,
+   "earnings_next": "2027-01-27",
+   "bear_case": [
+    "Reward:risk 0.8 is below the 2.0 minimum at a 8.3% stop",
+    "Regime does not favor new longs"
+   ]
+  },
+  {
+   "id": "c37a309a",
+   "at": "2026-11-04T20:17:07+00:00",
+   "symbol": null,
+   "decision": "HOLD",
+   "reason": "no candidate cleared score \u2265 75 and R:R \u2265 2.0 \u2014 no new orders",
+   "rule": "Default under uncertainty = WATCHLIST"
   }
  ],
  "alerts": [
@@ -492,100 +1008,110 @@
     "sent": false,
     "error": "notifications off or no recipients"
    }
+  },
+  {
+   "at": "2026-11-04T20:17:07+00:00",
+   "type": "setup_alert",
+   "subject": "[WSO] Setup alert: 0 possible entries, 9 on watchlist",
+   "to": [],
+   "result": {
+    "sent": false,
+    "error": "notifications off or no recipients"
+   }
   }
  ],
  "regime": {
-  "regime": "risk_off",
-  "score": 10.1,
-  "computed_at_utc": "2026-11-03T19:57:15+00:00",
-  "as_of_close": "2026-11-03",
+  "regime": "defensive",
+  "score": 47.8,
+  "computed_at_utc": "2026-11-04T20:16:57+00:00",
+  "as_of_close": "2026-11-04",
   "facts": {
    "SPY": {
-    "close": 753.84,
-    "ema21": 765.13,
-    "ema48": 764.61,
-    "ema200": 735.68,
-    "above21": false,
-    "above48": false,
+    "close": 767.61,
+    "ema21": 765.4,
+    "ema48": 764.76,
+    "ema200": 735.36,
+    "above21": true,
+    "above48": true,
     "above200": true,
     "ema21_gt_48": true,
-    "pct_from_52w_high": -3.55,
-    "ret_1m_pct": -2.71,
-    "as_of": "2026-11-03"
+    "pct_from_52w_high": -1.79,
+    "ret_1m_pct": -1.47,
+    "as_of": "2026-11-04"
    },
    "QQQ": {
-    "close": 684.02,
-    "ema21": 714.72,
-    "ema48": 719.77,
-    "ema200": 690.6,
+    "close": 692.68,
+    "ema21": 712.82,
+    "ema48": 718.71,
+    "ema200": 689.6,
     "above21": false,
     "above48": false,
-    "above200": false,
+    "above200": true,
     "ema21_gt_48": false,
-    "pct_from_52w_high": -10.34,
-    "ret_1m_pct": -9.55,
-    "as_of": "2026-11-03"
+    "pct_from_52w_high": -9.2,
+    "ret_1m_pct": -8.82,
+    "as_of": "2026-11-04"
    },
    "IWM": {
-    "close": 280.1,
-    "ema21": 279.02,
-    "ema48": 282.11,
-    "ema200": 277.51,
+    "close": 283.61,
+    "ema21": 279.41,
+    "ema48": 282.16,
+    "ema200": 277.23,
     "above21": true,
-    "above48": false,
+    "above48": true,
     "above200": true,
     "ema21_gt_48": false,
-    "pct_from_52w_high": -7.98,
-    "ret_1m_pct": -1.16,
-    "as_of": "2026-11-03"
+    "pct_from_52w_high": -6.83,
+    "ret_1m_pct": 0.81,
+    "as_of": "2026-11-04"
    },
    "SOXX": {
-    "close": 462.36,
-    "ema21": 505.9,
-    "ema48": 521.48,
-    "ema200": 481.4,
+    "close": 447.79,
+    "ema21": 500.84,
+    "ema48": 518.57,
+    "ema200": 480.12,
     "above21": false,
     "above48": false,
     "above200": false,
     "ema21_gt_48": false,
-    "pct_from_52w_high": -29.47,
-    "ret_1m_pct": -21.57,
-    "as_of": "2026-11-03"
+    "pct_from_52w_high": -31.69,
+    "ret_1m_pct": -24.03,
+    "as_of": "2026-11-04"
    },
    "DIA": {
-    "close": 516.94,
-    "ema21": 520.0,
-    "ema48": 520.1,
-    "ema200": 506.79,
-    "above21": false,
-    "above48": false,
+    "close": 533.11,
+    "ema21": 521.2,
+    "ema48": 520.63,
+    "ema200": 506.85,
+    "above21": true,
+    "above48": true,
     "above200": true,
-    "ema21_gt_48": false,
-    "pct_from_52w_high": -5.13,
-    "ret_1m_pct": 0.97,
-    "as_of": "2026-11-03"
+    "ema21_gt_48": true,
+    "pct_from_52w_high": -2.17,
+    "ret_1m_pct": 3.63,
+    "as_of": "2026-11-04"
    },
-   "VIX": 20.74,
-   "breadth_pct_above_48ema": 64.4
+   "VIX": 16.83,
+   "breadth_pct_above_48ema": 63.2
   },
   "sector_1m_returns": {
-   "Health Care": 10.19,
-   "Consumer Staples": 10.13,
-   "Utilities": 8.99,
-   "Real Estate": 7.19,
-   "Materials": 6.28,
-   "Financials": 6.26,
-   "Consumer Discretionary": 6.1,
-   "Energy": 5.45,
-   "Industrials": 0.79,
-   "Communication": -9.4,
-   "Technology": -12.47,
-   "Semiconductors": -21.57
+   "Health Care": 13.44,
+   "Consumer Staples": 12.6,
+   "Consumer Discretionary": 9.51,
+   "Real Estate": 9.44,
+   "Financials": 9.25,
+   "Materials": 8.01,
+   "Utilities": 6.21,
+   "Energy": -0.81,
+   "Industrials": -1.27,
+   "Communication": -5.97,
+   "Technology": -12.46,
+   "Semiconductors": -24.03
   },
   "leaders": [
    "Health Care",
    "Consumer Staples",
-   "Utilities",
+   "Consumer Discretionary",
    "Real Estate"
   ],
   "laggards": [
@@ -594,159 +1120,280 @@
    "Semiconductors"
   ],
   "notes": [
-   "SPY below 48 EMA: intermediate trend broken",
    "QQQ negative over 1 month: growth leadership fading",
    "QQQ below 21 EMA",
-   "IWM below 48 EMA: small caps lagging",
    "SOXX below 48 EMA: semis/AI-infra penalized",
    "defensive sectors leading: rotation away from risk"
   ],
-  "new_positions_allowed": false,
+  "new_positions_allowed": true,
   "label": "fact: computed from daily closes; regime label is a rule-based inference"
  },
  "last_cycle": {
-  "started_at_utc": "2026-10-29T07:33:18+00:00",
+  "started_at_utc": "2026-11-04T20:16:50+00:00",
   "watchlist": [
    {
-    "symbol": "PG",
-    "setup": "pullback_to_21ema",
-    "price": 158.26,
-    "score": 66.2,
+    "symbol": "DHR",
+    "setup": "post_earnings_continuation",
+    "price": 235.46,
+    "score": 76.8,
     "reasons": [
-     "reward:risk 1.19 < 2.0",
-     "fundamental data unavailable from vendor \u2014 confidence reduced, re-run later",
-     "score 66.2 in watchlist band"
+     "reward:risk 0.78 < 2.0"
     ],
-    "stop": 149.94,
-    "t1": 165.75,
-    "t2": 170.58,
-    "expected_rr": 1.19,
-    "added_at_utc": "2026-10-29T07:35:27+00:00",
-    "trigger": "re-test of 21 EMA 154.79 with rising volume"
+    "stop": 215.82,
+    "t1": 241.35,
+    "t2": 260.0,
+    "expected_rr": 0.78,
+    "added_at_utc": "2026-11-04T20:17:07+00:00",
+    "trigger": "hold above reaction low 217.5500030517578 and clear 241.35"
+   },
+   {
+    "symbol": "TMO",
+    "setup": "pullback_to_21ema",
+    "price": 704.89,
+    "score": 74.0,
+    "reasons": [
+     "reward:risk 0.86 < 2.0",
+     "score 74.0 in watchlist band"
+    ],
+    "stop": 654.27,
+    "t1": 746.99,
+    "t2": 750.0,
+    "expected_rr": 0.86,
+    "added_at_utc": "2026-11-04T20:17:06+00:00",
+    "trigger": "re-test of 21 EMA 684.59 with rising volume"
+   },
+   {
+    "symbol": "ABBV",
+    "setup": "breakout_watch",
+    "price": 292.17,
+    "score": 73.0,
+    "reasons": [
+     "reward:risk 0.90 < 2.0",
+     "score 73.0 in watchlist band"
+    ],
+    "stop": 276.37,
+    "t1": 298.74,
+    "t2": 314.0,
+    "expected_rr": 0.9,
+    "added_at_utc": "2026-11-04T20:17:05+00:00",
+    "trigger": "close above 298.74 on \u22651.2\u00d7 volume, or pullback to 21 EMA 283.07 that holds"
+   },
+   {
+    "symbol": "PG",
+    "setup": "post_earnings_continuation",
+    "price": 167.47,
+    "score": 72.9,
+    "reasons": [
+     "reward:risk 0.75 < 2.0",
+     "score 72.9 in watchlist band"
+    ],
+    "stop": 157.17,
+    "t1": 174.34,
+    "t2": 176.0,
+    "expected_rr": 0.75,
+    "added_at_utc": "2026-11-04T20:17:07+00:00",
+    "trigger": "hold above reaction low 160.2988147093329 and clear 174.34"
+   },
+   {
+    "symbol": "LLY",
+    "setup": "extended",
+    "price": 1417.19,
+    "score": 72.2,
+    "reasons": [
+     "no actionable setup (extended)",
+     "reward:risk 0.36 < 2.0",
+     "score 72.2 in watchlist band"
+    ],
+    "stop": 1245.99,
+    "t1": 1449.68,
+    "t2": 1508.0,
+    "expected_rr": 0.36,
+    "added_at_utc": "2026-11-04T20:17:01+00:00",
+    "trigger": "pullback toward 21 EMA 1300.6 (currently 9.0% above)"
+   },
+   {
+    "symbol": "REGN",
+    "setup": "extended",
+    "price": 942.18,
+    "score": 71.1,
+    "reasons": [
+     "no actionable setup (extended)",
+     "reward:risk 0.56 < 2.0",
+     "score 71.1 in watchlist band"
+    ],
+    "stop": 788.97,
+    "t1": 991.73,
+    "t2": 1064.4,
+    "expected_rr": 0.56,
+    "added_at_utc": "2026-11-04T20:17:00+00:00",
+    "trigger": "pullback toward 21 EMA 842.95 (currently 11.8% above)"
+   },
+   {
+    "symbol": "VEEV",
+    "setup": "pullback_to_21ema",
+    "price": 311.65,
+    "score": 67.6,
+    "reasons": [
+     "earnings inside holding window",
+     "reward:risk 0.93 < 2.0",
+     "score 67.6 in watchlist band"
+    ],
+    "stop": 284.74,
+    "t1": 325.99,
+    "t2": 347.08,
+    "expected_rr": 0.93,
+    "added_at_utc": "2026-11-04T20:16:59+00:00",
+    "trigger": "re-test of 21 EMA 305.8 with rising volume"
+   },
+   {
+    "symbol": "MAR",
+    "setup": "extended",
+    "price": 424.07,
+    "score": 65.3,
+    "reasons": [
+     "no actionable setup (extended)",
+     "reward:risk 0.55 < 2.0",
+     "score 65.3 in watchlist band"
+    ],
+    "stop": 378.49,
+    "t1": 433.3,
+    "t2": 464.9,
+    "expected_rr": 0.55,
+    "added_at_utc": "2026-11-04T20:17:03+00:00",
+    "trigger": "pullback toward 21 EMA 392.18 (currently 8.1% above)"
+   },
+   {
+    "symbol": "EXEL",
+    "setup": "extended",
+    "price": 72.84,
+    "score": 65.2,
+    "reasons": [
+     "no actionable setup (extended)",
+     "reward:risk 0.64 < 2.0",
+     "score 65.2 in watchlist band"
+    ],
+    "stop": 63.41,
+    "t1": 76.87,
+    "t2": 80.9,
+    "expected_rr": 0.64,
+    "added_at_utc": "2026-11-04T20:16:58+00:00",
+    "trigger": "pullback toward 21 EMA 65.4 (currently 11.4% above)"
    }
   ],
   "rejected": [
-   "CRM",
-   "KMI",
-   "VEEV",
-   "OKE",
-   "PM",
-   "OXY",
-   "DVN",
-   "COP",
-   "PLTR",
-   "XOM",
-   "SHOP",
-   "APA",
-   "LNG",
-   "CVX",
-   "EOG",
-   "TRGP",
-   "PR"
+   "AMGN",
+   "A",
+   "PFE",
+   "GILD",
+   "MTD",
+   "MDT",
+   "HCA",
+   "BDX",
+   "WMT"
   ],
   "errors": [],
   "regime": {
-   "regime": "balanced",
-   "score": 55.9,
-   "computed_at_utc": "2026-10-29T07:33:32+00:00",
-   "as_of_close": "2026-10-28",
+   "regime": "defensive",
+   "score": 47.8,
+   "computed_at_utc": "2026-11-04T20:16:57+00:00",
+   "as_of_close": "2026-11-04",
    "facts": {
     "SPY": {
-     "close": 772.31,
-     "ema21": 768.83,
-     "ema48": 765.91,
-     "ema200": 735.11,
+     "close": 767.61,
+     "ema21": 765.4,
+     "ema48": 764.76,
+     "ema200": 735.36,
      "above21": true,
      "above48": true,
      "above200": true,
      "ema21_gt_48": true,
-     "pct_from_52w_high": -1.19,
-     "ret_1m_pct": 1.06,
-     "as_of": "2026-10-28"
+     "pct_from_52w_high": -1.79,
+     "ret_1m_pct": -1.47,
+     "as_of": "2026-11-04"
     },
     "QQQ": {
-     "close": 725.61,
-     "ema21": 725.48,
-     "ema48": 724.77,
-     "ema200": 690.81,
-     "above21": true,
-     "above48": true,
+     "close": 692.68,
+     "ema21": 712.82,
+     "ema48": 718.71,
+     "ema200": 689.6,
+     "above21": false,
+     "above48": false,
      "above200": true,
-     "ema21_gt_48": true,
-     "pct_from_52w_high": -4.88,
-     "ret_1m_pct": -1.67,
-     "as_of": "2026-10-28"
+     "ema21_gt_48": false,
+     "pct_from_52w_high": -9.2,
+     "ret_1m_pct": -8.82,
+     "as_of": "2026-11-04"
     },
     "IWM": {
-     "close": 281.29,
-     "ema21": 278.33,
-     "ema48": 282.38,
-     "ema200": 277.5,
+     "close": 283.61,
+     "ema21": 279.41,
+     "ema48": 282.16,
+     "ema200": 277.23,
      "above21": true,
-     "above48": false,
+     "above48": true,
      "above200": true,
      "ema21_gt_48": false,
-     "pct_from_52w_high": -7.59,
-     "ret_1m_pct": 0.82,
-     "as_of": "2026-10-28"
+     "pct_from_52w_high": -6.83,
+     "ret_1m_pct": 0.81,
+     "as_of": "2026-11-04"
     },
     "SOXX": {
-     "close": 521.94,
-     "ema21": 521.01,
-     "ema48": 530.01,
-     "ema200": 481.76,
-     "above21": true,
+     "close": 447.79,
+     "ema21": 500.84,
+     "ema48": 518.57,
+     "ema200": 480.12,
+     "above21": false,
      "above48": false,
-     "above200": true,
+     "above200": false,
      "ema21_gt_48": false,
-     "pct_from_52w_high": -20.38,
-     "ret_1m_pct": -8.02,
-     "as_of": "2026-10-28"
+     "pct_from_52w_high": -31.69,
+     "ret_1m_pct": -24.03,
+     "as_of": "2026-11-04"
     },
     "DIA": {
-     "close": 524.68,
-     "ema21": 520.53,
-     "ema48": 520.3,
-     "ema200": 506.53,
+     "close": 533.11,
+     "ema21": 521.2,
+     "ema48": 520.63,
+     "ema200": 506.85,
      "above21": true,
      "above48": true,
      "above200": true,
      "ema21_gt_48": true,
-     "pct_from_52w_high": -3.71,
-     "ret_1m_pct": 2.32,
-     "as_of": "2026-10-28"
+     "pct_from_52w_high": -2.17,
+     "ret_1m_pct": 3.63,
+     "as_of": "2026-11-04"
     },
-    "VIX": 17.15,
-    "breadth_pct_above_48ema": 71.8
+    "VIX": 16.83,
+    "breadth_pct_above_48ema": 63.2
    },
    "sector_1m_returns": {
-    "Energy": 11.23,
-    "Utilities": 7.0,
-    "Consumer Staples": 6.1,
-    "Consumer Discretionary": 5.66,
-    "Materials": 5.62,
-    "Health Care": 5.27,
-    "Financials": 3.93,
-    "Real Estate": 1.91,
-    "Industrials": -0.38,
-    "Technology": -1.8,
-    "Communication": -7.47,
-    "Semiconductors": -8.02
+    "Health Care": 13.44,
+    "Consumer Staples": 12.6,
+    "Consumer Discretionary": 9.51,
+    "Real Estate": 9.44,
+    "Financials": 9.25,
+    "Materials": 8.01,
+    "Utilities": 6.21,
+    "Energy": -0.81,
+    "Industrials": -1.27,
+    "Communication": -5.97,
+    "Technology": -12.46,
+    "Semiconductors": -24.03
    },
    "leaders": [
-    "Energy",
-    "Utilities",
+    "Health Care",
     "Consumer Staples",
-    "Consumer Discretionary"
+    "Consumer Discretionary",
+    "Real Estate"
    ],
    "laggards": [
-    "Technology",
     "Communication",
+    "Technology",
     "Semiconductors"
    ],
    "notes": [
     "QQQ negative over 1 month: growth leadership fading",
-    "IWM below 48 EMA: small caps lagging",
+    "QQQ below 21 EMA",
     "SOXX below 48 EMA: semis/AI-infra penalized",
     "defensive sectors leading: rotation away from risk"
    ],
@@ -754,11 +1401,11 @@
    "label": "fact: computed from daily closes; regime label is a rule-based inference"
   },
   "evaluated": 18,
-  "data_quality": "degraded",
-  "finished_at_utc": "2026-10-29T07:36:40+00:00",
+  "data_quality": "ok",
+  "finished_at_utc": "2026-11-04T20:17:07+00:00",
   "proposal_symbols": []
  },
- "last_monitor": "2026-11-03T19:57:08+00:00",
+ "last_monitor": "2026-11-04T20:16:50+00:00",
  "reports": {
   "daily": [],
   "weekly": []
@@ -766,89 +1413,409 @@
  "fingerprints": [],
  "last_candidates": [
   {
-   "symbol": "PG",
-   "name": null,
-   "sector": "Consumer Staples",
-   "price": 158.26,
-   "setup": "pullback_to_21ema",
-   "score": 66.2,
+   "symbol": "DHR",
+   "name": "Danaher Corporation",
+   "sector": "Health Care",
+   "price": 235.46,
+   "setup": "post_earnings_continuation",
+   "score": 76.8,
    "factors": {
-    "regime": 75,
-    "business_quality": 55,
-    "financial_strength": 55,
-    "growth": 50,
-    "moat": 70,
-    "valuation": 55,
+    "regime": 60,
+    "business_quality": 65,
+    "financial_strength": 75,
+    "growth": 80,
+    "moat": 80,
+    "valuation": 80,
     "technical": 100.0,
-    "catalyst": 75,
-    "institutional": 65,
+    "catalyst": 85,
+    "institutional": 75,
     "liquidity": 95,
-    "reward_risk": 49.75
+    "reward_risk": 39.5
    },
-   "penalties": [
-    [
-     "binary macro event inside window: US midterm elections (2026-11-03)",
-     3
-    ]
-   ],
+   "penalties": [],
    "notes": [
-    "Consumer Staples is a leading sector",
+    "Health Care is a leading sector",
     "above 21/48/200 EMA",
-    "RS 3m +6.0% vs SPY",
-    "accumulation: more high-volume up days",
-    "post-earnings reaction +5.6% on 2.38x volume"
+    "RS 3m +17.8% vs SPY",
+    "within 3% of 52-week high",
+    "post-earnings reaction +4.3% on 2.15x volume"
    ],
    "bear_case": [
-    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)",
-    "Reward:risk 1.2 is below the 2.0 minimum at a 5.3% stop"
+    "Reward:risk 0.8 is below the 2.0 minimum at a 8.3% stop",
+    "Regime does not favor new longs"
    ],
    "decision": "WATCHLIST",
    "reasons": [
-    "reward:risk 1.19 < 2.0",
-    "fundamental data unavailable from vendor \u2014 confidence reduced, re-run later",
-    "score 66.2 in watchlist band"
+    "reward:risk 0.78 < 2.0"
    ],
    "tech": {
-    "symbol": "PG",
-    "as_of": "2026-10-28",
-    "price": 158.26,
-    "ema21": 154.79,
-    "ema48": 150.71,
-    "ema200": 146.6,
-    "ema21_slope_5d": 3.38,
-    "atr14": 3.08,
-    "atr_pct": 1.95,
-    "ext_vs_21ema_pct": 2.24,
-    "pct_from_52w_high": -4.52,
-    "hi52": 165.75,
-    "low10": 155.76,
-    "low20": 142.46,
-    "rs_1m_pct": 6.28,
-    "rs_3m_pct": 6.01,
-    "vol_ratio_last": 0.56,
-    "up_days_high_vol_20": 7,
+    "symbol": "DHR",
+    "as_of": "2026-11-04",
+    "price": 235.46,
+    "ema21": 228.37,
+    "ema48": 221.17,
+    "ema200": 207.34,
+    "ema21_slope_5d": 2.51,
+    "atr14": 6.9,
+    "atr_pct": 2.93,
+    "ext_vs_21ema_pct": 3.11,
+    "pct_from_52w_high": -2.44,
+    "hi52": 241.35,
+    "low10": 225.6,
+    "low20": 211.72,
+    "rs_1m_pct": 10.84,
+    "rs_3m_pct": 17.8,
+    "vol_ratio_last": 0.44,
+    "up_days_high_vol_20": 3,
     "down_days_high_vol_20": 4,
-    "avg_dollar_volume": 1467982993.0,
+    "avg_dollar_volume": 972581214.0,
+    "above_all_emas": true,
+    "setup": "post_earnings_continuation",
+    "post_earnings": {
+     "reaction_date": "2026-10-21",
+     "reaction_chg_pct": 4.29,
+     "reaction_vol_ratio": 2.15,
+     "reaction_low": 217.5500030517578,
+     "holding_above_low": true
+    },
+    "stop": 215.82,
+    "stop_pct": 8.34,
+    "t1": 241.35,
+    "t2": 260.0,
+    "ret_1m_pct": 9.21,
+    "ret_3m_pct": 17.95,
+    "t2_source": "analyst_median_target",
+    "rr_t1": 0.3,
+    "rr_t2": 1.25,
+    "expected_rr": 0.78,
+    "data_quality": "ok"
+   },
+   "earnings": {
+    "next": "2027-01-27",
+    "last": "2026-10-21",
+    "surprise": {
+     "eps_estimate": 1.92,
+     "eps_actual": 2.11,
+     "surprise_pct": 10.02
+    },
+    "inside_window": false,
+    "days_to_next": 60
+   },
+   "expected_rr": 0.78,
+   "stop": 215.82,
+   "stop_pct": 8.34,
+   "t1": 241.35,
+   "t2": 260.0,
+   "data_quality": "ok",
+   "fund": {
+    "marketCap": 165461819392,
+    "forwardPE": 25.254536,
+    "revenueGrowth": 0.083,
+    "profitMargins": 0.16913,
+    "debtToEquity": 51.8,
+    "targetMedianPrice": 260.0,
+    "recommendationMean": 1.45833,
+    "heldPercentInstitutions": 0.83271
+   },
+   "evaluated_at_utc": "2026-11-04T20:17:07+00:00"
+  },
+  {
+   "symbol": "TMO",
+   "name": "Thermo Fisher Scientific Inc.",
+   "sector": "Health Care",
+   "price": 704.89,
+   "setup": "pullback_to_21ema",
+   "score": 74.0,
+   "factors": {
+    "regime": 60,
+    "business_quality": 70,
+    "financial_strength": 75,
+    "growth": 70,
+    "moat": 70,
+    "valuation": 65,
+    "technical": 100.0,
+    "catalyst": 70,
+    "institutional": 85,
+    "liquidity": 95,
+    "reward_risk": 41.5
+   },
+   "penalties": [],
+   "notes": [
+    "Health Care is a leading sector",
+    "above 21/48/200 EMA",
+    "RS 3m +21.5% vs SPY",
+    "within 3% of 52-week high",
+    "accumulation: more high-volume up days",
+    "post-earnings reaction +1.0% on 1.85x volume"
+   ],
+   "bear_case": [
+    "Reward:risk 0.9 is below the 2.0 minimum at a 7.2% stop",
+    "Regime does not favor new longs"
+   ],
+   "decision": "WATCHLIST",
+   "reasons": [
+    "reward:risk 0.86 < 2.0",
+    "score 74.0 in watchlist band"
+   ],
+   "tech": {
+    "symbol": "TMO",
+    "as_of": "2026-11-04",
+    "price": 704.89,
+    "ema21": 684.59,
+    "ema48": 659.54,
+    "ema200": 584.71,
+    "ema21_slope_5d": 8.39,
+    "atr14": 21.05,
+    "atr_pct": 2.99,
+    "ext_vs_21ema_pct": 2.97,
+    "pct_from_52w_high": -1.02,
+    "hi52": 712.17,
+    "low10": 662.5,
+    "low20": 635.32,
+    "rs_1m_pct": 8.96,
+    "rs_3m_pct": 21.47,
+    "vol_ratio_last": 0.74,
+    "up_days_high_vol_20": 5,
+    "down_days_high_vol_20": 3,
+    "avg_dollar_volume": 1544549361.0,
     "above_all_emas": true,
     "setup": "pullback_to_21ema",
     "post_earnings": {
+     "reaction_date": "2026-10-21",
+     "reaction_chg_pct": 0.97,
+     "reaction_vol_ratio": 1.85,
+     "reaction_low": 661.2999877929688,
+     "holding_above_low": true
+    },
+    "stop": 654.27,
+    "stop_pct": 7.18,
+    "t1": 746.99,
+    "t2": 750.0,
+    "ret_1m_pct": 7.36,
+    "ret_3m_pct": 21.62,
+    "t2_source": "analyst_median_target",
+    "rr_t1": 0.83,
+    "rr_t2": 0.89,
+    "expected_rr": 0.86,
+    "data_quality": "ok"
+   },
+   "earnings": {
+    "next": "2027-01-28",
+    "last": "2026-10-21",
+    "surprise": {
+     "eps_estimate": 6.4,
+     "eps_actual": 6.68,
+     "surprise_pct": 4.33
+    },
+    "inside_window": false,
+    "days_to_next": 61
+   },
+   "expected_rr": 0.86,
+   "stop": 654.27,
+   "stop_pct": 7.18,
+   "t1": 746.99,
+   "t2": 750.0,
+   "data_quality": "ok",
+   "fund": {
+    "marketCap": 260983963648,
+    "forwardPE": 25.352777,
+    "revenueGrowth": 0.091,
+    "profitMargins": 0.14935,
+    "debtToEquity": 75.362,
+    "targetMedianPrice": 750.0,
+    "recommendationMean": 1.44444,
+    "heldPercentInstitutions": 0.93198997
+   },
+   "evaluated_at_utc": "2026-11-04T20:17:06+00:00"
+  },
+  {
+   "symbol": "ABBV",
+   "name": "AbbVie Inc.",
+   "sector": "Health Care",
+   "price": 292.17,
+   "setup": "breakout_watch",
+   "score": 73.0,
+   "factors": {
+    "regime": 60,
+    "business_quality": 65,
+    "financial_strength": 55,
+    "growth": 80,
+    "moat": 80,
+    "valuation": 75,
+    "technical": 100.0,
+    "catalyst": 65,
+    "institutional": 85,
+    "liquidity": 95,
+    "reward_risk": 42.5
+   },
+   "penalties": [],
+   "notes": [
+    "Health Care is a leading sector",
+    "above 21/48/200 EMA",
+    "RS 3m +20.4% vs SPY",
+    "within 3% of 52-week high",
+    "accumulation: more high-volume up days",
+    "post-earnings reaction +1.4% on 1.46x volume"
+   ],
+   "bear_case": [
+    "Reward:risk 0.9 is below the 2.0 minimum at a 5.4% stop",
+    "Regime does not favor new longs"
+   ],
+   "decision": "WATCHLIST",
+   "reasons": [
+    "reward:risk 0.90 < 2.0",
+    "score 73.0 in watchlist band"
+   ],
+   "tech": {
+    "symbol": "ABBV",
+    "as_of": "2026-11-04",
+    "price": 292.17,
+    "ema21": 283.07,
+    "ema48": 273.02,
+    "ema200": 244.17,
+    "ema21_slope_5d": 4.5,
+    "atr14": 6.56,
+    "atr_pct": 2.24,
+    "ext_vs_21ema_pct": 3.22,
+    "pct_from_52w_high": -2.2,
+    "hi52": 298.74,
+    "low10": 278.01,
+    "low20": 264.09,
+    "rs_1m_pct": 11.87,
+    "rs_3m_pct": 20.39,
+    "vol_ratio_last": 0.96,
+    "up_days_high_vol_20": 8,
+    "down_days_high_vol_20": 3,
+    "avg_dollar_volume": 1376606350.0,
+    "above_all_emas": true,
+    "setup": "breakout_watch",
+    "post_earnings": {
+     "reaction_date": "2026-10-30",
+     "reaction_chg_pct": 1.41,
+     "reaction_vol_ratio": 1.46,
+     "reaction_low": 291.010009765625,
+     "holding_above_low": true
+    },
+    "stop": 276.37,
+    "stop_pct": 5.41,
+    "t1": 298.74,
+    "t2": 314.0,
+    "ret_1m_pct": 10.23,
+    "ret_3m_pct": 20.54,
+    "t2_source": "analyst_median_target",
+    "rr_t1": 0.42,
+    "rr_t2": 1.38,
+    "expected_rr": 0.9,
+    "data_quality": "ok"
+   },
+   "earnings": {
+    "next": "2027-02-03",
+    "last": "2026-10-30",
+    "surprise": {
+     "eps_estimate": 3.76,
+     "eps_actual": 3.82,
+     "surprise_pct": 1.47
+    },
+    "inside_window": false,
+    "days_to_next": 65
+   },
+   "expected_rr": 0.9,
+   "stop": 276.37,
+   "stop_pct": 5.41,
+   "t1": 298.74,
+   "t2": 314.0,
+   "data_quality": "ok",
+   "fund": {
+    "marketCap": 516210294784,
+    "forwardPE": 18.052458,
+    "revenueGrowth": 0.103,
+    "profitMargins": 0.15666,
+    "debtToEquity": null,
+    "targetMedianPrice": 314.0,
+    "recommendationMean": 1.68966,
+    "heldPercentInstitutions": 0.77252996
+   },
+   "evaluated_at_utc": "2026-11-04T20:17:05+00:00"
+  },
+  {
+   "symbol": "PG",
+   "name": "The Procter & Gamble Company",
+   "sector": "Consumer Staples",
+   "price": 167.47,
+   "setup": "post_earnings_continuation",
+   "score": 72.9,
+   "factors": {
+    "regime": 60,
+    "business_quality": 80,
+    "financial_strength": 65,
+    "growth": 55,
+    "moat": 80,
+    "valuation": 50,
+    "technical": 100.0,
+    "catalyst": 80,
+    "institutional": 75,
+    "liquidity": 95,
+    "reward_risk": 38.75
+   },
+   "penalties": [],
+   "notes": [
+    "Consumer Staples is a leading sector",
+    "above 21/48/200 EMA",
+    "RS 3m +14.6% vs SPY",
+    "within 3% of 52-week high",
+    "accumulation: more high-volume up days",
+    "post-earnings reaction +5.6% on 2.45x volume"
+   ],
+   "bear_case": [
+    "Reward:risk 0.8 is below the 2.0 minimum at a 6.2% stop",
+    "Regime does not favor new longs"
+   ],
+   "decision": "WATCHLIST",
+   "reasons": [
+    "reward:risk 0.75 < 2.0",
+    "score 72.9 in watchlist band"
+   ],
+   "tech": {
+    "symbol": "PG",
+    "as_of": "2026-11-04",
+    "price": 167.47,
+    "ema21": 158.03,
+    "ema48": 153.06,
+    "ema200": 147.27,
+    "ema21_slope_5d": 3.24,
+    "atr14": 3.44,
+    "atr_pct": 2.05,
+    "ext_vs_21ema_pct": 5.97,
+    "pct_from_52w_high": -0.41,
+    "hi52": 168.16,
+    "low10": 157.4,
+    "low20": 146.08,
+    "rs_1m_pct": 15.29,
+    "rs_3m_pct": 14.56,
+    "vol_ratio_last": 1.0,
+    "up_days_high_vol_20": 8,
+    "down_days_high_vol_20": 5,
+    "avg_dollar_volume": 1504518081.0,
+    "above_all_emas": true,
+    "setup": "post_earnings_continuation",
+    "post_earnings": {
      "reaction_date": "2026-10-22",
      "reaction_chg_pct": 5.58,
-     "reaction_vol_ratio": 2.38,
+     "reaction_vol_ratio": 2.45,
      "reaction_low": 160.2988147093329,
-     "holding_above_low": false
+     "holding_above_low": true
     },
-    "stop": 149.94,
-    "stop_pct": 5.26,
-    "t1": 165.75,
-    "t2": 170.58,
-    "ret_1m_pct": 7.41,
-    "ret_3m_pct": 10.66,
-    "t2_source": "4xATR",
-    "rr_t1": 0.9,
-    "rr_t2": 1.48,
-    "expected_rr": 1.19,
-    "data_quality": "degraded"
+    "stop": 157.17,
+    "stop_pct": 6.15,
+    "t1": 174.34,
+    "t2": 176.0,
+    "ret_1m_pct": 13.59,
+    "ret_3m_pct": 14.7,
+    "t2_source": "analyst_median_target",
+    "rr_t1": 0.67,
+    "rr_t2": 0.83,
+    "expected_rr": 0.75,
+    "data_quality": "ok"
    },
    "earnings": {
     "next": "2027-01-21",
@@ -859,319 +1826,340 @@
      "surprise_pct": 5.66
     },
     "inside_window": false,
-    "days_to_next": 60
+    "days_to_next": 56
    },
-   "expected_rr": 1.19,
-   "stop": 149.94,
-   "stop_pct": 5.26,
-   "t1": 165.75,
-   "t2": 170.58,
-   "data_quality": "degraded",
+   "expected_rr": 0.75,
+   "stop": 157.17,
+   "stop_pct": 6.15,
+   "t1": 174.34,
+   "t2": 176.0,
+   "data_quality": "ok",
    "fund": {
-    "marketCap": 366812347479.2169,
-    "forwardPE": null,
-    "revenueGrowth": null,
-    "profitMargins": null,
-    "debtToEquity": null,
-    "targetMedianPrice": null,
-    "recommendationMean": null,
-    "heldPercentInstitutions": null
+    "marketCap": 388112777216,
+    "forwardPE": 22.629847,
+    "revenueGrowth": 0.04,
+    "profitMargins": 0.18229,
+    "debtToEquity": 70.343,
+    "targetMedianPrice": 176.0,
+    "recommendationMean": 2.08,
+    "heldPercentInstitutions": 0.71410006
    },
-   "evaluated_at_utc": "2026-10-29T07:35:27+00:00"
+   "evaluated_at_utc": "2026-11-04T20:17:07+00:00"
   },
   {
-   "symbol": "CRM",
-   "name": null,
-   "sector": "Technology",
-   "price": 242.11,
-   "setup": "pullback_to_21ema",
-   "score": 63.2,
+   "symbol": "LLY",
+   "name": "Eli Lilly and Company",
+   "sector": "Health Care",
+   "price": 1417.19,
+   "setup": "extended",
+   "score": 72.2,
    "factors": {
-    "regime": 50,
-    "business_quality": 55,
-    "financial_strength": 55,
-    "growth": 50,
-    "moat": 70,
-    "valuation": 55,
-    "technical": 100.0,
-    "catalyst": 55,
-    "institutional": 55,
+    "regime": 60,
+    "business_quality": 90,
+    "financial_strength": 70,
+    "growth": 90,
+    "moat": 80,
+    "valuation": 75,
+    "technical": 85.0,
+    "catalyst": 85,
+    "institutional": 85,
     "liquidity": 95,
-    "reward_risk": 80.25
+    "reward_risk": 29.0
    },
    "penalties": [
     [
-     "binary macro event inside window: US midterm elections (2026-11-03)",
-     3
+     "extended above 21 EMA",
+     5
     ]
    ],
    "notes": [
-    "Technology is a lagging sector",
+    "Health Care is a leading sector",
     "above 21/48/200 EMA",
-    "RS 3m +28.6% vs SPY"
+    "RS 3m +18.9% vs SPY",
+    "extended 9.0% above 21 EMA",
+    "within 3% of 52-week high",
+    "accumulation: more high-volume up days",
+    "post-earnings reaction +6.6% on 1.77x volume"
    ],
    "bear_case": [
-    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)"
+    "Penalty: extended above 21 EMA",
+    "Reward:risk 0.4 is below the 2.0 minimum at a 12.1% stop",
+    "Regime does not favor new longs",
+    "Chasing an extended move invites a sharp mean reversion to the 21 EMA"
    ],
-   "decision": "REJECT",
+   "decision": "WATCHLIST",
    "reasons": [
-    "fundamental data unavailable from vendor \u2014 confidence reduced, re-run later",
-    "score 63.2 below 65"
+    "no actionable setup (extended)",
+    "reward:risk 0.36 < 2.0",
+    "score 72.2 in watchlist band"
    ],
    "tech": {
-    "symbol": "CRM",
-    "as_of": "2026-10-28",
-    "price": 242.11,
-    "ema21": 240.01,
-    "ema48": 231.72,
-    "ema200": 212.62,
-    "ema21_slope_5d": 3.32,
-    "atr14": 8.73,
-    "atr_pct": 3.61,
-    "ext_vs_21ema_pct": 0.88,
-    "pct_from_52w_high": -9.59,
-    "hi52": 267.8,
-    "low10": 235.6,
-    "low20": 220.29,
-    "rs_1m_pct": 6.33,
-    "rs_3m_pct": 28.57,
-    "vol_ratio_last": 0.54,
-    "up_days_high_vol_20": 0,
-    "down_days_high_vol_20": 0,
-    "avg_dollar_volume": 2946074868.0,
+    "symbol": "LLY",
+    "as_of": "2026-11-04",
+    "price": 1417.19,
+    "ema21": 1300.6,
+    "ema48": 1241.6,
+    "ema200": 1123.74,
+    "ema21_slope_5d": 65.08,
+    "atr14": 46.5,
+    "atr_pct": 3.28,
+    "ext_vs_21ema_pct": 8.96,
+    "pct_from_52w_high": -2.24,
+    "hi52": 1449.68,
+    "low10": 1257.62,
+    "low20": 1131.21,
+    "rs_1m_pct": 24.27,
+    "rs_3m_pct": 18.92,
+    "vol_ratio_last": 0.92,
+    "up_days_high_vol_20": 6,
+    "down_days_high_vol_20": 3,
+    "avg_dollar_volume": 3493535765.0,
     "above_all_emas": true,
-    "setup": "pullback_to_21ema",
-    "post_earnings": null,
-    "stop": 229.53,
-    "stop_pct": 5.2,
-    "t1": 267.8,
-    "t2": 277.04,
-    "ret_1m_pct": 7.46,
-    "ret_3m_pct": 34.21,
-    "t2_source": "4xATR",
-    "rr_t1": 2.04,
-    "rr_t2": 2.78,
-    "expected_rr": 2.41,
-    "data_quality": "degraded"
+    "setup": "extended",
+    "post_earnings": {
+     "reaction_date": "2026-10-29",
+     "reaction_chg_pct": 6.63,
+     "reaction_vol_ratio": 1.77,
+     "reaction_low": 1330.0,
+     "holding_above_low": true
+    },
+    "stop": 1245.99,
+    "stop_pct": 12.08,
+    "t1": 1449.68,
+    "t2": 1508.0,
+    "ret_1m_pct": 22.44,
+    "ret_3m_pct": 19.07,
+    "t2_source": "analyst_median_target",
+    "rr_t1": 0.19,
+    "rr_t2": 0.53,
+    "expected_rr": 0.36,
+    "data_quality": "ok"
    },
    "earnings": {
-    "next": "2026-12-02",
-    "last": "2026-08-26",
+    "next": "2027-02-03",
+    "last": "2026-10-29",
     "surprise": {
-     "eps_estimate": 3.27,
-     "eps_actual": 5.9,
-     "surprise_pct": 80.36
+     "eps_estimate": 6.35,
+     "eps_actual": 7.48,
+     "surprise_pct": 17.88
     },
     "inside_window": false,
-    "days_to_next": 24
+    "days_to_next": 65
    },
-   "expected_rr": 2.41,
-   "stop": 229.53,
-   "stop_pct": 5.2,
-   "t1": 267.8,
-   "t2": 277.04,
-   "data_quality": "degraded",
+   "expected_rr": 0.36,
+   "stop": 1245.99,
+   "stop_pct": 12.08,
+   "t1": 1449.68,
+   "t2": 1508.0,
+   "data_quality": "ok",
    "fund": {
-    "marketCap": 199256530502.31934,
-    "forwardPE": null,
-    "revenueGrowth": null,
-    "profitMargins": null,
-    "debtToEquity": null,
-    "targetMedianPrice": null,
-    "recommendationMean": null,
-    "heldPercentInstitutions": null
+    "marketCap": 1262386151424,
+    "forwardPE": 28.258326,
+    "revenueGrowth": 0.386,
+    "profitMargins": 0.31898,
+    "debtToEquity": 122.925,
+    "targetMedianPrice": 1508.0,
+    "recommendationMean": 1.6129,
+    "heldPercentInstitutions": 0.85453004
    },
-   "evaluated_at_utc": "2026-10-29T07:36:40+00:00"
+   "evaluated_at_utc": "2026-11-04T20:17:01+00:00"
   },
   {
-   "symbol": "KMI",
-   "name": null,
-   "sector": "Energy",
-   "price": 33.56,
-   "setup": "pullback_to_21ema",
-   "score": 62.0,
+   "symbol": "REGN",
+   "name": "Regeneron Pharmaceuticals, Inc.",
+   "sector": "Health Care",
+   "price": 942.18,
+   "setup": "extended",
+   "score": 71.1,
    "factors": {
-    "regime": 75,
-    "business_quality": 55,
-    "financial_strength": 55,
-    "growth": 50,
-    "moat": 62,
-    "valuation": 55,
-    "technical": 90.0,
-    "catalyst": 60,
-    "institutional": 55,
-    "liquidity": 85,
-    "reward_risk": 59.75
+    "regime": 60,
+    "business_quality": 80,
+    "financial_strength": 85,
+    "growth": 90,
+    "moat": 72,
+    "valuation": 65,
+    "technical": 80.0,
+    "catalyst": 85,
+    "institutional": 85,
+    "liquidity": 95,
+    "reward_risk": 34.0
    },
    "penalties": [
     [
-     "binary macro event inside window: US midterm elections (2026-11-03)",
-     3
+     "extended above 21 EMA",
+     5
     ]
    ],
    "notes": [
-    "Energy is a leading sector",
+    "Health Care is a leading sector",
     "above 21/48/200 EMA",
-    "post-earnings reaction +1.2% on 1.39x volume"
+    "RS 3m +22.0% vs SPY",
+    "extended 11.8% above 21 EMA",
+    "accumulation: more high-volume up days",
+    "post-earnings reaction +13.3% on 3.77x volume"
    ],
    "bear_case": [
-    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)",
-    "Reward:risk 1.6 is below the 2.0 minimum at a 4.3% stop"
+    "Penalty: extended above 21 EMA",
+    "Reward:risk 0.6 is below the 2.0 minimum at a 16.3% stop",
+    "Regime does not favor new longs",
+    "Chasing an extended move invites a sharp mean reversion to the 21 EMA"
    ],
-   "decision": "REJECT",
+   "decision": "WATCHLIST",
    "reasons": [
-    "reward:risk 1.59 < 2.0",
-    "fundamental data unavailable from vendor \u2014 confidence reduced, re-run later",
-    "score 62.0 below 65"
+    "no actionable setup (extended)",
+    "reward:risk 0.56 < 2.0",
+    "score 71.1 in watchlist band"
    ],
    "tech": {
-    "symbol": "KMI",
-    "as_of": "2026-10-28",
-    "price": 33.56,
-    "ema21": 33.06,
-    "ema48": 32.39,
-    "ema200": 31.02,
-    "ema21_slope_5d": 0.5,
-    "atr14": 0.86,
-    "atr_pct": 2.56,
-    "ext_vs_21ema_pct": 1.52,
-    "pct_from_52w_high": -3.42,
-    "hi52": 34.75,
-    "low10": 32.32,
-    "low20": 29.43,
-    "rs_1m_pct": 9.06,
-    "rs_3m_pct": 2.5,
-    "vol_ratio_last": 0.86,
-    "up_days_high_vol_20": 5,
-    "down_days_high_vol_20": 5,
-    "avg_dollar_volume": 444443690.0,
+    "symbol": "REGN",
+    "as_of": "2026-11-04",
+    "price": 942.18,
+    "ema21": 842.95,
+    "ema48": 806.16,
+    "ema200": 743.44,
+    "ema21_slope_5d": 53.13,
+    "atr14": 30.55,
+    "atr_pct": 3.24,
+    "ext_vs_21ema_pct": 11.77,
+    "pct_from_52w_high": -5.0,
+    "hi52": 991.73,
+    "low10": 796.61,
+    "low20": 723.65,
+    "rs_1m_pct": 29.45,
+    "rs_3m_pct": 22.02,
+    "vol_ratio_last": 1.1,
+    "up_days_high_vol_20": 7,
+    "down_days_high_vol_20": 1,
+    "avg_dollar_volume": 716603297.0,
     "above_all_emas": true,
-    "setup": "pullback_to_21ema",
+    "setup": "extended",
     "post_earnings": {
-     "reaction_date": "2026-10-21",
-     "reaction_chg_pct": 1.19,
-     "reaction_vol_ratio": 1.39,
-     "reaction_low": 33.599998474121094,
-     "holding_above_low": false
+     "reaction_date": "2026-10-30",
+     "reaction_chg_pct": 13.33,
+     "reaction_vol_ratio": 3.77,
+     "reaction_low": 839.0800170898438,
+     "holding_above_low": true
     },
-    "stop": 32.11,
-    "stop_pct": 4.32,
-    "t1": 34.75,
-    "t2": 36.99,
-    "ret_1m_pct": 10.21,
-    "ret_3m_pct": 6.99,
+    "stop": 788.97,
+    "stop_pct": 16.26,
+    "t1": 991.73,
+    "t2": 1064.4,
+    "ret_1m_pct": 27.54,
+    "ret_3m_pct": 22.17,
     "t2_source": "4xATR",
-    "rr_t1": 0.82,
-    "rr_t2": 2.37,
-    "expected_rr": 1.59,
-    "data_quality": "degraded"
+    "rr_t1": 0.32,
+    "rr_t2": 0.8,
+    "expected_rr": 0.56,
+    "data_quality": "ok"
    },
    "earnings": {
-    "next": "2027-01-27",
-    "last": "2026-10-21",
+    "next": "2027-01-28",
+    "last": "2026-10-30",
     "surprise": {
-     "eps_estimate": 0.33,
-     "eps_actual": 0.35,
-     "surprise_pct": 6.25
+     "eps_estimate": 16.25,
+     "eps_actual": 20.07,
+     "surprise_pct": 23.54
     },
     "inside_window": false,
-    "days_to_next": 64
+    "days_to_next": 61
    },
-   "expected_rr": 1.59,
-   "stop": 32.11,
-   "stop_pct": 4.32,
-   "t1": 34.75,
-   "t2": 36.99,
-   "data_quality": "degraded",
+   "expected_rr": 0.56,
+   "stop": 788.97,
+   "stop_pct": 16.26,
+   "t1": 991.73,
+   "t2": 1064.4,
+   "data_quality": "ok",
    "fund": {
-    "marketCap": 74762126144.5413,
-    "forwardPE": null,
-    "revenueGrowth": null,
-    "profitMargins": null,
-    "debtToEquity": null,
-    "targetMedianPrice": null,
-    "recommendationMean": null,
-    "heldPercentInstitutions": null
+    "marketCap": 97449951232,
+    "forwardPE": 13.320007,
+    "revenueGrowth": 0.363,
+    "profitMargins": 0.28511998,
+    "debtToEquity": 8.081,
+    "targetMedianPrice": 982.0,
+    "recommendationMean": 1.78571,
+    "heldPercentInstitutions": 0.9275
    },
-   "evaluated_at_utc": "2026-10-29T07:35:38+00:00"
+   "evaluated_at_utc": "2026-11-04T20:17:00+00:00"
   },
   {
    "symbol": "VEEV",
-   "name": null,
+   "name": "Veeva Systems Inc.",
    "sector": "Health Care",
-   "price": 317.82,
-   "setup": "breakout_watch",
-   "score": 62.0,
+   "price": 311.65,
+   "setup": "pullback_to_21ema",
+   "score": 67.6,
    "factors": {
-    "regime": 65,
-    "business_quality": 55,
-    "financial_strength": 55,
-    "growth": 50,
-    "moat": 62,
-    "valuation": 55,
+    "regime": 60,
+    "business_quality": 80,
+    "financial_strength": 85,
+    "growth": 90,
+    "moat": 72,
+    "valuation": 60,
     "technical": 100.0,
-    "catalyst": 55,
-    "institutional": 65,
+    "catalyst": 65,
+    "institutional": 85,
     "liquidity": 95,
-    "reward_risk": 44.75
+    "reward_risk": 43.25
    },
    "penalties": [
     [
-     "binary macro event inside window: US midterm elections (2026-11-03)",
-     3
+     "earnings inside holding window",
+     10
     ]
    ],
    "notes": [
+    "Health Care is a leading sector",
+    "analyst median target is below price",
     "above 21/48/200 EMA",
-    "RS 3m +51.0% vs SPY",
-    "within 3% of 52-week high",
+    "RS 3m +42.9% vs SPY",
     "accumulation: more high-volume up days"
    ],
    "bear_case": [
-    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)",
-    "Reward:risk 1.0 is below the 2.0 minimum at a 7.8% stop"
+    "Penalty: earnings inside holding window",
+    "Reward:risk 0.9 is below the 2.0 minimum at a 8.6% stop",
+    "Regime does not favor new longs"
    ],
-   "decision": "REJECT",
+   "decision": "WATCHLIST",
    "reasons": [
-    "reward:risk 0.99 < 2.0",
-    "fundamental data unavailable from vendor \u2014 confidence reduced, re-run later",
-    "score 62.0 below 65"
+    "earnings inside holding window",
+    "reward:risk 0.93 < 2.0",
+    "score 67.6 in watchlist band"
    ],
    "tech": {
     "symbol": "VEEV",
-    "as_of": "2026-10-28",
-    "price": 317.82,
-    "ema21": 303.9,
-    "ema48": 281.85,
-    "ema200": 236.19,
-    "ema21_slope_5d": 9.01,
-    "atr14": 10.16,
-    "atr_pct": 3.2,
-    "ext_vs_21ema_pct": 4.58,
-    "pct_from_52w_high": -2.51,
+    "as_of": "2026-11-04",
+    "price": 311.65,
+    "ema21": 305.8,
+    "ema48": 286.95,
+    "ema200": 240.28,
+    "ema21_slope_5d": 1.9,
+    "atr14": 8.86,
+    "atr_pct": 2.84,
+    "ext_vs_21ema_pct": 1.91,
+    "pct_from_52w_high": -4.4,
     "hi52": 325.99,
-    "low10": 295.67,
-    "low20": 272.84,
-    "rs_1m_pct": 12.89,
-    "rs_3m_pct": 51.05,
-    "vol_ratio_last": 0.84,
+    "low10": 299.02,
+    "low20": 279.02,
+    "rs_1m_pct": 11.57,
+    "rs_3m_pct": 42.91,
+    "vol_ratio_last": 0.55,
     "up_days_high_vol_20": 4,
-    "down_days_high_vol_20": 1,
-    "avg_dollar_volume": 528747612.0,
+    "down_days_high_vol_20": 2,
+    "avg_dollar_volume": 519032496.0,
     "above_all_emas": true,
-    "setup": "breakout_watch",
+    "setup": "pullback_to_21ema",
     "post_earnings": null,
-    "stop": 293.13,
-    "stop_pct": 7.77,
+    "stop": 284.74,
+    "stop_pct": 8.63,
     "t1": 325.99,
-    "t2": 358.46,
-    "ret_1m_pct": 14.09,
-    "ret_3m_pct": 57.68,
+    "t2": 347.08,
+    "ret_1m_pct": 9.93,
+    "ret_3m_pct": 43.09,
     "t2_source": "4xATR",
-    "rr_t1": 0.33,
-    "rr_t2": 1.65,
-    "expected_rr": 0.99,
-    "data_quality": "degraded"
+    "rr_t1": 0.53,
+    "rr_t2": 1.32,
+    "expected_rr": 0.93,
+    "data_quality": "ok"
    },
    "earnings": {
     "next": "2026-11-25",
@@ -1181,1638 +2169,1313 @@
      "eps_actual": 2.35,
      "surprise_pct": 5.77
     },
-    "inside_window": false,
-    "days_to_next": 19
+    "inside_window": true,
+    "days_to_next": 15
    },
-   "expected_rr": 0.99,
-   "stop": 293.13,
-   "stop_pct": 7.77,
+   "expected_rr": 0.93,
+   "stop": 284.74,
+   "stop_pct": 8.63,
    "t1": 325.99,
-   "t2": 358.46,
-   "data_quality": "degraded",
+   "t2": 347.08,
+   "data_quality": "ok",
    "fund": {
-    "marketCap": 51457871892.855835,
-    "forwardPE": null,
-    "revenueGrowth": null,
-    "profitMargins": null,
-    "debtToEquity": null,
-    "targetMedianPrice": null,
-    "recommendationMean": null,
-    "heldPercentInstitutions": null
+    "marketCap": 50458890240,
+    "forwardPE": 30.37995,
+    "revenueGrowth": 0.176,
+    "profitMargins": 0.29345,
+    "debtToEquity": 2.041,
+    "targetMedianPrice": 305.0,
+    "recommendationMean": 1.93103,
+    "heldPercentInstitutions": 0.92455
    },
-   "evaluated_at_utc": "2026-10-29T07:36:09+00:00"
+   "evaluated_at_utc": "2026-11-04T20:16:59+00:00"
   },
   {
-   "symbol": "OKE",
-   "name": null,
-   "sector": "Energy",
-   "price": 94.54,
-   "setup": "pullback_to_21ema",
-   "score": 60.9,
+   "symbol": "MAR",
+   "name": "Marriott International, Inc.",
+   "sector": "Consumer Discretionary",
+   "price": 424.07,
+   "setup": "extended",
+   "score": 65.3,
    "factors": {
-    "regime": 75,
-    "business_quality": 55,
-    "financial_strength": 55,
-    "growth": 50,
-    "moat": 62,
-    "valuation": 55,
-    "technical": 95.0,
-    "catalyst": 40,
-    "institutional": 65,
-    "liquidity": 85,
-    "reward_risk": 56.75
+    "regime": 60,
+    "business_quality": 75,
+    "financial_strength": 60,
+    "growth": 70,
+    "moat": 80,
+    "valuation": 50,
+    "technical": 85.0,
+    "catalyst": 80,
+    "institutional": 75,
+    "liquidity": 95,
+    "reward_risk": 33.75
    },
    "penalties": [
     [
-     "binary macro event inside window: US midterm elections (2026-11-03)",
+     "extended above 21 EMA",
+     5
+    ]
+   ],
+   "notes": [
+    "Consumer Discretionary is a leading sector",
+    "analyst median target is below price",
+    "above 21/48/200 EMA",
+    "RS 3m +18.0% vs SPY",
+    "extended 8.1% above 21 EMA",
+    "within 3% of 52-week high",
+    "accumulation: more high-volume up days",
+    "post-earnings reaction +4.3% on 1.7x volume"
+   ],
+   "bear_case": [
+    "Penalty: extended above 21 EMA",
+    "Reward:risk 0.6 is below the 2.0 minimum at a 10.8% stop",
+    "Regime does not favor new longs",
+    "Chasing an extended move invites a sharp mean reversion to the 21 EMA"
+   ],
+   "decision": "WATCHLIST",
+   "reasons": [
+    "no actionable setup (extended)",
+    "reward:risk 0.55 < 2.0",
+    "score 65.3 in watchlist band"
+   ],
+   "tech": {
+    "symbol": "MAR",
+    "as_of": "2026-11-04",
+    "price": 424.07,
+    "ema21": 392.18,
+    "ema48": 376.47,
+    "ema200": 352.43,
+    "ema21_slope_5d": 12.34,
+    "atr14": 10.21,
+    "atr_pct": 2.41,
+    "ext_vs_21ema_pct": 8.13,
+    "pct_from_52w_high": -2.13,
+    "hi52": 433.3,
+    "low10": 381.04,
+    "low20": 354.62,
+    "rs_1m_pct": 19.13,
+    "rs_3m_pct": 18.0,
+    "vol_ratio_last": 0.66,
+    "up_days_high_vol_20": 5,
+    "down_days_high_vol_20": 3,
+    "avg_dollar_volume": 645303938.0,
+    "above_all_emas": true,
+    "setup": "extended",
+    "post_earnings": {
+     "reaction_date": "2026-11-02",
+     "reaction_chg_pct": 4.26,
+     "reaction_vol_ratio": 1.7,
+     "reaction_low": 411.739990234375,
+     "holding_above_low": true
+    },
+    "stop": 378.49,
+    "stop_pct": 10.75,
+    "t1": 433.3,
+    "t2": 464.9,
+    "ret_1m_pct": 17.38,
+    "ret_3m_pct": 18.14,
+    "t2_source": "4xATR",
+    "rr_t1": 0.2,
+    "rr_t2": 0.9,
+    "expected_rr": 0.55,
+    "data_quality": "ok"
+   },
+   "earnings": {
+    "next": "2027-02-09",
+    "last": "2026-11-02",
+    "surprise": {
+     "eps_estimate": 2.85,
+     "eps_actual": 3.02,
+     "surprise_pct": 5.97
+    },
+    "inside_window": false,
+    "days_to_next": 69
+   },
+   "expected_rr": 0.55,
+   "stop": 378.49,
+   "stop_pct": 10.75,
+   "t1": 433.3,
+   "t2": 464.9,
+   "data_quality": "ok",
+   "fund": {
+    "marketCap": 109180575744,
+    "forwardPE": 31.715998,
+    "revenueGrowth": 0.113,
+    "profitMargins": 0.34995,
+    "debtToEquity": null,
+    "targetMedianPrice": 410.0,
+    "recommendationMean": 2.27586,
+    "heldPercentInstitutions": 0.64338994
+   },
+   "evaluated_at_utc": "2026-11-04T20:17:03+00:00"
+  },
+  {
+   "symbol": "EXEL",
+   "name": "Exelixis, Inc.",
+   "sector": "Health Care",
+   "price": 72.84,
+   "setup": "extended",
+   "score": 65.2,
+   "factors": {
+    "regime": 60,
+    "business_quality": 90,
+    "financial_strength": 85,
+    "growth": 80,
+    "moat": 65,
+    "valuation": 35,
+    "technical": 85.0,
+    "catalyst": 45,
+    "institutional": 85,
+    "liquidity": 85,
+    "reward_risk": 36.0
+   },
+   "penalties": [
+    [
+     "extended above 21 EMA",
+     5
+    ]
+   ],
+   "notes": [
+    "Health Care is a leading sector",
+    "analyst median target is below price",
+    "above 21/48/200 EMA",
+    "RS 3m +39.4% vs SPY",
+    "extended 11.4% above 21 EMA",
+    "within 3% of 52-week high",
+    "accumulation: more high-volume up days",
+    "post-earnings reaction -0.1% on 1.22x volume"
+   ],
+   "bear_case": [
+    "Penalty: extended above 21 EMA",
+    "Reward:risk 0.6 is below the 2.0 minimum at a 12.9% stop",
+    "Earnings reaction day closed red \u2014 continuation is unconfirmed",
+    "Valuation offers little cushion if growth disappoints",
+    "Regime does not favor new longs",
+    "Chasing an extended move invites a sharp mean reversion to the 21 EMA"
+   ],
+   "decision": "WATCHLIST",
+   "reasons": [
+    "no actionable setup (extended)",
+    "reward:risk 0.64 < 2.0",
+    "score 65.2 in watchlist band"
+   ],
+   "tech": {
+    "symbol": "EXEL",
+    "as_of": "2026-11-04",
+    "price": 72.84,
+    "ema21": 65.4,
+    "ema48": 61.66,
+    "ema200": 53.1,
+    "ema21_slope_5d": 3.1,
+    "atr14": 2.01,
+    "atr_pct": 2.77,
+    "ext_vs_21ema_pct": 11.37,
+    "pct_from_52w_high": -0.82,
+    "hi52": 73.44,
+    "low10": 63.91,
+    "low20": 57.91,
+    "rs_1m_pct": 26.74,
+    "rs_3m_pct": 39.37,
+    "vol_ratio_last": 0.72,
+    "up_days_high_vol_20": 7,
+    "down_days_high_vol_20": 4,
+    "avg_dollar_volume": 169890405.0,
+    "above_all_emas": true,
+    "setup": "extended",
+    "post_earnings": {
+     "reaction_date": "2026-10-29",
+     "reaction_chg_pct": -0.12,
+     "reaction_vol_ratio": 1.22,
+     "reaction_low": 65.05999755859375,
+     "holding_above_low": true
+    },
+    "stop": 63.41,
+    "stop_pct": 12.95,
+    "t1": 76.87,
+    "t2": 80.9,
+    "ret_1m_pct": 24.88,
+    "ret_3m_pct": 39.54,
+    "t2_source": "4xATR",
+    "rr_t1": 0.43,
+    "rr_t2": 0.85,
+    "expected_rr": 0.64,
+    "data_quality": "ok"
+   },
+   "earnings": {
+    "next": "2027-02-09",
+    "last": "2026-10-29",
+    "surprise": {
+     "eps_estimate": 0.9,
+     "eps_actual": 0.94,
+     "surprise_pct": 3.98
+    },
+    "inside_window": false,
+    "days_to_next": 69
+   },
+   "expected_rr": 0.64,
+   "stop": 63.41,
+   "stop_pct": 12.95,
+   "t1": 76.87,
+   "t2": 80.9,
+   "data_quality": "ok",
+   "fund": {
+    "marketCap": 17773752320,
+    "forwardPE": 17.040829,
+    "revenueGrowth": 0.102,
+    "profitMargins": 0.3545,
+    "debtToEquity": 8.845,
+    "targetMedianPrice": 60.0,
+    "recommendationMean": 2.41176,
+    "heldPercentInstitutions": 1.0901899
+   },
+   "evaluated_at_utc": "2026-11-04T20:16:58+00:00"
+  },
+  {
+   "symbol": "AMGN",
+   "name": "Amgen Inc.",
+   "sector": "Health Care",
+   "price": 479.49,
+   "setup": "extended",
+   "score": 63.6,
+   "factors": {
+    "regime": 60,
+    "business_quality": 90,
+    "financial_strength": 60,
+    "growth": 80,
+    "moat": 80,
+    "valuation": 35,
+    "technical": 85.0,
+    "catalyst": 40,
+    "institutional": 85,
+    "liquidity": 95,
+    "reward_risk": 39.25
+   },
+   "penalties": [
+    [
+     "extended above 21 EMA",
+     5
+    ]
+   ],
+   "notes": [
+    "Health Care is a leading sector",
+    "analyst median target is below price",
+    "above 21/48/200 EMA",
+    "RS 3m +19.0% vs SPY",
+    "extended 8.0% above 21 EMA",
+    "within 3% of 52-week high",
+    "accumulation: more high-volume up days",
+    "post-earnings reaction -0.9% on 0.84x volume"
+   ],
+   "bear_case": [
+    "Penalty: extended above 21 EMA",
+    "Reward:risk 0.8 is below the 2.0 minimum at a 9.4% stop",
+    "Earnings reaction day closed red \u2014 continuation is unconfirmed",
+    "Valuation offers little cushion if growth disappoints",
+    "Regime does not favor new longs",
+    "Chasing an extended move invites a sharp mean reversion to the 21 EMA"
+   ],
+   "decision": "REJECT",
+   "reasons": [
+    "no actionable setup (extended)",
+    "reward:risk 0.77 < 2.0",
+    "score 63.6 below 65"
+   ],
+   "tech": {
+    "symbol": "AMGN",
+    "as_of": "2026-11-04",
+    "price": 479.49,
+    "ema21": 443.95,
+    "ema48": 426.44,
+    "ema200": 379.55,
+    "ema21_slope_5d": 14.21,
+    "atr14": 11.55,
+    "atr_pct": 2.41,
+    "ext_vs_21ema_pct": 8.01,
+    "pct_from_52w_high": -0.52,
+    "hi52": 482.0,
+    "low10": 437.19,
+    "low20": 400.06,
+    "rs_1m_pct": 20.88,
+    "rs_3m_pct": 18.98,
+    "vol_ratio_last": 1.07,
+    "up_days_high_vol_20": 7,
+    "down_days_high_vol_20": 1,
+    "avg_dollar_volume": 1353231734.0,
+    "above_all_emas": true,
+    "setup": "extended",
+    "post_earnings": {
+     "reaction_date": "2026-11-03",
+     "reaction_chg_pct": -0.9,
+     "reaction_vol_ratio": 0.84,
+     "reaction_low": 460.1499938964844,
+     "holding_above_low": true
+    },
+    "stop": 434.3,
+    "stop_pct": 9.43,
+    "t1": 502.59,
+    "t2": 525.69,
+    "ret_1m_pct": 19.1,
+    "ret_3m_pct": 19.13,
+    "t2_source": "4xATR",
+    "rr_t1": 0.51,
+    "rr_t2": 1.02,
+    "expected_rr": 0.77,
+    "data_quality": "ok"
+   },
+   "earnings": {
+    "next": "2027-02-02",
+    "last": "2026-11-03",
+    "surprise": {
+     "eps_estimate": 5.78,
+     "eps_actual": 6.45,
+     "surprise_pct": 11.55
+    },
+    "inside_window": false,
+    "days_to_next": 64
+   },
+   "expected_rr": 0.77,
+   "stop": 434.3,
+   "stop_pct": 9.43,
+   "t1": 502.59,
+   "t2": 525.69,
+   "data_quality": "ok",
+   "fund": {
+    "marketCap": 259124903936,
+    "forwardPE": 19.489079,
+    "revenueGrowth": 0.095,
+    "profitMargins": 0.22951001,
+    "debtToEquity": 490.281,
+    "targetMedianPrice": 410.0,
+    "recommendationMean": 2.64706,
+    "heldPercentInstitutions": 0.85143995
+   },
+   "evaluated_at_utc": "2026-11-04T20:17:02+00:00"
+  },
+  {
+   "symbol": "A",
+   "name": "Agilent Technologies, Inc.",
+   "sector": "Health Care",
+   "price": 178.1,
+   "setup": "pullback_to_21ema",
+   "score": 63.4,
+   "factors": {
+    "regime": 60,
+    "business_quality": 80,
+    "financial_strength": 75,
+    "growth": 70,
+    "moat": 72,
+    "valuation": 75,
+    "technical": 100.0,
+    "catalyst": 65,
+    "institutional": 75,
+    "liquidity": 85,
+    "reward_risk": 31.5
+   },
+   "penalties": [
+    [
+     "earnings inside holding window",
+     10
+    ]
+   ],
+   "notes": [
+    "Health Care is a leading sector",
+    "above 21/48/200 EMA",
+    "RS 3m +26.0% vs SPY",
+    "within 3% of 52-week high",
+    "distribution: more high-volume down days"
+   ],
+   "bear_case": [
+    "Penalty: earnings inside holding window",
+    "Reward:risk 0.5 is below the 2.0 minimum at a 7.2% stop",
+    "Regime does not favor new longs"
+   ],
+   "decision": "REJECT",
+   "reasons": [
+    "earnings inside holding window",
+    "reward:risk 0.46 < 2.0",
+    "score 63.4 below 65"
+   ],
+   "tech": {
+    "symbol": "A",
+    "as_of": "2026-11-04",
+    "price": 178.1,
+    "ema21": 173.78,
+    "ema48": 166.59,
+    "ema200": 146.33,
+    "ema21_slope_5d": 1.5,
+    "atr14": 5.54,
+    "atr_pct": 3.11,
+    "ext_vs_21ema_pct": 2.49,
+    "pct_from_52w_high": -2.67,
+    "hi52": 182.99,
+    "low10": 169.89,
+    "low20": 163.32,
+    "rs_1m_pct": 6.75,
+    "rs_3m_pct": 26.04,
+    "vol_ratio_last": 0.38,
+    "up_days_high_vol_20": 1,
+    "down_days_high_vol_20": 5,
+    "avg_dollar_volume": 419907453.0,
+    "above_all_emas": true,
+    "setup": "pullback_to_21ema",
+    "post_earnings": null,
+    "stop": 165.2,
+    "stop_pct": 7.24,
+    "t1": 182.99,
+    "t2": 185.0,
+    "ret_1m_pct": 5.18,
+    "ret_3m_pct": 26.2,
+    "t2_source": "analyst_median_target",
+    "rr_t1": 0.38,
+    "rr_t2": 0.53,
+    "expected_rr": 0.46,
+    "data_quality": "ok"
+   },
+   "earnings": {
+    "next": "2026-11-23",
+    "last": "2026-08-26",
+    "surprise": {
+     "eps_estimate": 1.49,
+     "eps_actual": 1.62,
+     "surprise_pct": 9.01
+    },
+    "inside_window": true,
+    "days_to_next": 13
+   },
+   "expected_rr": 0.46,
+   "stop": 165.2,
+   "stop_pct": 7.24,
+   "t1": 182.99,
+   "t2": 185.0,
+   "data_quality": "ok",
+   "fund": {
+    "marketCap": 50211532800,
+    "forwardPE": 26.467607,
+    "revenueGrowth": 0.081,
+    "profitMargins": 0.19533001,
+    "debtToEquity": 56.336,
+    "targetMedianPrice": 185.0,
+    "recommendationMean": 1.77273,
+    "heldPercentInstitutions": 0.94898003
+   },
+   "evaluated_at_utc": "2026-11-04T20:17:05+00:00"
+  },
+  {
+   "symbol": "PFE",
+   "name": "Pfizer Inc.",
+   "sector": "Health Care",
+   "price": 30.68,
+   "setup": "breakout_watch",
+   "score": 62.2,
+   "factors": {
+    "regime": 60,
+    "business_quality": 55,
+    "financial_strength": 60,
+    "growth": 30,
+    "moat": 70,
+    "valuation": 35,
+    "technical": 100.0,
+    "catalyst": 45,
+    "institutional": 75,
+    "liquidity": 95,
+    "reward_risk": 50.0
+   },
+   "penalties": [],
+   "notes": [
+    "Health Care is a leading sector",
+    "analyst median target is below price",
+    "above 21/48/200 EMA",
+    "RS 3m +17.0% vs SPY",
+    "within 3% of 52-week high",
+    "accumulation: more high-volume up days",
+    "post-earnings reaction -2.2% on 1.63x volume"
+   ],
+   "bear_case": [
+    "Reward:risk 1.2 is below the 2.0 minimum at a 5.3% stop",
+    "Earnings reaction day closed red \u2014 continuation is unconfirmed",
+    "Valuation offers little cushion if growth disappoints",
+    "Regime does not favor new longs"
+   ],
+   "decision": "REJECT",
+   "reasons": [
+    "reward:risk 1.20 < 2.0",
+    "score 62.2 below 65"
+   ],
+   "tech": {
+    "symbol": "PFE",
+    "as_of": "2026-11-04",
+    "price": 30.68,
+    "ema21": 29.63,
+    "ema48": 28.74,
+    "ema200": 26.54,
+    "ema21_slope_5d": 0.46,
+    "atr14": 0.65,
+    "atr_pct": 2.12,
+    "ext_vs_21ema_pct": 3.58,
+    "pct_from_52w_high": -1.21,
+    "hi52": 31.06,
+    "low10": 29.22,
+    "low20": 27.48,
+    "rs_1m_pct": 13.25,
+    "rs_3m_pct": 16.97,
+    "vol_ratio_last": 1.0,
+    "up_days_high_vol_20": 6,
+    "down_days_high_vol_20": 2,
+    "avg_dollar_volume": 998865467.0,
+    "above_all_emas": true,
+    "setup": "breakout_watch",
+    "post_earnings": {
+     "reaction_date": "2026-11-03",
+     "reaction_chg_pct": -2.18,
+     "reaction_vol_ratio": 1.63,
+     "reaction_low": 29.889999389648438,
+     "holding_above_low": true
+    },
+    "stop": 29.06,
+    "stop_pct": 5.3,
+    "t1": 31.98,
+    "t2": 33.28,
+    "ret_1m_pct": 11.58,
+    "ret_3m_pct": 17.12,
+    "t2_source": "4xATR",
+    "rr_t1": 0.8,
+    "rr_t2": 1.6,
+    "expected_rr": 1.2,
+    "data_quality": "ok"
+   },
+   "earnings": {
+    "next": "2027-02-02",
+    "last": "2026-11-03",
+    "surprise": {
+     "eps_estimate": 0.74,
+     "eps_actual": 0.87,
+     "surprise_pct": 18.26
+    },
+    "inside_window": false,
+    "days_to_next": 64
+   },
+   "expected_rr": 1.2,
+   "stop": 29.06,
+   "stop_pct": 5.3,
+   "t1": 31.98,
+   "t2": 33.28,
+   "data_quality": "ok",
+   "fund": {
+    "marketCap": 174900019200,
+    "forwardPE": 10.548117,
+    "revenueGrowth": -0.004,
+    "profitMargins": 0.06339,
+    "debtToEquity": 74.253,
+    "targetMedianPrice": 30.0,
+    "recommendationMean": 2.5,
+    "heldPercentInstitutions": 0.68907
+   },
+   "evaluated_at_utc": "2026-11-04T20:17:06+00:00"
+  },
+  {
+   "symbol": "GILD",
+   "name": "Gilead Sciences, Inc.",
+   "sector": "Health Care",
+   "price": 174.71,
+   "setup": "extended",
+   "score": 57.9,
+   "factors": {
+    "regime": 60,
+    "business_quality": 35,
+    "financial_strength": 60,
+    "growth": 45,
+    "moat": 70,
+    "valuation": 60,
+    "technical": 80.0,
+    "catalyst": 85,
+    "institutional": 75,
+    "liquidity": 95,
+    "reward_risk": 36.25
+   },
+   "penalties": [
+    [
+     "extended above 21 EMA",
+     5
+    ]
+   ],
+   "notes": [
+    "Health Care is a leading sector",
+    "above 21/48/200 EMA",
+    "RS 3m +34.1% vs SPY",
+    "extended 9.3% above 21 EMA",
+    "within 3% of 52-week high",
+    "post-earnings reaction +4.0% on 1.41x volume"
+   ],
+   "bear_case": [
+    "Penalty: extended above 21 EMA",
+    "Reward:risk 0.7 is below the 2.0 minimum at a 13.1% stop",
+    "Regime does not favor new longs",
+    "Chasing an extended move invites a sharp mean reversion to the 21 EMA"
+   ],
+   "decision": "REJECT",
+   "reasons": [
+    "no actionable setup (extended)",
+    "reward:risk 0.65 < 2.0",
+    "score 57.9 below 65"
+   ],
+   "tech": {
+    "symbol": "GILD",
+    "as_of": "2026-11-04",
+    "price": 174.71,
+    "ema21": 159.91,
+    "ema48": 153.11,
+    "ema200": 139.52,
+    "ema21_slope_5d": 6.19,
+    "atr14": 4.92,
+    "atr_pct": 2.82,
+    "ext_vs_21ema_pct": 9.26,
+    "pct_from_52w_high": -0.54,
+    "hi52": 175.65,
+    "low10": 153.0,
+    "low20": 144.65,
+    "rs_1m_pct": 22.94,
+    "rs_3m_pct": 34.09,
+    "vol_ratio_last": 0.98,
+    "up_days_high_vol_20": 5,
+    "down_days_high_vol_20": 6,
+    "avg_dollar_volume": 1044758153.0,
+    "above_all_emas": true,
+    "setup": "extended",
+    "post_earnings": {
+     "reaction_date": "2026-10-29",
+     "reaction_chg_pct": 4.03,
+     "reaction_vol_ratio": 1.41,
+     "reaction_low": 160.86000061035156,
+     "holding_above_low": true
+    },
+    "stop": 151.77,
+    "stop_pct": 13.13,
+    "t1": 184.55,
+    "t2": 194.39,
+    "ret_1m_pct": 21.13,
+    "ret_3m_pct": 34.26,
+    "t2_source": "4xATR",
+    "rr_t1": 0.43,
+    "rr_t2": 0.86,
+    "expected_rr": 0.65,
+    "data_quality": "ok"
+   },
+   "earnings": {
+    "next": "2027-02-09",
+    "last": "2026-10-29",
+    "surprise": {
+     "eps_estimate": 2.19,
+     "eps_actual": 2.55,
+     "surprise_pct": 16.23
+    },
+    "inside_window": false,
+    "days_to_next": 69
+   },
+   "expected_rr": 0.65,
+   "stop": 151.77,
+   "stop_pct": 13.13,
+   "t1": 184.55,
+   "t2": 194.39,
+   "data_quality": "ok",
+   "fund": {
+    "marketCap": 216724357120,
+    "forwardPE": 17.313492,
+    "revenueGrowth": 0.068,
+    "profitMargins": -0.124630004,
+    "debtToEquity": 202.462,
+    "targetMedianPrice": 175.0,
+    "recommendationMean": 1.67857,
+    "heldPercentInstitutions": 0.91984004
+   },
+   "evaluated_at_utc": "2026-11-04T20:16:58+00:00"
+  },
+  {
+   "symbol": "MTD",
+   "name": "Mettler-Toledo International Inc.",
+   "sector": "Health Care",
+   "price": 1729.97,
+   "setup": "breakout_watch",
+   "score": 56.2,
+   "factors": {
+    "regime": 60,
+    "business_quality": 75,
+    "financial_strength": 50,
+    "growth": 70,
+    "moat": 72,
+    "valuation": 35,
+    "technical": 100.0,
+    "catalyst": 55,
+    "institutional": 85,
+    "liquidity": 85,
+    "reward_risk": 51.0
+   },
+   "penalties": [
+    [
+     "earnings inside holding window",
+     10
+    ],
+    [
+     "new high on light volume",
      3
     ]
    ],
    "notes": [
-    "Energy is a leading sector",
+    "Health Care is a leading sector",
+    "analyst median target is below price",
     "above 21/48/200 EMA",
-    "accumulation: more high-volume up days",
-    "post-earnings reaction -0.4% on 0.74x volume"
+    "RS 3m +21.6% vs SPY",
+    "within 3% of 52-week high",
+    "accumulation: more high-volume up days"
    ],
    "bear_case": [
-    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)",
-    "Reward:risk 1.5 is below the 2.0 minimum at a 5.1% stop",
-    "Earnings reaction day closed red \u2014 continuation is unconfirmed"
+    "Penalty: earnings inside holding window",
+    "Penalty: new high on light volume",
+    "Reward:risk 1.2 is below the 2.0 minimum at a 5.7% stop",
+    "Valuation offers little cushion if growth disappoints",
+    "Regime does not favor new longs"
    ],
    "decision": "REJECT",
    "reasons": [
-    "reward:risk 1.47 < 2.0",
-    "fundamental data unavailable from vendor \u2014 confidence reduced, re-run later",
-    "score 60.9 below 65"
+    "earnings inside holding window",
+    "reward:risk 1.24 < 2.0",
+    "score 56.2 below 65"
    ],
    "tech": {
-    "symbol": "OKE",
-    "as_of": "2026-10-28",
-    "price": 94.54,
-    "ema21": 92.91,
-    "ema48": 92.16,
-    "ema200": 86.42,
-    "ema21_slope_5d": 1.49,
-    "atr14": 2.21,
-    "atr_pct": 2.33,
-    "ext_vs_21ema_pct": 1.75,
-    "pct_from_52w_high": -5.32,
-    "hi52": 99.85,
-    "low10": 90.27,
-    "low20": 84.15,
-    "rs_1m_pct": 7.7,
-    "rs_3m_pct": 2.89,
-    "vol_ratio_last": 1.01,
-    "up_days_high_vol_20": 5,
+    "symbol": "MTD",
+    "as_of": "2026-11-04",
+    "price": 1729.97,
+    "ema21": 1642.03,
+    "ema48": 1554.2,
+    "ema200": 1402.57,
+    "ema21_slope_5d": 35.97,
+    "atr14": 40.47,
+    "atr_pct": 2.34,
+    "ext_vs_21ema_pct": 5.36,
+    "pct_from_52w_high": -0.46,
+    "hi52": 1737.99,
+    "low10": 1648.36,
+    "low20": 1500.9,
+    "rs_1m_pct": 14.53,
+    "rs_3m_pct": 21.57,
+    "vol_ratio_last": 0.66,
+    "up_days_high_vol_20": 6,
     "down_days_high_vol_20": 2,
-    "avg_dollar_volume": 321123454.0,
+    "avg_dollar_volume": 342970999.0,
     "above_all_emas": true,
-    "setup": "pullback_to_21ema",
-    "post_earnings": {
-     "reaction_date": "2026-10-27",
-     "reaction_chg_pct": -0.36,
-     "reaction_vol_ratio": 0.74,
-     "reaction_low": 95.41999816894531,
-     "holding_above_low": false
-    },
-    "stop": 89.72,
-    "stop_pct": 5.1,
-    "t1": 99.85,
-    "t2": 103.36,
-    "ret_1m_pct": 8.84,
-    "ret_3m_pct": 7.41,
+    "setup": "breakout_watch",
+    "post_earnings": null,
+    "stop": 1631.91,
+    "stop_pct": 5.67,
+    "t1": 1810.92,
+    "t2": 1891.87,
+    "ret_1m_pct": 12.84,
+    "ret_3m_pct": 21.72,
     "t2_source": "4xATR",
-    "rr_t1": 1.1,
-    "rr_t2": 1.83,
-    "expected_rr": 1.47,
-    "data_quality": "degraded"
+    "rr_t1": 0.83,
+    "rr_t2": 1.65,
+    "expected_rr": 1.24,
+    "data_quality": "ok"
    },
    "earnings": {
-    "next": "2027-02-22",
-    "last": "2026-10-27",
+    "next": "2026-11-05",
+    "last": "2026-07-30",
     "surprise": {
-     "eps_estimate": 1.5,
-     "eps_actual": 2.13,
-     "surprise_pct": 41.99
+     "eps_estimate": 10.8,
+     "eps_actual": 11.46,
+     "surprise_pct": 6.09
     },
-    "inside_window": false,
-    "days_to_next": 82
+    "inside_window": true,
+    "days_to_next": 1
    },
-   "expected_rr": 1.47,
-   "stop": 89.72,
-   "stop_pct": 5.1,
-   "t1": 99.85,
-   "t2": 103.36,
-   "data_quality": "degraded",
+   "expected_rr": 1.24,
+   "stop": 1631.91,
+   "stop_pct": 5.67,
+   "t1": 1810.92,
+   "t2": 1891.87,
+   "data_quality": "ok",
    "fund": {
-    "marketCap": 59598886628.77686,
-    "forwardPE": null,
-    "revenueGrowth": null,
-    "profitMargins": null,
-    "debtToEquity": null,
-    "targetMedianPrice": null,
-    "recommendationMean": null,
-    "heldPercentInstitutions": null
+    "marketCap": 34652626944,
+    "forwardPE": 33.415318,
+    "revenueGrowth": 0.045,
+    "profitMargins": 0.21907,
+    "debtToEquity": 16668.447,
+    "targetMedianPrice": 1565.0,
+    "recommendationMean": 2.61538,
+    "heldPercentInstitutions": 1.04634
    },
-   "evaluated_at_utc": "2026-10-29T07:35:48+00:00"
+   "evaluated_at_utc": "2026-11-04T20:17:03+00:00"
   },
   {
-   "symbol": "PM",
-   "name": null,
-   "sector": "Consumer Staples",
-   "price": 202.64,
-   "setup": "pullback_to_21ema",
-   "score": 59.7,
+   "symbol": "MDT",
+   "name": "Medtronic plc",
+   "sector": "Health Care",
+   "price": 105.25,
+   "setup": "extended",
+   "score": 56.0,
    "factors": {
-    "regime": 75,
-    "business_quality": 55,
-    "financial_strength": 55,
-    "growth": 50,
+    "regime": 60,
+    "business_quality": 70,
+    "financial_strength": 75,
+    "growth": 80,
     "moat": 70,
-    "valuation": 55,
-    "technical": 95.0,
-    "catalyst": 35,
-    "institutional": 65,
+    "valuation": 60,
+    "technical": 85.0,
+    "catalyst": 65,
+    "institutional": 85,
     "liquidity": 95,
-    "reward_risk": 38.25
+    "reward_risk": 34.5
    },
    "penalties": [
     [
-     "binary macro event inside window: US midterm elections (2026-11-03)",
-     3
+     "earnings inside holding window",
+     10
+    ],
+    [
+     "extended above 21 EMA",
+     5
+    ]
+   ],
+   "notes": [
+    "Health Care is a leading sector",
+    "above 21/48/200 EMA",
+    "RS 3m +23.4% vs SPY",
+    "extended 10.3% above 21 EMA",
+    "within 3% of 52-week high",
+    "accumulation: more high-volume up days"
+   ],
+   "bear_case": [
+    "Penalty: earnings inside holding window",
+    "Penalty: extended above 21 EMA",
+    "Reward:risk 0.6 is below the 2.0 minimum at a 12.2% stop",
+    "Regime does not favor new longs",
+    "Chasing an extended move invites a sharp mean reversion to the 21 EMA"
+   ],
+   "decision": "REJECT",
+   "reasons": [
+    "earnings inside holding window",
+    "no actionable setup (extended)",
+    "reward:risk 0.58 < 2.0",
+    "score 56.0 below 65"
+   ],
+   "tech": {
+    "symbol": "MDT",
+    "as_of": "2026-11-04",
+    "price": 105.25,
+    "ema21": 95.38,
+    "ema48": 92.44,
+    "ema200": 88.26,
+    "ema21_slope_5d": 2.68,
+    "atr14": 2.51,
+    "atr_pct": 2.38,
+    "ext_vs_21ema_pct": 10.35,
+    "pct_from_52w_high": -0.34,
+    "hi52": 105.61,
+    "low10": 93.04,
+    "low20": 85.55,
+    "rs_1m_pct": 22.66,
+    "rs_3m_pct": 23.35,
+    "vol_ratio_last": 0.44,
+    "up_days_high_vol_20": 6,
+    "down_days_high_vol_20": 2,
+    "avg_dollar_volume": 2026035346.0,
+    "above_all_emas": true,
+    "setup": "extended",
+    "post_earnings": null,
+    "stop": 92.41,
+    "stop_pct": 12.2,
+    "t1": 110.26,
+    "t2": 115.28,
+    "ret_1m_pct": 20.85,
+    "ret_3m_pct": 23.5,
+    "t2_source": "4xATR",
+    "rr_t1": 0.39,
+    "rr_t2": 0.78,
+    "expected_rr": 0.58,
+    "data_quality": "ok"
+   },
+   "earnings": {
+    "next": "2026-11-17",
+    "last": "2026-09-01",
+    "surprise": {
+     "eps_estimate": 1.39,
+     "eps_actual": 1.45,
+     "surprise_pct": 4.51
+    },
+    "inside_window": true,
+    "days_to_next": 9
+   },
+   "expected_rr": 0.58,
+   "stop": 92.41,
+   "stop_pct": 12.2,
+   "t1": 110.26,
+   "t2": 115.28,
+   "data_quality": "ok",
+   "fund": {
+    "marketCap": 134661242880,
+    "forwardPE": 16.433632,
+    "revenueGrowth": 0.137,
+    "profitMargins": 0.13934,
+    "debtToEquity": 55.365,
+    "targetMedianPrice": 106.0,
+    "recommendationMean": 1.76667,
+    "heldPercentInstitutions": 0.88509005
+   },
+   "evaluated_at_utc": "2026-11-04T20:17:01+00:00"
+  },
+  {
+   "symbol": "HCA",
+   "name": "HCA Healthcare, Inc.",
+   "sector": "Health Care",
+   "price": 514.48,
+   "setup": "extended",
+   "score": 55.5,
+   "factors": {
+    "regime": 60,
+    "business_quality": 55,
+    "financial_strength": 60,
+    "growth": 55,
+    "moat": 70,
+    "valuation": 60,
+    "technical": 70.0,
+    "catalyst": 50,
+    "institutional": 75,
+    "liquidity": 95,
+    "reward_risk": 37.75
+   },
+   "penalties": [
+    [
+     "extended above 21 EMA",
+     5
+    ]
+   ],
+   "notes": [
+    "Health Care is a leading sector",
+    "analyst median target is below price",
+    "above 21/48/200 EMA",
+    "RS 3m +25.9% vs SPY",
+    "extended 11.0% above 21 EMA",
+    "distribution: more high-volume down days",
+    "post-earnings reaction -3.3% on 2.16x volume"
+   ],
+   "bear_case": [
+    "Penalty: extended above 21 EMA",
+    "Reward:risk 0.7 is below the 2.0 minimum at a 15.4% stop",
+    "Earnings reaction day closed red \u2014 continuation is unconfirmed",
+    "Regime does not favor new longs",
+    "Chasing an extended move invites a sharp mean reversion to the 21 EMA"
+   ],
+   "decision": "REJECT",
+   "reasons": [
+    "no actionable setup (extended)",
+    "reward:risk 0.71 < 2.0",
+    "score 55.5 below 65"
+   ],
+   "tech": {
+    "symbol": "HCA",
+    "as_of": "2026-11-04",
+    "price": 514.48,
+    "ema21": 463.61,
+    "ema48": 446.8,
+    "ema200": 439.1,
+    "ema21_slope_5d": 10.35,
+    "atr14": 18.54,
+    "atr_pct": 3.6,
+    "ext_vs_21ema_pct": 10.97,
+    "pct_from_52w_high": -7.06,
+    "hi52": 553.56,
+    "low10": 439.83,
+    "low20": 436.0,
+    "rs_1m_pct": 20.82,
+    "rs_3m_pct": 25.9,
+    "vol_ratio_last": 1.82,
+    "up_days_high_vol_20": 2,
+    "down_days_high_vol_20": 4,
+    "avg_dollar_volume": 692556471.0,
+    "above_all_emas": true,
+    "setup": "extended",
+    "post_earnings": {
+     "reaction_date": "2026-10-27",
+     "reaction_chg_pct": -3.29,
+     "reaction_vol_ratio": 2.16,
+     "reaction_low": 439.8299865722656,
+     "holding_above_low": true
+    },
+    "stop": 435.2,
+    "stop_pct": 15.41,
+    "t1": 553.56,
+    "t2": 588.63,
+    "ret_1m_pct": 19.04,
+    "ret_3m_pct": 26.06,
+    "t2_source": "4xATR",
+    "rr_t1": 0.49,
+    "rr_t2": 0.94,
+    "expected_rr": 0.71,
+    "data_quality": "ok"
+   },
+   "earnings": {
+    "next": "2027-01-26",
+    "last": "2026-10-27",
+    "surprise": {
+     "eps_estimate": 6.63,
+     "eps_actual": 7.22,
+     "surprise_pct": 8.95
+    },
+    "inside_window": false,
+    "days_to_next": 59
+   },
+   "expected_rr": 0.71,
+   "stop": 435.2,
+   "stop_pct": 15.41,
+   "t1": 553.56,
+   "t2": 588.63,
+   "data_quality": "ok",
+   "fund": {
+    "marketCap": 107479367680,
+    "forwardPE": 16.44599,
+    "revenueGrowth": 0.036,
+    "profitMargins": 0.0861,
+    "debtToEquity": null,
+    "targetMedianPrice": 488.0,
+    "recommendationMean": 2.0,
+    "heldPercentInstitutions": 0.81406
+   },
+   "evaluated_at_utc": "2026-11-04T20:17:00+00:00"
+  },
+  {
+   "symbol": "BDX",
+   "name": "Becton, Dickinson and Company",
+   "sector": "Health Care",
+   "price": 208.04,
+   "setup": "extended",
+   "score": 48.7,
+   "factors": {
+    "regime": 60,
+    "business_quality": 55,
+    "financial_strength": 65,
+    "growth": 45,
+    "moat": 62,
+    "valuation": 60,
+    "technical": 85.0,
+    "catalyst": 60,
+    "institutional": 85,
+    "liquidity": 85,
+    "reward_risk": 40.25
+   },
+   "penalties": [
+    [
+     "earnings inside holding window",
+     10
+    ],
+    [
+     "extended above 21 EMA",
+     5
+    ]
+   ],
+   "notes": [
+    "Health Care is a leading sector",
+    "analyst median target is below price",
+    "above 21/48/200 EMA",
+    "RS 3m +18.0% vs SPY",
+    "extended 7.0% above 21 EMA",
+    "within 3% of 52-week high",
+    "accumulation: more high-volume up days"
+   ],
+   "bear_case": [
+    "Penalty: earnings inside holding window",
+    "Penalty: extended above 21 EMA",
+    "Reward:risk 0.8 is below the 2.0 minimum at a 7.3% stop",
+    "Regime does not favor new longs",
+    "Chasing an extended move invites a sharp mean reversion to the 21 EMA"
+   ],
+   "decision": "REJECT",
+   "reasons": [
+    "earnings inside holding window",
+    "no actionable setup (extended)",
+    "reward:risk 0.81 < 2.0",
+    "score 48.7 below 65"
+   ],
+   "tech": {
+    "symbol": "BDX",
+    "as_of": "2026-11-04",
+    "price": 208.04,
+    "ema21": 194.4,
+    "ema48": 187.66,
+    "ema200": 168.06,
+    "ema21_slope_5d": 3.78,
+    "atr14": 4.14,
+    "atr_pct": 1.99,
+    "ext_vs_21ema_pct": 7.02,
+    "pct_from_52w_high": -0.82,
+    "hi52": 209.76,
+    "low10": 193.8,
+    "low20": 178.9,
+    "rs_1m_pct": 17.11,
+    "rs_3m_pct": 18.03,
+    "vol_ratio_last": 1.54,
+    "up_days_high_vol_20": 5,
+    "down_days_high_vol_20": 2,
+    "avg_dollar_volume": 352817797.0,
+    "above_all_emas": true,
+    "setup": "extended",
+    "post_earnings": null,
+    "stop": 192.77,
+    "stop_pct": 7.34,
+    "t1": 216.31,
+    "t2": 224.59,
+    "ret_1m_pct": 15.38,
+    "ret_3m_pct": 18.18,
+    "t2_source": "4xATR",
+    "rr_t1": 0.54,
+    "rr_t2": 1.08,
+    "expected_rr": 0.81,
+    "data_quality": "ok"
+   },
+   "earnings": {
+    "next": "2026-11-05",
+    "last": "2026-08-06",
+    "surprise": {
+     "eps_estimate": 3.14,
+     "eps_actual": 3.23,
+     "surprise_pct": 2.93
+    },
+    "inside_window": true,
+    "days_to_next": 1
+   },
+   "expected_rr": 0.81,
+   "stop": 192.77,
+   "stop_pct": 7.34,
+   "t1": 216.31,
+   "t2": 224.59,
+   "data_quality": "ok",
+   "fund": {
+    "marketCap": 56665993216,
+    "forwardPE": 15.639708,
+    "revenueGrowth": 0.054,
+    "profitMargins": 0.0419,
+    "debtToEquity": 68.84,
+    "targetMedianPrice": 197.5,
+    "recommendationMean": 2.125,
+    "heldPercentInstitutions": 0.99514
+   },
+   "evaluated_at_utc": "2026-11-04T20:17:04+00:00"
+  },
+  {
+   "symbol": "WMT",
+   "name": "Walmart Inc.",
+   "sector": "Consumer Staples",
+   "price": 130.37,
+   "setup": "extended",
+   "score": 48.2,
+   "factors": {
+    "regime": 60,
+    "business_quality": 70,
+    "financial_strength": 65,
+    "growth": 45,
+    "moat": 70,
+    "valuation": 35,
+    "technical": 80.0,
+    "catalyst": 65,
+    "institutional": 65,
+    "liquidity": 95,
+    "reward_risk": 34.75
+   },
+   "penalties": [
+    [
+     "earnings inside holding window",
+     10
+    ],
+    [
+     "extended above 21 EMA",
+     5
     ]
    ],
    "notes": [
     "Consumer Staples is a leading sector",
+    "analyst median target is below price",
     "above 21/48/200 EMA",
-    "accumulation: more high-volume up days",
-    "post-earnings reaction -1.2% on 1.29x volume"
-   ],
-   "bear_case": [
-    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)",
-    "Reward:risk 0.7 is below the 2.0 minimum at a 9.8% stop",
-    "Earnings reaction day closed red \u2014 continuation is unconfirmed"
-   ],
-   "decision": "REJECT",
-   "reasons": [
-    "reward:risk 0.73 < 2.0",
-    "fundamental data unavailable from vendor \u2014 confidence reduced, re-run later",
-    "score 59.7 below 65"
-   ],
-   "tech": {
-    "symbol": "PM",
-    "as_of": "2026-10-28",
-    "price": 202.64,
-    "ema21": 198.47,
-    "ema48": 194.06,
-    "ema200": 179.14,
-    "ema21_slope_5d": 2.01,
-    "atr14": 5.27,
-    "atr_pct": 2.6,
-    "ext_vs_21ema_pct": 2.1,
-    "pct_from_52w_high": -3.71,
-    "hi52": 210.45,
-    "low10": 184.0,
-    "low20": 184.0,
-    "rs_1m_pct": 4.3,
-    "rs_3m_pct": 1.97,
-    "vol_ratio_last": 0.74,
-    "up_days_high_vol_20": 5,
-    "down_days_high_vol_20": 4,
-    "avg_dollar_volume": 913543672.0,
-    "above_all_emas": true,
-    "setup": "pullback_to_21ema",
-    "post_earnings": {
-     "reaction_date": "2026-10-21",
-     "reaction_chg_pct": -1.22,
-     "reaction_vol_ratio": 1.29,
-     "reaction_low": 184.0,
-     "holding_above_low": true
-    },
-    "stop": 182.68,
-    "stop_pct": 9.85,
-    "t1": 210.45,
-    "t2": 223.74,
-    "ret_1m_pct": 5.4,
-    "ret_3m_pct": 6.45,
-    "t2_source": "4xATR",
-    "rr_t1": 0.39,
-    "rr_t2": 1.06,
-    "expected_rr": 0.73,
-    "data_quality": "degraded"
-   },
-   "earnings": {
-    "next": "2027-02-04",
-    "last": "2026-10-21",
-    "surprise": {
-     "eps_estimate": 2.32,
-     "eps_actual": 2.36,
-     "surprise_pct": 1.88
-    },
-    "inside_window": false,
-    "days_to_next": 70
-   },
-   "expected_rr": 0.73,
-   "stop": 182.68,
-   "stop_pct": 9.85,
-   "t1": 210.45,
-   "t2": 223.74,
-   "data_quality": "degraded",
-   "fund": {
-    "marketCap": 315837426327.65784,
-    "forwardPE": null,
-    "revenueGrowth": null,
-    "profitMargins": null,
-    "debtToEquity": null,
-    "targetMedianPrice": null,
-    "recommendationMean": null,
-    "heldPercentInstitutions": null
-   },
-   "evaluated_at_utc": "2026-10-29T07:35:59+00:00"
-  },
-  {
-   "symbol": "OXY",
-   "name": null,
-   "sector": "Energy",
-   "price": 62.86,
-   "setup": "pullback_to_21ema",
-   "score": 54.0,
-   "factors": {
-    "regime": 75,
-    "business_quality": 55,
-    "financial_strength": 55,
-    "growth": 50,
-    "moat": 62,
-    "valuation": 55,
-    "technical": 100.0,
-    "catalyst": 55,
-    "institutional": 65,
-    "liquidity": 95,
-    "reward_risk": 58.0
-   },
-   "penalties": [
-    [
-     "earnings inside holding window",
-     10
-    ],
-    [
-     "binary macro event inside window: US midterm elections (2026-11-03)",
-     3
-    ]
-   ],
-   "notes": [
-    "Energy is a leading sector",
-    "above 21/48/200 EMA",
-    "RS 3m +8.1% vs SPY",
+    "RS 3m +16.5% vs SPY",
+    "extended 9.2% above 21 EMA",
     "accumulation: more high-volume up days"
    ],
    "bear_case": [
     "Penalty: earnings inside holding window",
-    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)",
-    "Reward:risk 1.5 is below the 2.0 minimum at a 5.2% stop"
+    "Penalty: extended above 21 EMA",
+    "Reward:risk 0.6 is below the 2.0 minimum at a 10.2% stop",
+    "Valuation offers little cushion if growth disappoints",
+    "Regime does not favor new longs",
+    "Chasing an extended move invites a sharp mean reversion to the 21 EMA"
    ],
    "decision": "REJECT",
    "reasons": [
     "earnings inside holding window",
-    "reward:risk 1.52 < 2.0",
-    "fundamental data unavailable from vendor \u2014 confidence reduced, re-run later",
-    "score 54.0 below 65"
+    "no actionable setup (extended)",
+    "reward:risk 0.59 < 2.0",
+    "score 48.2 below 65"
    ],
    "tech": {
-    "symbol": "OXY",
-    "as_of": "2026-10-28",
-    "price": 62.86,
-    "ema21": 61.47,
-    "ema48": 59.96,
-    "ema200": 54.91,
-    "ema21_slope_5d": 1.09,
-    "atr14": 1.51,
-    "atr_pct": 2.4,
-    "ext_vs_21ema_pct": 2.26,
-    "pct_from_52w_high": -5.94,
-    "hi52": 66.83,
-    "low10": 60.28,
-    "low20": 55.5,
-    "rs_1m_pct": 13.21,
-    "rs_3m_pct": 8.12,
-    "vol_ratio_last": 0.86,
-    "up_days_high_vol_20": 8,
-    "down_days_high_vol_20": 2,
-    "avg_dollar_volume": 532310429.0,
-    "above_all_emas": true,
-    "setup": "pullback_to_21ema",
-    "post_earnings": null,
-    "stop": 59.59,
-    "stop_pct": 5.2,
-    "t1": 66.83,
-    "t2": 68.89,
-    "ret_1m_pct": 14.42,
-    "ret_3m_pct": 12.87,
-    "t2_source": "4xATR",
-    "rr_t1": 1.21,
-    "rr_t2": 1.84,
-    "expected_rr": 1.52,
-    "data_quality": "degraded"
-   },
-   "earnings": {
-    "next": "2026-11-09",
-    "last": "2026-08-05",
-    "surprise": {
-     "eps_estimate": 1.85,
-     "eps_actual": 2.4,
-     "surprise_pct": 29.8
-    },
-    "inside_window": true,
-    "days_to_next": 7
-   },
-   "expected_rr": 1.52,
-   "stop": 59.59,
-   "stop_pct": 5.2,
-   "t1": 66.83,
-   "t2": 68.89,
-   "data_quality": "degraded",
-   "fund": {
-    "marketCap": 62837205751.19023,
-    "forwardPE": null,
-    "revenueGrowth": null,
-    "profitMargins": null,
-    "debtToEquity": null,
-    "targetMedianPrice": null,
-    "recommendationMean": null,
-    "heldPercentInstitutions": null
-   },
-   "evaluated_at_utc": "2026-10-29T07:34:46+00:00"
-  },
-  {
-   "symbol": "DVN",
-   "name": null,
-   "sector": "Energy",
-   "price": 51.27,
-   "setup": "pullback_to_21ema",
-   "score": 53.5,
-   "factors": {
-    "regime": 75,
-    "business_quality": 55,
-    "financial_strength": 55,
-    "growth": 50,
-    "moat": 62,
-    "valuation": 55,
-    "technical": 100.0,
-    "catalyst": 55,
-    "institutional": 65,
-    "liquidity": 95,
-    "reward_risk": 51.75
-   },
-   "penalties": [
-    [
-     "earnings inside holding window",
-     10
-    ],
-    [
-     "binary macro event inside window: US midterm elections (2026-11-03)",
-     3
-    ]
-   ],
-   "notes": [
-    "Energy is a leading sector",
-    "above 21/48/200 EMA",
-    "RS 3m +11.9% vs SPY",
-    "within 3% of 52-week high",
-    "accumulation: more high-volume up days"
-   ],
-   "bear_case": [
-    "Penalty: earnings inside holding window",
-    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)",
-    "Reward:risk 1.3 is below the 2.0 minimum at a 6.3% stop"
-   ],
-   "decision": "REJECT",
-   "reasons": [
-    "earnings inside holding window",
-    "reward:risk 1.27 < 2.0",
-    "fundamental data unavailable from vendor \u2014 confidence reduced, re-run later",
-    "score 53.5 below 65"
-   ],
-   "tech": {
-    "symbol": "DVN",
-    "as_of": "2026-10-28",
-    "price": 51.27,
-    "ema21": 49.79,
-    "ema48": 48.56,
-    "ema200": 44.56,
-    "ema21_slope_5d": 0.75,
-    "atr14": 1.37,
-    "atr_pct": 2.67,
-    "ext_vs_21ema_pct": 2.97,
-    "pct_from_52w_high": -1.42,
-    "hi52": 52.01,
-    "low10": 48.4,
-    "low20": 45.75,
-    "rs_1m_pct": 8.87,
-    "rs_3m_pct": 11.92,
+    "symbol": "WMT",
+    "as_of": "2026-11-04",
+    "price": 130.37,
+    "ema21": 119.34,
+    "ema48": 115.11,
+    "ema200": 114.25,
+    "ema21_slope_5d": 4.01,
+    "atr14": 2.78,
+    "atr_pct": 2.13,
+    "ext_vs_21ema_pct": 9.24,
+    "pct_from_52w_high": -3.31,
+    "hi52": 134.84,
+    "low10": 117.83,
+    "low20": 108.44,
+    "rs_1m_pct": 23.43,
+    "rs_3m_pct": 16.46,
     "vol_ratio_last": 0.77,
-    "up_days_high_vol_20": 2,
+    "up_days_high_vol_20": 6,
     "down_days_high_vol_20": 0,
-    "avg_dollar_volume": 552272857.0,
+    "avg_dollar_volume": 2882589581.0,
     "above_all_emas": true,
-    "setup": "pullback_to_21ema",
+    "setup": "extended",
     "post_earnings": null,
-    "stop": 48.06,
-    "stop_pct": 6.26,
-    "t1": 54.0,
-    "t2": 56.74,
-    "ret_1m_pct": 10.02,
-    "ret_3m_pct": 16.83,
+    "stop": 117.14,
+    "stop_pct": 10.15,
+    "t1": 134.84,
+    "t2": 141.48,
+    "ret_1m_pct": 21.61,
+    "ret_3m_pct": 16.61,
     "t2_source": "4xATR",
-    "rr_t1": 0.85,
-    "rr_t2": 1.7,
-    "expected_rr": 1.27,
-    "data_quality": "degraded"
+    "rr_t1": 0.34,
+    "rr_t2": 0.84,
+    "expected_rr": 0.59,
+    "data_quality": "ok"
    },
    "earnings": {
-    "next": "2026-11-05",
-    "last": "2026-08-04",
+    "next": "2026-11-19",
+    "last": "2026-08-20",
     "surprise": {
-     "eps_estimate": 1.41,
-     "eps_actual": 1.57,
-     "surprise_pct": 11.26
+     "eps_estimate": 0.74,
+     "eps_actual": 0.81,
+     "surprise_pct": 9.27
     },
     "inside_window": true,
-    "days_to_next": 5
+    "days_to_next": 11
    },
-   "expected_rr": 1.27,
-   "stop": 48.06,
-   "stop_pct": 6.26,
-   "t1": 54.0,
-   "t2": 56.74,
-   "data_quality": "degraded",
+   "expected_rr": 0.59,
+   "stop": 117.14,
+   "stop_pct": 10.15,
+   "t1": 134.84,
+   "t2": 141.48,
+   "data_quality": "ok",
    "fund": {
-    "marketCap": 56397000503.54004,
-    "forwardPE": null,
-    "revenueGrowth": null,
-    "profitMargins": null,
-    "debtToEquity": null,
-    "targetMedianPrice": null,
-    "recommendationMean": null,
-    "heldPercentInstitutions": null
+    "marketCap": 1034315300864,
+    "forwardPE": 40.40636,
+    "revenueGrowth": 0.059,
+    "profitMargins": 0.03,
+    "debtToEquity": 71.653,
+    "targetMedianPrice": 130.0,
+    "recommendationMean": 1.51163,
+    "heldPercentInstitutions": 0.38368
    },
-   "evaluated_at_utc": "2026-10-29T07:35:07+00:00"
-  },
-  {
-   "symbol": "COP",
-   "name": null,
-   "sector": "Energy",
-   "price": 149.06,
-   "setup": "breakout_watch",
-   "score": 53.4,
-   "factors": {
-    "regime": 75,
-    "business_quality": 55,
-    "financial_strength": 55,
-    "growth": 50,
-    "moat": 70,
-    "valuation": 55,
-    "technical": 100.0,
-    "catalyst": 55,
-    "institutional": 65,
-    "liquidity": 95,
-    "reward_risk": 44.5
-   },
-   "penalties": [
-    [
-     "earnings inside holding window",
-     10
-    ],
-    [
-     "binary macro event inside window: US midterm elections (2026-11-03)",
-     3
-    ]
-   ],
-   "notes": [
-    "Energy is a leading sector",
-    "above 21/48/200 EMA",
-    "RS 3m +20.8% vs SPY",
-    "within 3% of 52-week high",
-    "accumulation: more high-volume up days"
-   ],
-   "bear_case": [
-    "Penalty: earnings inside holding window",
-    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)",
-    "Reward:risk 1.0 is below the 2.0 minimum at a 6.1% stop"
-   ],
-   "decision": "REJECT",
-   "reasons": [
-    "earnings inside holding window",
-    "reward:risk 0.98 < 2.0",
-    "fundamental data unavailable from vendor \u2014 confidence reduced, re-run later",
-    "score 53.4 below 65"
-   ],
-   "tech": {
-    "symbol": "COP",
-    "as_of": "2026-10-28",
-    "price": 149.06,
-    "ema21": 141.79,
-    "ema48": 135.55,
-    "ema200": 119.75,
-    "ema21_slope_5d": 4.42,
-    "atr14": 3.53,
-    "atr_pct": 2.37,
-    "ext_vs_21ema_pct": 5.13,
-    "pct_from_52w_high": -2.43,
-    "hi52": 152.77,
-    "low10": 140.81,
-    "low20": 124.23,
-    "rs_1m_pct": 17.58,
-    "rs_3m_pct": 20.77,
-    "vol_ratio_last": 0.84,
-    "up_days_high_vol_20": 3,
-    "down_days_high_vol_20": 1,
-    "avg_dollar_volume": 963421867.0,
-    "above_all_emas": true,
-    "setup": "breakout_watch",
-    "post_earnings": null,
-    "stop": 139.93,
-    "stop_pct": 6.13,
-    "t1": 152.77,
-    "t2": 163.19,
-    "ret_1m_pct": 18.83,
-    "ret_3m_pct": 26.06,
-    "t2_source": "4xATR",
-    "rr_t1": 0.41,
-    "rr_t2": 1.55,
-    "expected_rr": 0.98,
-    "data_quality": "degraded"
-   },
-   "earnings": {
-    "next": "2026-11-05",
-    "last": "2026-08-06",
-    "surprise": {
-     "eps_estimate": 2.93,
-     "eps_actual": 3.24,
-     "surprise_pct": 10.58
-    },
-    "inside_window": true,
-    "days_to_next": 5
-   },
-   "expected_rr": 0.98,
-   "stop": 139.93,
-   "stop_pct": 6.13,
-   "t1": 152.77,
-   "t2": 163.19,
-   "data_quality": "degraded",
-   "fund": {
-    "marketCap": 181598901709.0694,
-    "forwardPE": null,
-    "revenueGrowth": null,
-    "profitMargins": null,
-    "debtToEquity": null,
-    "targetMedianPrice": null,
-    "recommendationMean": null,
-    "heldPercentInstitutions": null
-   },
-   "evaluated_at_utc": "2026-10-29T07:33:53+00:00"
-  },
-  {
-   "symbol": "PLTR",
-   "name": null,
-   "sector": "Technology",
-   "price": 196.81,
-   "setup": "pullback_to_21ema",
-   "score": 52.5,
-   "factors": {
-    "regime": 50,
-    "business_quality": 55,
-    "financial_strength": 55,
-    "growth": 50,
-    "moat": 70,
-    "valuation": 55,
-    "technical": 100.0,
-    "catalyst": 55,
-    "institutional": 65,
-    "liquidity": 95,
-    "reward_risk": 64.25
-   },
-   "penalties": [
-    [
-     "earnings inside holding window",
-     10
-    ],
-    [
-     "binary macro event inside window: US midterm elections (2026-11-03)",
-     3
-    ]
-   ],
-   "notes": [
-    "Technology is a lagging sector",
-    "above 21/48/200 EMA",
-    "RS 3m +54.2% vs SPY",
-    "accumulation: more high-volume up days"
-   ],
-   "bear_case": [
-    "Penalty: earnings inside holding window",
-    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)",
-    "Reward:risk 1.8 is below the 2.0 minimum at a 7.4% stop"
-   ],
-   "decision": "REJECT",
-   "reasons": [
-    "earnings inside holding window",
-    "reward:risk 1.77 < 2.0",
-    "fundamental data unavailable from vendor \u2014 confidence reduced, re-run later",
-    "score 52.5 below 65"
-   ],
-   "tech": {
-    "symbol": "PLTR",
-    "as_of": "2026-10-28",
-    "price": 196.81,
-    "ema21": 195.04,
-    "ema48": 185.55,
-    "ema200": 166.24,
-    "ema21_slope_5d": 1.51,
-    "atr14": 8.8,
-    "atr_pct": 4.47,
-    "ext_vs_21ema_pct": 0.91,
-    "pct_from_52w_high": -7.57,
-    "hi52": 212.94,
-    "low10": 184.45,
-    "low20": 184.45,
-    "rs_1m_pct": 4.16,
-    "rs_3m_pct": 54.21,
-    "vol_ratio_last": 0.82,
-    "up_days_high_vol_20": 2,
-    "down_days_high_vol_20": 1,
-    "avg_dollar_volume": 4991128304.0,
-    "above_all_emas": true,
-    "setup": "pullback_to_21ema",
-    "post_earnings": null,
-    "stop": 182.25,
-    "stop_pct": 7.4,
-    "t1": 212.94,
-    "t2": 232.02,
-    "ret_1m_pct": 5.26,
-    "ret_3m_pct": 60.98,
-    "t2_source": "4xATR",
-    "rr_t1": 1.11,
-    "rr_t2": 2.42,
-    "expected_rr": 1.77,
-    "data_quality": "degraded"
-   },
-   "earnings": {
-    "next": "2026-11-02",
-    "last": "2026-08-03",
-    "surprise": {
-     "eps_estimate": 0.35,
-     "eps_actual": 0.41,
-     "surprise_pct": 18.51
-    },
-    "inside_window": true,
-    "days_to_next": 2
-   },
-   "expected_rr": 1.77,
-   "stop": 182.25,
-   "stop_pct": 7.4,
-   "t1": 212.94,
-   "t2": 232.02,
-   "data_quality": "degraded",
-   "fund": {
-    "marketCap": 472945933581.958,
-    "forwardPE": null,
-    "revenueGrowth": null,
-    "profitMargins": null,
-    "debtToEquity": null,
-    "targetMedianPrice": null,
-    "recommendationMean": null,
-    "heldPercentInstitutions": null
-   },
-   "evaluated_at_utc": "2026-10-29T07:36:19+00:00"
-  },
-  {
-   "symbol": "XOM",
-   "name": null,
-   "sector": "Energy",
-   "price": 182.02,
-   "setup": "breakout_watch",
-   "score": 52.2,
-   "factors": {
-    "regime": 75,
-    "business_quality": 55,
-    "financial_strength": 55,
-    "growth": 50,
-    "moat": 70,
-    "valuation": 55,
-    "technical": 100.0,
-    "catalyst": 45,
-    "institutional": 55,
-    "liquidity": 95,
-    "reward_risk": 51.5
-   },
-   "penalties": [
-    [
-     "earnings inside holding window",
-     10
-    ],
-    [
-     "binary macro event inside window: US midterm elections (2026-11-03)",
-     3
-    ]
-   ],
-   "notes": [
-    "Energy is a leading sector",
-    "above 21/48/200 EMA",
-    "RS 3m +11.8% vs SPY",
-    "within 3% of 52-week high"
-   ],
-   "bear_case": [
-    "Penalty: earnings inside holding window",
-    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)",
-    "Reward:risk 1.3 is below the 2.0 minimum at a 5.2% stop"
-   ],
-   "decision": "REJECT",
-   "reasons": [
-    "earnings inside holding window",
-    "reward:risk 1.26 < 2.0",
-    "fundamental data unavailable from vendor \u2014 confidence reduced, re-run later",
-    "score 52.2 below 65"
-   ],
-   "tech": {
-    "symbol": "XOM",
-    "as_of": "2026-10-28",
-    "price": 182.02,
-    "ema21": 174.85,
-    "ema48": 168.31,
-    "ema200": 151.64,
-    "ema21_slope_5d": 4.16,
-    "atr14": 3.95,
-    "atr_pct": 2.17,
-    "ext_vs_21ema_pct": 4.1,
-    "pct_from_52w_high": -1.55,
-    "hi52": 184.88,
-    "low10": 173.6,
-    "low20": 160.81,
-    "rs_1m_pct": 11.63,
-    "rs_3m_pct": 11.8,
-    "vol_ratio_last": 0.96,
-    "up_days_high_vol_20": 2,
-    "down_days_high_vol_20": 2,
-    "avg_dollar_volume": 2408555316.0,
-    "above_all_emas": true,
-    "setup": "breakout_watch",
-    "post_earnings": null,
-    "stop": 172.61,
-    "stop_pct": 5.17,
-    "t1": 189.92,
-    "t2": 197.83,
-    "ret_1m_pct": 12.81,
-    "ret_3m_pct": 16.71,
-    "t2_source": "4xATR",
-    "rr_t1": 0.84,
-    "rr_t2": 1.68,
-    "expected_rr": 1.26,
-    "data_quality": "degraded"
-   },
-   "earnings": {
-    "next": "2026-10-30",
-    "last": "2026-07-31",
-    "surprise": {
-     "eps_estimate": 3.63,
-     "eps_actual": 3.52,
-     "surprise_pct": -3.0
-    },
-    "inside_window": true,
-    "days_to_next": 1
-   },
-   "expected_rr": 1.26,
-   "stop": 172.61,
-   "stop_pct": 5.17,
-   "t1": 189.92,
-   "t2": 197.83,
-   "data_quality": "degraded",
-   "fund": {
-    "marketCap": 748450232527.1832,
-    "forwardPE": null,
-    "revenueGrowth": null,
-    "profitMargins": null,
-    "debtToEquity": null,
-    "targetMedianPrice": null,
-    "recommendationMean": null,
-    "heldPercentInstitutions": null
-   },
-   "evaluated_at_utc": "2026-10-29T07:34:25+00:00"
-  },
-  {
-   "symbol": "SHOP",
-   "name": null,
-   "sector": "Technology",
-   "price": 168.22,
-   "setup": "pullback_to_21ema",
-   "score": 52.0,
-   "factors": {
-    "regime": 50,
-    "business_quality": 55,
-    "financial_strength": 55,
-    "growth": 50,
-    "moat": 70,
-    "valuation": 55,
-    "technical": 100.0,
-    "catalyst": 55,
-    "institutional": 65,
-    "liquidity": 95,
-    "reward_risk": 57.75
-   },
-   "penalties": [
-    [
-     "earnings inside holding window",
-     10
-    ],
-    [
-     "binary macro event inside window: US midterm elections (2026-11-03)",
-     3
-    ]
-   ],
-   "notes": [
-    "Technology is a lagging sector",
-    "above 21/48/200 EMA",
-    "RS 3m +31.7% vs SPY",
-    "accumulation: more high-volume up days"
-   ],
-   "bear_case": [
-    "Penalty: earnings inside holding window",
-    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)",
-    "Reward:risk 1.5 is below the 2.0 minimum at a 8.9% stop"
-   ],
-   "decision": "REJECT",
-   "reasons": [
-    "earnings inside holding window",
-    "reward:risk 1.51 < 2.0",
-    "fundamental data unavailable from vendor \u2014 confidence reduced, re-run later",
-    "score 52.0 below 65"
-   ],
-   "tech": {
-    "symbol": "SHOP",
-    "as_of": "2026-10-28",
-    "price": 168.22,
-    "ema21": 165.09,
-    "ema48": 155.27,
-    "ema200": 141.59,
-    "ema21_slope_5d": 1.7,
-    "atr14": 7.78,
-    "atr_pct": 4.63,
-    "ext_vs_21ema_pct": 1.9,
-    "pct_from_52w_high": -7.67,
-    "hi52": 182.19,
-    "low10": 163.25,
-    "low20": 148.01,
-    "rs_1m_pct": 12.27,
-    "rs_3m_pct": 31.66,
-    "vol_ratio_last": 0.66,
-    "up_days_high_vol_20": 4,
-    "down_days_high_vol_20": 2,
-    "avg_dollar_volume": 1445671252.0,
-    "above_all_emas": true,
-    "setup": "pullback_to_21ema",
-    "post_earnings": null,
-    "stop": 153.32,
-    "stop_pct": 8.86,
-    "t1": 182.19,
-    "t2": 199.35,
-    "ret_1m_pct": 13.46,
-    "ret_3m_pct": 37.43,
-    "t2_source": "4xATR",
-    "rr_t1": 0.94,
-    "rr_t2": 2.09,
-    "expected_rr": 1.51,
-    "data_quality": "degraded"
-   },
-   "earnings": {
-    "next": "2026-11-03",
-    "last": "2026-08-05",
-    "surprise": {
-     "eps_estimate": 0.4,
-     "eps_actual": 0.42,
-     "surprise_pct": 5.05
-    },
-    "inside_window": true,
-    "days_to_next": 3
-   },
-   "expected_rr": 1.51,
-   "stop": 153.32,
-   "stop_pct": 8.86,
-   "t1": 182.19,
-   "t2": 199.35,
-   "data_quality": "degraded",
-   "fund": {
-    "marketCap": 216439243643.43027,
-    "forwardPE": null,
-    "revenueGrowth": null,
-    "profitMargins": null,
-    "debtToEquity": null,
-    "targetMedianPrice": null,
-    "recommendationMean": null,
-    "heldPercentInstitutions": null
-   },
-   "evaluated_at_utc": "2026-10-29T07:36:30+00:00"
-  },
-  {
-   "symbol": "APA",
-   "name": null,
-   "sector": "Energy",
-   "price": 51.11,
-   "setup": "breakout_watch",
-   "score": 51.6,
-   "factors": {
-    "regime": 75,
-    "business_quality": 55,
-    "financial_strength": 55,
-    "growth": 50,
-    "moat": 55,
-    "valuation": 55,
-    "technical": 100.0,
-    "catalyst": 55,
-    "institutional": 65,
-    "liquidity": 85,
-    "reward_risk": 38.0
-   },
-   "penalties": [
-    [
-     "earnings inside holding window",
-     10
-    ],
-    [
-     "binary macro event inside window: US midterm elections (2026-11-03)",
-     3
-    ]
-   ],
-   "notes": [
-    "Energy is a leading sector",
-    "above 21/48/200 EMA",
-    "RS 3m +35.5% vs SPY",
-    "within 3% of 52-week high",
-    "accumulation: more high-volume up days"
-   ],
-   "bear_case": [
-    "Penalty: earnings inside holding window",
-    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)",
-    "Reward:risk 0.7 is below the 2.0 minimum at a 10.2% stop"
-   ],
-   "decision": "REJECT",
-   "reasons": [
-    "earnings inside holding window",
-    "reward:risk 0.72 < 2.0",
-    "fundamental data unavailable from vendor \u2014 confidence reduced, re-run later",
-    "score 51.6 below 65"
-   ],
-   "tech": {
-    "symbol": "APA",
-    "as_of": "2026-10-28",
-    "price": 51.11,
-    "ema21": 48.01,
-    "ema48": 45.23,
-    "ema200": 37.59,
-    "ema21_slope_5d": 1.83,
-    "atr14": 1.55,
-    "atr_pct": 3.04,
-    "ext_vs_21ema_pct": 6.45,
-    "pct_from_52w_high": -2.44,
-    "hi52": 52.39,
-    "low10": 46.3,
-    "low20": 41.1,
-    "rs_1m_pct": 20.48,
-    "rs_3m_pct": 35.45,
-    "vol_ratio_last": 0.9,
-    "up_days_high_vol_20": 4,
-    "down_days_high_vol_20": 2,
-    "avg_dollar_volume": 285596141.0,
-    "above_all_emas": true,
-    "setup": "breakout_watch",
-    "post_earnings": null,
-    "stop": 45.91,
-    "stop_pct": 10.17,
-    "t1": 52.39,
-    "t2": 57.33,
-    "ret_1m_pct": 21.76,
-    "ret_3m_pct": 41.39,
-    "t2_source": "4xATR",
-    "rr_t1": 0.25,
-    "rr_t2": 1.2,
-    "expected_rr": 0.72,
-    "data_quality": "degraded"
-   },
-   "earnings": {
-    "next": "2026-11-04",
-    "last": "2026-08-05",
-    "surprise": {
-     "eps_estimate": 1.87,
-     "eps_actual": 1.89,
-     "surprise_pct": 1.01
-    },
-    "inside_window": true,
-    "days_to_next": 4
-   },
-   "expected_rr": 0.72,
-   "stop": 45.91,
-   "stop_pct": 10.17,
-   "t1": 52.39,
-   "t2": 57.33,
-   "data_quality": "degraded",
-   "fund": {
-    "marketCap": 17906465889.93759,
-    "forwardPE": null,
-    "revenueGrowth": null,
-    "profitMargins": null,
-    "debtToEquity": null,
-    "targetMedianPrice": null,
-    "recommendationMean": null,
-    "heldPercentInstitutions": null
-   },
-   "evaluated_at_utc": "2026-10-29T07:33:43+00:00"
-  },
-  {
-   "symbol": "LNG",
-   "name": null,
-   "sector": "Energy",
-   "price": 297.77,
-   "setup": "breakout_watch",
-   "score": 51.2,
-   "factors": {
-    "regime": 75,
-    "business_quality": 55,
-    "financial_strength": 55,
-    "growth": 50,
-    "moat": 62,
-    "valuation": 55,
-    "technical": 100.0,
-    "catalyst": 45,
-    "institutional": 65,
-    "liquidity": 95,
-    "reward_risk": 38.5
-   },
-   "penalties": [
-    [
-     "earnings inside holding window",
-     10
-    ],
-    [
-     "binary macro event inside window: US midterm elections (2026-11-03)",
-     3
-    ]
-   ],
-   "notes": [
-    "Energy is a leading sector",
-    "above 21/48/200 EMA",
-    "RS 3m +10.8% vs SPY",
-    "within 3% of 52-week high",
-    "accumulation: more high-volume up days"
-   ],
-   "bear_case": [
-    "Penalty: earnings inside holding window",
-    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)",
-    "Reward:risk 0.7 is below the 2.0 minimum at a 8.7% stop"
-   ],
-   "decision": "REJECT",
-   "reasons": [
-    "earnings inside holding window",
-    "reward:risk 0.74 < 2.0",
-    "fundamental data unavailable from vendor \u2014 confidence reduced, re-run later",
-    "score 51.2 below 65"
-   ],
-   "tech": {
-    "symbol": "LNG",
-    "as_of": "2026-10-28",
-    "price": 297.77,
-    "ema21": 286.13,
-    "ema48": 279.21,
-    "ema200": 255.98,
-    "ema21_slope_5d": 6.74,
-    "atr14": 7.78,
-    "atr_pct": 2.61,
-    "ext_vs_21ema_pct": 4.07,
-    "pct_from_52w_high": -2.28,
-    "hi52": 304.73,
-    "low10": 273.95,
-    "low20": 259.5,
-    "rs_1m_pct": 10.23,
-    "rs_3m_pct": 10.78,
-    "vol_ratio_last": 1.24,
-    "up_days_high_vol_20": 4,
-    "down_days_high_vol_20": 3,
-    "avg_dollar_volume": 560528183.0,
-    "above_all_emas": true,
-    "setup": "breakout_watch",
-    "post_earnings": null,
-    "stop": 272.0,
-    "stop_pct": 8.65,
-    "t1": 304.73,
-    "t2": 328.9,
-    "ret_1m_pct": 11.4,
-    "ret_3m_pct": 15.64,
-    "t2_source": "4xATR",
-    "rr_t1": 0.27,
-    "rr_t2": 1.21,
-    "expected_rr": 0.74,
-    "data_quality": "degraded"
-   },
-   "earnings": {
-    "next": "2026-10-29",
-    "last": "2026-08-06",
-    "surprise": {
-     "eps_estimate": 3.15,
-     "eps_actual": 3.02,
-     "surprise_pct": -4.3
-    },
-    "inside_window": true,
-    "days_to_next": 0
-   },
-   "expected_rr": 0.74,
-   "stop": 272.0,
-   "stop_pct": 8.65,
-   "t1": 304.73,
-   "t2": 328.9,
-   "data_quality": "degraded",
-   "fund": {
-    "marketCap": 61499673958.60797,
-    "forwardPE": null,
-    "revenueGrowth": null,
-    "profitMargins": null,
-    "debtToEquity": null,
-    "targetMedianPrice": null,
-    "recommendationMean": null,
-    "heldPercentInstitutions": null
-   },
-   "evaluated_at_utc": "2026-10-29T07:34:56+00:00"
-  },
-  {
-   "symbol": "CVX",
-   "name": null,
-   "sector": "Energy",
-   "price": 229.2,
-   "setup": "breakout_watch",
-   "score": 50.4,
-   "factors": {
-    "regime": 75,
-    "business_quality": 55,
-    "financial_strength": 55,
-    "growth": 50,
-    "moat": 70,
-    "valuation": 55,
-    "technical": 100.0,
-    "catalyst": 55,
-    "institutional": 65,
-    "liquidity": 95,
-    "reward_risk": 44.0
-   },
-   "penalties": [
-    [
-     "earnings inside holding window",
-     10
-    ],
-    [
-     "new high on light volume",
-     3
-    ],
-    [
-     "binary macro event inside window: US midterm elections (2026-11-03)",
-     3
-    ]
-   ],
-   "notes": [
-    "Energy is a leading sector",
-    "above 21/48/200 EMA",
-    "RS 3m +15.2% vs SPY",
-    "within 3% of 52-week high",
-    "accumulation: more high-volume up days"
-   ],
-   "bear_case": [
-    "Penalty: earnings inside holding window",
-    "Penalty: new high on light volume",
-    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)",
-    "Reward:risk 1.0 is below the 2.0 minimum at a 5.4% stop"
-   ],
-   "decision": "REJECT",
-   "reasons": [
-    "earnings inside holding window",
-    "reward:risk 0.96 < 2.0",
-    "fundamental data unavailable from vendor \u2014 confidence reduced, re-run later",
-    "score 50.4 below 65"
-   ],
-   "tech": {
-    "symbol": "CVX",
-    "as_of": "2026-10-28",
-    "price": 229.2,
-    "ema21": 220.98,
-    "ema48": 212.69,
-    "ema200": 190.88,
-    "ema21_slope_5d": 5.42,
-    "atr14": 4.64,
-    "atr_pct": 2.03,
-    "ext_vs_21ema_pct": 3.72,
-    "pct_from_52w_high": -2.08,
-    "hi52": 234.08,
-    "low10": 218.05,
-    "low20": 201.96,
-    "rs_1m_pct": 10.97,
-    "rs_3m_pct": 15.17,
-    "vol_ratio_last": 0.75,
-    "up_days_high_vol_20": 2,
-    "down_days_high_vol_20": 1,
-    "avg_dollar_volume": 1944093627.0,
-    "above_all_emas": true,
-    "setup": "breakout_watch",
-    "post_earnings": null,
-    "stop": 216.89,
-    "stop_pct": 5.37,
-    "t1": 234.08,
-    "t2": 247.78,
-    "ret_1m_pct": 12.14,
-    "ret_3m_pct": 20.22,
-    "t2_source": "4xATR",
-    "rr_t1": 0.4,
-    "rr_t2": 1.51,
-    "expected_rr": 0.96,
-    "data_quality": "degraded"
-   },
-   "earnings": {
-    "next": "2026-10-30",
-    "last": "2026-07-31",
-    "surprise": {
-     "eps_estimate": 5.57,
-     "eps_actual": 6.06,
-     "surprise_pct": 8.84
-    },
-    "inside_window": true,
-    "days_to_next": 1
-   },
-   "expected_rr": 0.96,
-   "stop": 216.89,
-   "stop_pct": 5.37,
-   "t1": 234.08,
-   "t2": 247.78,
-   "data_quality": "degraded",
-   "fund": {
-    "marketCap": 449599464414.4619,
-    "forwardPE": null,
-    "revenueGrowth": null,
-    "profitMargins": null,
-    "debtToEquity": null,
-    "targetMedianPrice": null,
-    "recommendationMean": null,
-    "heldPercentInstitutions": null
-   },
-   "evaluated_at_utc": "2026-10-29T07:34:14+00:00"
-  },
-  {
-   "symbol": "EOG",
-   "name": null,
-   "sector": "Energy",
-   "price": 160.92,
-   "setup": "breakout_watch",
-   "score": 49.3,
-   "factors": {
-    "regime": 75,
-    "business_quality": 55,
-    "financial_strength": 55,
-    "growth": 50,
-    "moat": 62,
-    "valuation": 55,
-    "technical": 100.0,
-    "catalyst": 55,
-    "institutional": 65,
-    "liquidity": 85,
-    "reward_risk": 41.25
-   },
-   "penalties": [
-    [
-     "earnings inside holding window",
-     10
-    ],
-    [
-     "new high on light volume",
-     3
-    ],
-    [
-     "binary macro event inside window: US midterm elections (2026-11-03)",
-     3
-    ]
-   ],
-   "notes": [
-    "Energy is a leading sector",
-    "above 21/48/200 EMA",
-    "RS 3m +6.7% vs SPY",
-    "within 3% of 52-week high",
-    "accumulation: more high-volume up days"
-   ],
-   "bear_case": [
-    "Penalty: earnings inside holding window",
-    "Penalty: new high on light volume",
-    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)",
-    "Reward:risk 0.8 is below the 2.0 minimum at a 7.0% stop"
-   ],
-   "decision": "REJECT",
-   "reasons": [
-    "earnings inside holding window",
-    "reward:risk 0.85 < 2.0",
-    "fundamental data unavailable from vendor \u2014 confidence reduced, re-run later",
-    "score 49.3 below 65"
-   ],
-   "tech": {
-    "symbol": "EOG",
-    "as_of": "2026-10-28",
-    "price": 160.92,
-    "ema21": 154.1,
-    "ema48": 148.93,
-    "ema200": 135.24,
-    "ema21_slope_5d": 4.46,
-    "atr14": 3.74,
-    "atr_pct": 2.33,
-    "ext_vs_21ema_pct": 4.43,
-    "pct_from_52w_high": -2.54,
-    "hi52": 165.11,
-    "low10": 150.64,
-    "low20": 136.61,
-    "rs_1m_pct": 14.78,
-    "rs_3m_pct": 6.66,
-    "vol_ratio_last": 0.63,
-    "up_days_high_vol_20": 4,
-    "down_days_high_vol_20": 0,
-    "avg_dollar_volume": 478415798.0,
-    "above_all_emas": true,
-    "setup": "breakout_watch",
-    "post_earnings": null,
-    "stop": 149.7,
-    "stop_pct": 6.97,
-    "t1": 165.11,
-    "t2": 175.9,
-    "ret_1m_pct": 16.0,
-    "ret_3m_pct": 11.33,
-    "t2_source": "4xATR",
-    "rr_t1": 0.37,
-    "rr_t2": 1.34,
-    "expected_rr": 0.85,
-    "data_quality": "degraded"
-   },
-   "earnings": {
-    "next": "2026-11-05",
-    "last": "2026-08-04",
-    "surprise": {
-     "eps_estimate": 4.97,
-     "eps_actual": 5.07,
-     "surprise_pct": 2.1
-    },
-    "inside_window": true,
-    "days_to_next": 5
-   },
-   "expected_rr": 0.85,
-   "stop": 149.7,
-   "stop_pct": 6.97,
-   "t1": 165.11,
-   "t2": 175.9,
-   "data_quality": "degraded",
-   "fund": {
-    "marketCap": 84407234041.4784,
-    "forwardPE": null,
-    "revenueGrowth": null,
-    "profitMargins": null,
-    "debtToEquity": null,
-    "targetMedianPrice": null,
-    "recommendationMean": null,
-    "heldPercentInstitutions": null
-   },
-   "evaluated_at_utc": "2026-10-29T07:34:35+00:00"
-  },
-  {
-   "symbol": "TRGP",
-   "name": null,
-   "sector": "Energy",
-   "price": 305.9,
-   "setup": "breakout_watch",
-   "score": 49.2,
-   "factors": {
-    "regime": 75,
-    "business_quality": 55,
-    "financial_strength": 55,
-    "growth": 50,
-    "moat": 62,
-    "valuation": 55,
-    "technical": 100.0,
-    "catalyst": 55,
-    "institutional": 65,
-    "liquidity": 85,
-    "reward_risk": 40.0
-   },
-   "penalties": [
-    [
-     "earnings inside holding window",
-     10
-    ],
-    [
-     "new high on light volume",
-     3
-    ],
-    [
-     "binary macro event inside window: US midterm elections (2026-11-03)",
-     3
-    ]
-   ],
-   "notes": [
-    "Energy is a leading sector",
-    "above 21/48/200 EMA",
-    "RS 3m +9.7% vs SPY",
-    "within 3% of 52-week high",
-    "accumulation: more high-volume up days"
-   ],
-   "bear_case": [
-    "Penalty: earnings inside holding window",
-    "Penalty: new high on light volume",
-    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)",
-    "Reward:risk 0.8 is below the 2.0 minimum at a 10.1% stop"
-   ],
-   "decision": "REJECT",
-   "reasons": [
-    "earnings inside holding window",
-    "reward:risk 0.80 < 2.0",
-    "fundamental data unavailable from vendor \u2014 confidence reduced, re-run later",
-    "score 49.2 below 65"
-   ],
-   "tech": {
-    "symbol": "TRGP",
-    "as_of": "2026-10-28",
-    "price": 305.9,
-    "ema21": 293.32,
-    "ema48": 287.97,
-    "ema200": 255.78,
-    "ema21_slope_5d": 5.07,
-    "atr14": 8.15,
-    "atr_pct": 2.66,
-    "ext_vs_21ema_pct": 4.29,
-    "pct_from_52w_high": -0.83,
-    "hi52": 308.46,
-    "low10": 277.13,
-    "low20": 267.0,
-    "rs_1m_pct": 10.68,
-    "rs_3m_pct": 9.72,
-    "vol_ratio_last": 0.78,
-    "up_days_high_vol_20": 3,
-    "down_days_high_vol_20": 2,
-    "avg_dollar_volume": 365407332.0,
-    "above_all_emas": true,
-    "setup": "breakout_watch",
-    "post_earnings": null,
-    "stop": 275.09,
-    "stop_pct": 10.07,
-    "t1": 322.2,
-    "t2": 338.5,
-    "ret_1m_pct": 11.85,
-    "ret_3m_pct": 14.53,
-    "t2_source": "4xATR",
-    "rr_t1": 0.53,
-    "rr_t2": 1.06,
-    "expected_rr": 0.8,
-    "data_quality": "degraded"
-   },
-   "earnings": {
-    "next": "2026-11-05",
-    "last": "2026-08-06",
-    "surprise": {
-     "eps_estimate": 2.84,
-     "eps_actual": 3.25,
-     "surprise_pct": 14.25
-    },
-    "inside_window": true,
-    "days_to_next": 5
-   },
-   "expected_rr": 0.8,
-   "stop": 275.09,
-   "stop_pct": 10.07,
-   "t1": 322.2,
-   "t2": 338.5,
-   "data_quality": "degraded",
-   "fund": {
-    "marketCap": 65594448015.11691,
-    "forwardPE": null,
-    "revenueGrowth": null,
-    "profitMargins": null,
-    "debtToEquity": null,
-    "targetMedianPrice": null,
-    "recommendationMean": null,
-    "heldPercentInstitutions": null
-   },
-   "evaluated_at_utc": "2026-10-29T07:35:17+00:00"
-  },
-  {
-   "symbol": "PR",
-   "name": null,
-   "sector": "Energy",
-   "price": 25.52,
-   "setup": "breakout_watch",
-   "score": 49.0,
-   "factors": {
-    "regime": 75,
-    "business_quality": 55,
-    "financial_strength": 55,
-    "growth": 50,
-    "moat": 55,
-    "valuation": 55,
-    "technical": 100.0,
-    "catalyst": 55,
-    "institutional": 65,
-    "liquidity": 85,
-    "reward_risk": 43.75
-   },
-   "penalties": [
-    [
-     "earnings inside holding window",
-     10
-    ],
-    [
-     "new high on light volume",
-     3
-    ],
-    [
-     "binary macro event inside window: US midterm elections (2026-11-03)",
-     3
-    ]
-   ],
-   "notes": [
-    "Energy is a leading sector",
-    "above 21/48/200 EMA",
-    "RS 3m +17.2% vs SPY",
-    "within 3% of 52-week high",
-    "accumulation: more high-volume up days"
-   ],
-   "bear_case": [
-    "Penalty: earnings inside holding window",
-    "Penalty: new high on light volume",
-    "Penalty: binary macro event inside window: US midterm elections (2026-11-03)",
-    "Reward:risk 0.9 is below the 2.0 minimum at a 9.1% stop"
-   ],
-   "decision": "REJECT",
-   "reasons": [
-    "earnings inside holding window",
-    "reward:risk 0.95 < 2.0",
-    "fundamental data unavailable from vendor \u2014 confidence reduced, re-run later",
-    "score 49.0 below 65"
-   ],
-   "tech": {
-    "symbol": "PR",
-    "as_of": "2026-10-28",
-    "price": 25.52,
-    "ema21": 24.16,
-    "ema48": 23.19,
-    "ema200": 20.08,
-    "ema21_slope_5d": 0.74,
-    "atr14": 0.73,
-    "atr_pct": 2.87,
-    "ext_vs_21ema_pct": 5.63,
-    "pct_from_52w_high": -1.69,
-    "hi52": 25.96,
-    "low10": 23.37,
-    "low20": 20.94,
-    "rs_1m_pct": 19.11,
-    "rs_3m_pct": 17.18,
-    "vol_ratio_last": 0.79,
-    "up_days_high_vol_20": 2,
-    "down_days_high_vol_20": 1,
-    "avg_dollar_volume": 251149674.0,
-    "above_all_emas": true,
-    "setup": "breakout_watch",
-    "post_earnings": null,
-    "stop": 23.19,
-    "stop_pct": 9.13,
-    "t1": 26.99,
-    "t2": 28.45,
-    "ret_1m_pct": 20.38,
-    "ret_3m_pct": 22.32,
-    "t2_source": "4xATR",
-    "rr_t1": 0.63,
-    "rr_t2": 1.26,
-    "expected_rr": 0.95,
-    "data_quality": "degraded"
-   },
-   "earnings": {
-    "next": "2026-11-04",
-    "last": "2026-08-05",
-    "surprise": {
-     "eps_estimate": 0.59,
-     "eps_actual": 0.69,
-     "surprise_pct": 16.92
-    },
-    "inside_window": true,
-    "days_to_next": 4
-   },
-   "expected_rr": 0.95,
-   "stop": 23.19,
-   "stop_pct": 9.13,
-   "t1": 26.99,
-   "t2": 28.45,
-   "data_quality": "degraded",
-   "fund": {
-    "marketCap": 21374455763.48318,
-    "forwardPE": null,
-    "revenueGrowth": null,
-    "profitMargins": null,
-    "debtToEquity": null,
-    "targetMedianPrice": null,
-    "recommendationMean": null,
-    "heldPercentInstitutions": null
-   },
-   "evaluated_at_utc": "2026-10-29T07:34:04+00:00"
+   "evaluated_at_utc": "2026-11-04T20:17:02+00:00"
   }
  ]
 }
